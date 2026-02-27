@@ -1,0 +1,132 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 40 320 208 336)
+	(text "INPUT" (rect 125 0 154 10)(font "Arial" (font_size 6)))
+	(text "CLOCK_50" (rect 5 0 63 11)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 149 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 40 400 208 416)
+	(text "INPUT" (rect 125 0 154 10)(font "Arial" (font_size 6)))
+	(text "BUTTIN2" (rect 5 0 53 11)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 149 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 32 360 208 376)
+	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
+	(text "OUTPUT" (rect 5 5 53 16)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 176 8)(pt 124 8))
+		(line (pt 124 12)(pt 98 12))
+		(line (pt 124 4)(pt 98 4))
+		(line (pt 124 4)(pt 124 12))
+		(line (pt 98 12)(pt 94 8))
+		(line (pt 94 8)(pt 98 4))
+		(line (pt 98 4)(pt 94 8))
+	)
+	(rotate180)
+)
+(symbol
+	(rect 232 256 520 440)
+	(text "nios2" (rect 129 -1 167 15)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 168 26 179)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "clk_clk" (rect 0 0 40 13)(font "Arial" (font_size 8)))
+		(text "clk_clk" (rect 4 61 44 74)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 112 72))
+	)
+	(port
+		(pt 0 152)
+		(input)
+		(text "reset_reset_n" (rect 0 0 79 13)(font "Arial" (font_size 8)))
+		(text "reset_reset_n" (rect 4 141 83 154)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 112 152))
+	)
+	(port
+		(pt 0 112)
+		(output)
+		(text "led_pio_export[7..0]" (rect 0 0 112 13)(font "Arial" (font_size 8)))
+		(text "led_pio_export[7..0]" (rect 4 101 116 114)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 112 112)(line_width 3))
+	)
+	(drawing
+		(text "clk" (rect 97 43 115 57)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 117 67 132 78)(font "Arial" (color 0 0 0)))
+		(text "led_pio" (rect 71 83 118 97)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 117 107 148 118)(font "Arial" (color 0 0 0)))
+		(text "reset" (rect 83 123 117 137)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 117 147 155 158)(font "Arial" (color 0 0 0)))
+		(text " nios2 " (rect 263 168 296 179)(font "Arial" ))
+		(line (pt 113 52)(pt 113 76))
+		(line (pt 114 52)(pt 114 76))
+		(line (pt 113 92)(pt 113 116))
+		(line (pt 114 92)(pt 114 116))
+		(line (pt 113 132)(pt 113 156))
+		(line (pt 114 132)(pt 114 156))
+		(line (pt 112 32)(pt 176 32))
+		(line (pt 176 32)(pt 176 168))
+		(line (pt 112 168)(pt 176 168))
+		(line (pt 112 32)(pt 112 168))
+		(line (pt 0 0)(pt 288 0))
+		(line (pt 288 0)(pt 288 184))
+		(line (pt 0 184)(pt 288 184))
+		(line (pt 0 0)(pt 0 184))
+	)
+)
+(connector
+	(pt 208 328)
+	(pt 232 328)
+)
+(connector
+	(pt 208 368)
+	(pt 232 368)
+	(bus)
+)
+(connector
+	(pt 208 408)
+	(pt 232 408)
+)

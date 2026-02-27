@@ -1,0 +1,255 @@
+Info: Starting: Create simulation model
+Info: ip-generate --project-directory=/home/rissun57/Desktop/Git/2025_2_NioII_SoC_Lab/Lab1/ --output-directory=/home/rissun57/Desktop/Git/2025_2_NioII_SoC_Lab/Lab1/nios2/simulation/ --file-set=SIM_VHDL --report-file=html:/home/rissun57/Desktop/Git/2025_2_NioII_SoC_Lab/Lab1/nios2.html --report-file=sopcinfo:/home/rissun57/Desktop/Git/2025_2_NioII_SoC_Lab/Lab1/nios2.sopcinfo --report-file=csv:/home/rissun57/Desktop/Git/2025_2_NioII_SoC_Lab/Lab1/nios2.csv --report-file=spd:/home/rissun57/Desktop/Git/2025_2_NioII_SoC_Lab/Lab1/nios2.spd --report-file=sip:/home/rissun57/Desktop/Git/2025_2_NioII_SoC_Lab/Lab1/nios2/simulation/nios2.sip --report-file=cmp:/home/rissun57/Desktop/Git/2025_2_NioII_SoC_Lab/Lab1/nios2.cmp --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=/home/rissun57/Desktop/Git/2025_2_NioII_SoC_Lab/Lab1/nios2.qsys
+Progress: Loading Lab1/nios2.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.1]
+Progress: Parameterizing module clk_0
+Progress: Adding nios2 [altera_nios2_qsys 13.1]
+Progress: Parameterizing module nios2
+Progress: Adding RAM [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module RAM
+Progress: Adding JUART [altera_avalon_jtag_uart 13.1]
+Progress: Parameterizing module JUART
+Progress: Adding LED_PIO [altera_avalon_pio 13.1]
+Progress: Parameterizing module LED_PIO
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: nios2.LED_PIO: LED_PIO.external_connection must be exported, or connected to a matching conduit.
+Info: nios2: Generating nios2 "nios2" for SIM_VHDL
+Info: pipeline_bridge_swap_transform: After transform: 5 modules, 18 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_initial_interconnect_transform: After transform: 5 modules, 16 connections
+Info: merlin_translator_transform: After transform: 11 modules, 34 connections
+Info: merlin_domain_transform: After transform: 22 modules, 88 connections
+Info: merlin_router_transform: After transform: 28 modules, 106 connections
+Info: merlin_network_to_switch_transform: After transform: 39 modules, 134 connections
+Info: merlin_clock_and_reset_bridge_transform: After transform: 41 modules, 174 connections
+Info: merlin_hierarchy_transform: After transform: 6 modules, 18 connections
+Info: merlin_mm_transform: After transform: 6 modules, 18 connections
+Info: merlin_interrupt_mapper_transform: After transform: 7 modules, 21 connections
+Info: reset_adaptation_transform: After transform: 9 modules, 28 connections
+Info: nios2: Starting RTL generation for module 'nios2_nios2'
+Info: nios2:   Generation command is [exec /home/rissun57/QuartusII/quartus/linux/eperlcmd -I /home/rissun57/QuartusII/quartus/linux/perl/lib -I /home/rissun57/QuartusII/quartus/sopc_builder/bin/europa -I /home/rissun57/QuartusII/quartus/sopc_builder/bin/perl_lib -I /home/rissun57/QuartusII/quartus/sopc_builder/bin -I /home/rissun57/QuartusII/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I /home/rissun57/QuartusII/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I /home/rissun57/QuartusII/quartus/../ip/altera/nios2_ip/altera_nios2 -I /home/rissun57/QuartusII/quartus/../ip/altera/nios2_ip/altera_nios2 -- /home/rissun57/QuartusII/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=nios2_nios2 --dir=/tmp/alt0511_4437577110372229473.dir/0001_nios2_gen/ --quartus_dir=/home/rissun57/QuartusII/quartus --vhdl --config=/tmp/alt0511_4437577110372229473.dir/0001_nios2_gen//nios2_nios2_processor_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt0511_4437577110372229473.dir/0001_nios2_gen/  ]
+Info: nios2: # 2026.02.27 22:31:08 (*) Starting Nios II generation
+Info: nios2: # 2026.02.27 22:31:08 (*)   Checking for plaintext license.
+Info: nios2: # 2026.02.27 22:31:10 (*)   Couldn't query license setup in Quartus directory /home/rissun57/QuartusII/quartus
+Info: nios2: # 2026.02.27 22:31:10 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: nios2: # 2026.02.27 22:31:10 (*)   LM_LICENSE_FILE environment variable is empty
+Info: nios2: # 2026.02.27 22:31:10 (*)   Plaintext license not found.
+Info: nios2: # 2026.02.27 22:31:10 (*)   No license required to generate encrypted Nios II/e.
+Info: nios2: # 2026.02.27 22:31:10 (*)   Elaborating CPU configuration settings
+Info: nios2: # 2026.02.27 22:31:10 (*)   Creating all objects for CPU
+Info: nios2: # 2026.02.27 22:31:11 (*)   Creating '/tmp/alt0511_4437577110372229473.dir/0001_nios2_gen//nios2_nios2_nios2_waves.do'
+Info: nios2: # 2026.02.27 22:31:11 (*)   Generating RTL from CPU objects
+Info: nios2: # 2026.02.27 22:31:11 (*)   Creating plain-text RTL
+Info: nios2: # 2026.02.27 22:31:13 (*) Done Nios II generation
+Info: nios2: Done RTL generation for module 'nios2_nios2'
+Info: nios2: "nios2" instantiated altera_nios2_qsys "nios2"
+Info: RAM: Starting RTL generation for module 'nios2_RAM'
+Info: RAM:   Generation command is [exec /home/rissun57/QuartusII/quartus/linux/perl/bin/perl -I /home/rissun57/QuartusII/quartus/linux/perl/lib -I /home/rissun57/QuartusII/quartus/sopc_builder/bin/europa -I /home/rissun57/QuartusII/quartus/sopc_builder/bin/perl_lib -I /home/rissun57/QuartusII/quartus/sopc_builder/bin -I /home/rissun57/QuartusII/quartus/../ip/altera/sopc_builder_ip/common -I /home/rissun57/QuartusII/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /home/rissun57/QuartusII/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=nios2_RAM --dir=/tmp/alt0511_4437577110372229473.dir/0002_RAM_gen/ --quartus_dir=/home/rissun57/QuartusII/quartus --vhdl --config=/tmp/alt0511_4437577110372229473.dir/0002_RAM_gen//nios2_RAM_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt0511_4437577110372229473.dir/0002_RAM_gen/  ]
+Info: RAM: Done RTL generation for module 'nios2_RAM'
+Info: RAM: "nios2" instantiated altera_avalon_onchip_memory2 "RAM"
+Info: JUART: Starting RTL generation for module 'nios2_JUART'
+Info: JUART:   Generation command is [exec /home/rissun57/QuartusII/quartus/linux/perl/bin/perl -I /home/rissun57/QuartusII/quartus/linux/perl/lib -I /home/rissun57/QuartusII/quartus/sopc_builder/bin/europa -I /home/rissun57/QuartusII/quartus/sopc_builder/bin/perl_lib -I /home/rissun57/QuartusII/quartus/sopc_builder/bin -I /home/rissun57/QuartusII/quartus/../ip/altera/sopc_builder_ip/common -I /home/rissun57/QuartusII/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /home/rissun57/QuartusII/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=nios2_JUART --dir=/tmp/alt0511_4437577110372229473.dir/0003_JUART_gen/ --quartus_dir=/home/rissun57/QuartusII/quartus --vhdl --config=/tmp/alt0511_4437577110372229473.dir/0003_JUART_gen//nios2_JUART_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt0511_4437577110372229473.dir/0003_JUART_gen/  ]
+Info: JUART: Done RTL generation for module 'nios2_JUART'
+Info: JUART: "nios2" instantiated altera_avalon_jtag_uart "JUART"
+Info: LED_PIO: Starting RTL generation for module 'nios2_LED_PIO'
+Info: LED_PIO:   Generation command is [exec /home/rissun57/QuartusII/quartus/linux/perl/bin/perl -I /home/rissun57/QuartusII/quartus/linux/perl/lib -I /home/rissun57/QuartusII/quartus/sopc_builder/bin/europa -I /home/rissun57/QuartusII/quartus/sopc_builder/bin/perl_lib -I /home/rissun57/QuartusII/quartus/sopc_builder/bin -I /home/rissun57/QuartusII/quartus/../ip/altera/sopc_builder_ip/common -I /home/rissun57/QuartusII/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/rissun57/QuartusII/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios2_LED_PIO --dir=/tmp/alt0511_4437577110372229473.dir/0004_LED_PIO_gen/ --quartus_dir=/home/rissun57/QuartusII/quartus --vhdl --config=/tmp/alt0511_4437577110372229473.dir/0004_LED_PIO_gen//nios2_LED_PIO_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt0511_4437577110372229473.dir/0004_LED_PIO_gen/  ]
+Info: LED_PIO: Done RTL generation for module 'nios2_LED_PIO'
+Info: LED_PIO: "nios2" instantiated altera_avalon_pio "LED_PIO"
+Info: pipeline_bridge_swap_transform: After transform: 36 modules, 121 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 36 modules, 121 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 36 modules, 121 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 36 modules, 121 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 36 modules, 121 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 36 modules, 121 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 36 modules, 121 connections
+Info: mm_interconnect_0: "nios2" instantiated altera_merlin_interconnect_wrapper "mm_interconnect_0"
+Info: irq_mapper: Generating VHDL simulation model
+Warning: Parallel compilation is not licensed and has been disabled
+Info: irq_mapper: Generated simulation model nios2_irq_mapper.vho
+Info: irq_mapper: "nios2" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "nios2" instantiated altera_reset_controller "rst_controller"
+Info: nios2_instruction_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_instruction_master_translator"
+Info: nios2_jtag_debug_module_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "nios2_jtag_debug_module_translator"
+Info: nios2_instruction_master_translator_avalon_universal_master_0_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_instruction_master_translator_avalon_universal_master_0_agent"
+Info: nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: Generating VHDL simulation model
+Warning: Parallel compilation is not licensed and has been disabled
+Info: nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: Generated simulation model nios2_mm_interconnect_0_nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo.vho
+Info: nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Warning: Parallel compilation is not licensed and has been disabled
+Info: addr_router: "mm_interconnect_0" instantiated altera_merlin_router "addr_router"
+Warning: Parallel compilation is not licensed and has been disabled
+Info: id_router: "mm_interconnect_0" instantiated altera_merlin_router "id_router"
+Info: cmd_xbar_demux: Generating VHDL simulation model
+Warning: Parallel compilation is not licensed and has been disabled
+Info: cmd_xbar_demux: Generated simulation model nios2_mm_interconnect_0_cmd_xbar_demux.vho
+Info: cmd_xbar_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_mux: Generating VHDL simulation model
+Warning: Parallel compilation is not licensed and has been disabled
+Info: cmd_xbar_mux: Generated simulation model nios2_mm_interconnect_0_cmd_xbar_mux.vho
+Info: cmd_xbar_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: rsp_xbar_demux: Generating VHDL simulation model
+Warning: Parallel compilation is not licensed and has been disabled
+Info: rsp_xbar_demux: Generated simulation model nios2_mm_interconnect_0_rsp_xbar_demux.vho
+Info: rsp_xbar_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_mux: Generating VHDL simulation model
+Warning: Parallel compilation is not licensed and has been disabled
+Info: rsp_xbar_mux: Generated simulation model nios2_mm_interconnect_0_rsp_xbar_mux.vho
+Info: rsp_xbar_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: nios2: Done "nios2" with 19 modules, 65 files, 2210961 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=/home/rissun57/Desktop/Git/2025_2_NioII_SoC_Lab/Lab1/nios2.spd --output-directory=/home/rissun57/Desktop/Git/2025_2_NioII_SoC_Lab/Lab1/nios2/simulation/
+Info: Doing: ip-make-simscript --spd=/home/rissun57/Desktop/Git/2025_2_NioII_SoC_Lab/Lab1/nios2.spd --output-directory=/home/rissun57/Desktop/Git/2025_2_NioII_SoC_Lab/Lab1/nios2/simulation/
+Info: Generating the following file(s) for MODELSIM simulator in /home/rissun57/Desktop/Git/2025_2_NioII_SoC_Lab/Lab1/nios2/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Skipping VCS script generation since VHDL file $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_syn_attributes.vhd is required for simulation
+Info: Generating the following file(s) for VCSMX simulator in /home/rissun57/Desktop/Git/2025_2_NioII_SoC_Lab/Lab1/nios2/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in /home/rissun57/Desktop/Git/2025_2_NioII_SoC_Lab/Lab1/nios2/simulation/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	18 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in /home/rissun57/Desktop/Git/2025_2_NioII_SoC_Lab/Lab1/nios2/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=/home/rissun57/Desktop/Git/2025_2_NioII_SoC_Lab/Lab1/ --output-directory=/home/rissun57/Desktop/Git/2025_2_NioII_SoC_Lab/Lab1/nios2/ --report-file=bsf:/home/rissun57/Desktop/Git/2025_2_NioII_SoC_Lab/Lab1/nios2.bsf --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=/home/rissun57/Desktop/Git/2025_2_NioII_SoC_Lab/Lab1/nios2.qsys
+Progress: Loading Lab1/nios2.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.1]
+Progress: Parameterizing module clk_0
+Progress: Adding nios2 [altera_nios2_qsys 13.1]
+Progress: Parameterizing module nios2
+Progress: Adding RAM [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module RAM
+Progress: Adding JUART [altera_avalon_jtag_uart 13.1]
+Progress: Parameterizing module JUART
+Progress: Adding LED_PIO [altera_avalon_pio 13.1]
+Progress: Parameterizing module LED_PIO
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: nios2.LED_PIO: LED_PIO.external_connection must be exported, or connected to a matching conduit.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=/home/rissun57/Desktop/Git/2025_2_NioII_SoC_Lab/Lab1/ --output-directory=/home/rissun57/Desktop/Git/2025_2_NioII_SoC_Lab/Lab1/nios2/synthesis/ --file-set=QUARTUS_SYNTH --report-file=html:/home/rissun57/Desktop/Git/2025_2_NioII_SoC_Lab/Lab1/nios2.html --report-file=sopcinfo:/home/rissun57/Desktop/Git/2025_2_NioII_SoC_Lab/Lab1/nios2.sopcinfo --report-file=cmp:/home/rissun57/Desktop/Git/2025_2_NioII_SoC_Lab/Lab1/nios2.cmp --report-file=qip:/home/rissun57/Desktop/Git/2025_2_NioII_SoC_Lab/Lab1/nios2/synthesis/nios2.qip --report-file=svd --report-file=regmap:/home/rissun57/Desktop/Git/2025_2_NioII_SoC_Lab/Lab1/nios2/synthesis/nios2.regmap --report-file=debuginfo:/home/rissun57/Desktop/Git/2025_2_NioII_SoC_Lab/Lab1/nios2/synthesis/nios2.debuginfo --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=/home/rissun57/Desktop/Git/2025_2_NioII_SoC_Lab/Lab1/nios2.qsys --language=VERILOG
+Progress: Loading Lab1/nios2.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.1]
+Progress: Parameterizing module clk_0
+Progress: Adding nios2 [altera_nios2_qsys 13.1]
+Progress: Parameterizing module nios2
+Progress: Adding RAM [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module RAM
+Progress: Adding JUART [altera_avalon_jtag_uart 13.1]
+Progress: Parameterizing module JUART
+Progress: Adding LED_PIO [altera_avalon_pio 13.1]
+Progress: Parameterizing module LED_PIO
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: nios2.LED_PIO: LED_PIO.external_connection must be exported, or connected to a matching conduit.
+Info: nios2: Generating nios2 "nios2" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 5 modules, 18 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_initial_interconnect_transform: After transform: 5 modules, 16 connections
+Info: merlin_translator_transform: After transform: 11 modules, 34 connections
+Info: merlin_domain_transform: After transform: 22 modules, 88 connections
+Info: merlin_router_transform: After transform: 28 modules, 106 connections
+Info: merlin_network_to_switch_transform: After transform: 39 modules, 134 connections
+Info: merlin_clock_and_reset_bridge_transform: After transform: 41 modules, 174 connections
+Info: merlin_hierarchy_transform: After transform: 6 modules, 18 connections
+Info: merlin_mm_transform: After transform: 6 modules, 18 connections
+Info: merlin_interrupt_mapper_transform: After transform: 7 modules, 21 connections
+Info: reset_adaptation_transform: After transform: 9 modules, 28 connections
+Info: nios2: Starting RTL generation for module 'nios2_nios2'
+Info: nios2:   Generation command is [exec /home/rissun57/QuartusII/quartus/linux/eperlcmd -I /home/rissun57/QuartusII/quartus/linux/perl/lib -I /home/rissun57/QuartusII/quartus/sopc_builder/bin/europa -I /home/rissun57/QuartusII/quartus/sopc_builder/bin/perl_lib -I /home/rissun57/QuartusII/quartus/sopc_builder/bin -I /home/rissun57/QuartusII/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I /home/rissun57/QuartusII/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I /home/rissun57/QuartusII/quartus/../ip/altera/nios2_ip/altera_nios2 -I /home/rissun57/QuartusII/quartus/../ip/altera/nios2_ip/altera_nios2 -- /home/rissun57/QuartusII/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=nios2_nios2 --dir=/tmp/alt0511_4437577110372229473.dir/0035_nios2_gen/ --quartus_dir=/home/rissun57/QuartusII/quartus --verilog --config=/tmp/alt0511_4437577110372229473.dir/0035_nios2_gen//nios2_nios2_processor_configuration.pl  --do_build_sim=0  ]
+Info: nios2: # 2026.02.27 22:31:44 (*) Starting Nios II generation
+Info: nios2: # 2026.02.27 22:31:44 (*)   Checking for plaintext license.
+Info: nios2: # 2026.02.27 22:31:45 (*)   Couldn't query license setup in Quartus directory /home/rissun57/QuartusII/quartus
+Info: nios2: # 2026.02.27 22:31:45 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: nios2: # 2026.02.27 22:31:45 (*)   LM_LICENSE_FILE environment variable is empty
+Info: nios2: # 2026.02.27 22:31:45 (*)   Plaintext license not found.
+Info: nios2: # 2026.02.27 22:31:45 (*)   No license required to generate encrypted Nios II/e.
+Info: nios2: # 2026.02.27 22:31:45 (*)   Elaborating CPU configuration settings
+Info: nios2: # 2026.02.27 22:31:46 (*)   Creating all objects for CPU
+Info: nios2: # 2026.02.27 22:31:46 (*)   Generating RTL from CPU objects
+Info: nios2: # 2026.02.27 22:31:46 (*)   Creating plain-text RTL
+Info: nios2: # 2026.02.27 22:31:48 (*) Done Nios II generation
+Info: nios2: Done RTL generation for module 'nios2_nios2'
+Info: nios2: "nios2" instantiated altera_nios2_qsys "nios2"
+Info: RAM: Starting RTL generation for module 'nios2_RAM'
+Info: RAM:   Generation command is [exec /home/rissun57/QuartusII/quartus/linux/perl/bin/perl -I /home/rissun57/QuartusII/quartus/linux/perl/lib -I /home/rissun57/QuartusII/quartus/sopc_builder/bin/europa -I /home/rissun57/QuartusII/quartus/sopc_builder/bin/perl_lib -I /home/rissun57/QuartusII/quartus/sopc_builder/bin -I /home/rissun57/QuartusII/quartus/../ip/altera/sopc_builder_ip/common -I /home/rissun57/QuartusII/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /home/rissun57/QuartusII/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=nios2_RAM --dir=/tmp/alt0511_4437577110372229473.dir/0036_RAM_gen/ --quartus_dir=/home/rissun57/QuartusII/quartus --verilog --config=/tmp/alt0511_4437577110372229473.dir/0036_RAM_gen//nios2_RAM_component_configuration.pl  --do_build_sim=0  ]
+Info: RAM: Done RTL generation for module 'nios2_RAM'
+Info: RAM: "nios2" instantiated altera_avalon_onchip_memory2 "RAM"
+Info: JUART: Starting RTL generation for module 'nios2_JUART'
+Info: JUART:   Generation command is [exec /home/rissun57/QuartusII/quartus/linux/perl/bin/perl -I /home/rissun57/QuartusII/quartus/linux/perl/lib -I /home/rissun57/QuartusII/quartus/sopc_builder/bin/europa -I /home/rissun57/QuartusII/quartus/sopc_builder/bin/perl_lib -I /home/rissun57/QuartusII/quartus/sopc_builder/bin -I /home/rissun57/QuartusII/quartus/../ip/altera/sopc_builder_ip/common -I /home/rissun57/QuartusII/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /home/rissun57/QuartusII/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=nios2_JUART --dir=/tmp/alt0511_4437577110372229473.dir/0037_JUART_gen/ --quartus_dir=/home/rissun57/QuartusII/quartus --verilog --config=/tmp/alt0511_4437577110372229473.dir/0037_JUART_gen//nios2_JUART_component_configuration.pl  --do_build_sim=0  ]
+Info: JUART: Done RTL generation for module 'nios2_JUART'
+Info: JUART: "nios2" instantiated altera_avalon_jtag_uart "JUART"
+Info: LED_PIO: Starting RTL generation for module 'nios2_LED_PIO'
+Info: LED_PIO:   Generation command is [exec /home/rissun57/QuartusII/quartus/linux/perl/bin/perl -I /home/rissun57/QuartusII/quartus/linux/perl/lib -I /home/rissun57/QuartusII/quartus/sopc_builder/bin/europa -I /home/rissun57/QuartusII/quartus/sopc_builder/bin/perl_lib -I /home/rissun57/QuartusII/quartus/sopc_builder/bin -I /home/rissun57/QuartusII/quartus/../ip/altera/sopc_builder_ip/common -I /home/rissun57/QuartusII/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/rissun57/QuartusII/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios2_LED_PIO --dir=/tmp/alt0511_4437577110372229473.dir/0038_LED_PIO_gen/ --quartus_dir=/home/rissun57/QuartusII/quartus --verilog --config=/tmp/alt0511_4437577110372229473.dir/0038_LED_PIO_gen//nios2_LED_PIO_component_configuration.pl  --do_build_sim=0  ]
+Info: LED_PIO: Done RTL generation for module 'nios2_LED_PIO'
+Info: LED_PIO: "nios2" instantiated altera_avalon_pio "LED_PIO"
+Info: pipeline_bridge_swap_transform: After transform: 36 modules, 121 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 36 modules, 121 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 36 modules, 121 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 36 modules, 121 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 36 modules, 121 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 36 modules, 121 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 36 modules, 121 connections
+Info: mm_interconnect_0: "nios2" instantiated altera_merlin_interconnect_wrapper "mm_interconnect_0"
+Info: irq_mapper: "nios2" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "nios2" instantiated altera_reset_controller "rst_controller"
+Info: nios2_instruction_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_instruction_master_translator"
+Info: nios2_jtag_debug_module_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "nios2_jtag_debug_module_translator"
+Info: nios2_instruction_master_translator_avalon_universal_master_0_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_instruction_master_translator_avalon_universal_master_0_agent"
+Info: nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "mm_interconnect_0" instantiated altera_merlin_router "addr_router"
+Info: id_router: "mm_interconnect_0" instantiated altera_merlin_router "id_router"
+Info: cmd_xbar_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: rsp_xbar_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file /home/rissun57/Desktop/Git/2025_2_NioII_SoC_Lab/Lab1/nios2/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: nios2: Done "nios2" with 19 modules, 33 files, 900414 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

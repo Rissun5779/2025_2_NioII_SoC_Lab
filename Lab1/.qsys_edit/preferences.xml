@@ -3,11 +3,19 @@
  <debug showDebugMenu="0" />
  <systemtable filter="All Interfaces">
   <columns>
-   <connections preferredWidth="47" />
+   <connections preferredWidth="143" />
    <irq preferredWidth="34" />
   </columns>
  </systemtable>
  <library
-   expandedCategories="Library/Processors and Peripherals/Hard Processor Systems,Library/Processors and Peripherals,Library,Library/Processors and Peripherals/Hard Processor Components,Library/Processors and Peripherals/Embedded Processors,Project" />
- <window width="941" height="1011" x="979" y="69" />
+   expandedCategories="Library,Library/Peripherals,Library/Peripherals/Microcontroller Peripherals,Project" />
+ <window width="969" height="1077" x="937" y="20" />
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="127" />
+   <clocksource preferredWidth="126" />
+   <frequency preferredWidth="107" />
+  </columns>
+ </clocktable>
+ <generation simulation="VHDL" />
 </preferences>
