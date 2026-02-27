@@ -1,0 +1,15 @@
+|Bit2UD
+CLK => current_stage~1.DATAIN
+RST => current_stage~3.DATAIN
+UP => Selector0.IN3
+UP => Selector1.IN3
+UP => Selector2.IN3
+UP => Selector3.IN3
+UP => Selector0.IN1
+UP => Selector1.IN1
+UP => Selector2.IN1
+UP => Selector3.IN1
+CNT[0] <= CNT.DB_MAX_OUTPUT_PORT_TYPE
+CNT[1] <= CNT.DB_MAX_OUTPUT_PORT_TYPE
+
+

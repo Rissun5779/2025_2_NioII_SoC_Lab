@@ -1,0 +1,50 @@
+// *** vhdl2v log file : Opened Sat Feb  7 16:52:44 2026
+
+Command line: /home/rissun57/Downloads/synapticad-19.00c-x64-full-linux/synapticad-19.00c-x64/bin/x86_64/vhdl2verilog.bin Ripple_adder.vhd
+
+// VHDL2verilog version 19.00c
+
+//       Copyright (c) SynaptiCAD Inc. 1992-2014, All Rights Reserved.
+//                      UNPUBLISHED, LICENSED SOFTWARE.
+//           CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//         PROPERTY OF ALTERNATIVE SYSTEM CONCEPTS OR ITS LICENSORS.
+//
+
+Running..
+
+Read in map file
+
+Loading /home/rissun57/Downloads/synapticad-19.00c-x64-full-linux/synapticad-19.00c-x64//v2v/lib/standard.vhd, Package standard
+
+Loading input file Ripple_adder.vhd
+Loading /home/rissun57/Downloads/synapticad-19.00c-x64-full-linux/synapticad-19.00c-x64//v2v/lib/std_logic_1164_header.vhd, Package std_logic_1164
+Loading /home/rissun57/Downloads/synapticad-19.00c-x64-full-linux/synapticad-19.00c-x64//v2v/lib/numeric_std_header.vhd, Package numeric_std
+Reading function mapping files...
+Reading function mapping file '/home/rissun57/Downloads/synapticad-19.00c-x64-full-linux/synapticad-19.00c-x64//v2v/lib/standard.fm'
+Reading function mapping file '/home/rissun57/Downloads/synapticad-19.00c-x64-full-linux/synapticad-19.00c-x64//v2v/lib/std_logic_1164.fm'
+Reading function mapping file '/home/rissun57/Downloads/synapticad-19.00c-x64-full-linux/synapticad-19.00c-x64//v2v/lib/std_logic_arith.fm'
+Reading function mapping file '/home/rissun57/Downloads/synapticad-19.00c-x64-full-linux/synapticad-19.00c-x64//v2v/lib/std_logic_unsigned.fm'
+Finished reading function mapping files
+Top-level module is 'Ripple_adder'
+
+    NOTE: Adding port 'IN1' of mode 'IN' to module 'Ripple_adder'
+    NOTE: Adding port 'IN2' of mode 'IN' to module 'Ripple_adder'
+    NOTE: Adding port 'Cin' of mode 'IN' to module 'Ripple_adder'
+    NOTE: Adding port 'Sum' of mode 'OUT' to module 'Ripple_adder'
+    NOTE: Adding port 'Carry' of mode 'OUT' to module 'Ripple_adder'
+    NOTE: Adding component instantiation 'FA0' to module
+    NOTE: Adding component instantiation 'FA1' to module
+    NOTE: Adding component instantiation 'FA2' to module
+    NOTE: Adding component instantiation 'FA3' to module
+
+Demo Data:
+HDL file translated : Ripple_adder.vhd
+
+        THIS DEMO VERSION OF VHDL2Verilog TRANSLATOR IS DISTRIBUTED
+                         EXCLUSIVELY BY SynaptiCAD.
+           FOR MORE INFORMATION OR EVALUATION OF THE FULL VERSION, 
+                         PLEASE CONTACT SynaptiCAD AT 
+                   800-804-7073 or sales@syncad.com 
+
+// Closing log file : Sat Feb  7 16:52:45 2026
+

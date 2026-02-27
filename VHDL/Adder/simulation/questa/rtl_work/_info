@@ -1,0 +1,184 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/rissun57/Desktop/FPGA/VHDL/Adder/simulation/questa
+Efull_adder2
+Z1 w1770375113
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 2
+R0
+Z5 8/home/rissun57/Desktop/FPGA/VHDL/Adder/full_adder2.vhd
+Z6 F/home/rissun57/Desktop/FPGA/VHDL/Adder/full_adder2.vhd
+l0
+L5 1
+V91JPncMBGgkE4O;_?_?JA2
+!s100 TWoYRA7AT7bWMfhDD0UfP2
+Z7 OV;C;2020.1;71
+31
+Z8 !s110 1770376847
+!i10b 1
+Z9 !s108 1770376847.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|/home/rissun57/Desktop/FPGA/VHDL/Adder/full_adder2.vhd|
+Z11 !s107 /home/rissun57/Desktop/FPGA/VHDL/Adder/full_adder2.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Artl
+R2
+R3
+R4
+DEx4 work 11 full_adder2 0 22 91JPncMBGgkE4O;_?_?JA2
+!i122 2
+l28
+L15 30
+VAbcYN:I@XTYLQ^O6bX3Z[0
+!s100 8`eb38QVD@kPRmL>fVaNQ3
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ehalf_adder
+Z14 w1770374152
+R2
+R3
+R4
+!i122 1
+R0
+Z15 8/home/rissun57/Desktop/FPGA/VHDL/Adder/half_adder.vhd
+Z16 F/home/rissun57/Desktop/FPGA/VHDL/Adder/half_adder.vhd
+l0
+L5 1
+V2PK_hHj]@6X^8oe9`5Q4E2
+!s100 1>NdBP81d=5bBkUiHHRL:1
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|/home/rissun57/Desktop/FPGA/VHDL/Adder/half_adder.vhd|
+Z18 !s107 /home/rissun57/Desktop/FPGA/VHDL/Adder/half_adder.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 10 half_adder 0 22 2PK_hHj]@6X^8oe9`5Q4E2
+!i122 1
+l15
+L14 5
+V^oR0JjRZ9adKBQMUS`4Oa1
+!s100 Y`d:m5SA2?zaHOU@C3AF83
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Eripple_adder
+Z19 w1770376105
+R2
+R3
+R4
+!i122 0
+R0
+Z20 8/home/rissun57/Desktop/FPGA/VHDL/Adder/Ripple_adder.vhd
+Z21 F/home/rissun57/Desktop/FPGA/VHDL/Adder/Ripple_adder.vhd
+l0
+L5 1
+Ve><lKYbknZe58URX@FVdG0
+!s100 =I4@H5?^D_2Dg7USK;c3g2
+R7
+31
+R8
+!i10b 1
+R9
+Z22 !s90 -reportprogress|300|-93|-work|work|/home/rissun57/Desktop/FPGA/VHDL/Adder/Ripple_adder.vhd|
+Z23 !s107 /home/rissun57/Desktop/FPGA/VHDL/Adder/Ripple_adder.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+R4
+Z24 DEx4 work 12 ripple_adder 0 22 e><lKYbknZe58URX@FVdG0
+!i122 0
+l29
+L15 44
+V8]86Shd_RI?5LE;cBVAeM3
+!s100 AoPX;QTQzIZ[3KYYBDj6Z3
+R7
+31
+R8
+!i10b 1
+R9
+R22
+R23
+!i113 1
+R12
+R13
+Ersa_tb
+Z25 w1770376841
+R2
+R3
+R4
+!i122 3
+R0
+Z26 8/home/rissun57/Desktop/FPGA/VHDL/Adder/RSA_tb.vhd
+Z27 F/home/rissun57/Desktop/FPGA/VHDL/Adder/RSA_tb.vhd
+l0
+L5 1
+VFe>WnE>B2<V1`Iz@PmN@a1
+!s100 o=0<dEd@=P`n=Vbf<:I5P2
+R7
+31
+R8
+!i10b 1
+R9
+Z28 !s90 -reportprogress|300|-93|-work|work|/home/rissun57/Desktop/FPGA/VHDL/Adder/RSA_tb.vhd|
+!s107 /home/rissun57/Desktop/FPGA/VHDL/Adder/RSA_tb.vhd|
+!i113 1
+R12
+R13
+Asim
+R24
+R2
+R3
+R4
+DEx4 work 6 rsa_tb 0 22 Fe>WnE>B2<V1`Iz@PmN@a1
+!i122 3
+l17
+L8 75
+VX1zPaTlf>COGAQ?jQl>fC1
+!s100 >9nk5X=H^9D4EgaK]Zen<3
+R7
+31
+R8
+!i10b 1
+R9
+R28
+Z29 !s107 /home/rissun57/Desktop/FPGA/VHDL/Adder/RSA_tb.vhd|
+!i113 1
+R12
+R13

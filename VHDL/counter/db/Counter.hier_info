@@ -1,0 +1,27 @@
+|BIT4CNT_LOAD
+CLK => Counter[0].CLK
+CLK => Counter[1].CLK
+CLK => Counter[2].CLK
+CLK => Counter[3].CLK
+RST => Counter[0].ACLR
+RST => Counter[1].ACLR
+RST => Counter[2].ACLR
+RST => Counter[3].ACLR
+EN => Counter.OUTPUTSELECT
+EN => Counter.OUTPUTSELECT
+EN => Counter.OUTPUTSELECT
+EN => Counter.OUTPUTSELECT
+LOAD => Counter.OUTPUTSELECT
+LOAD => Counter.OUTPUTSELECT
+LOAD => Counter.OUTPUTSELECT
+LOAD => Counter.OUTPUTSELECT
+CNT_IN[0] => Counter.DATAB
+CNT_IN[1] => Counter.DATAB
+CNT_IN[2] => Counter.DATAB
+CNT_IN[3] => Counter.DATAB
+OUT_PIN[0] <= Counter[0].DB_MAX_OUTPUT_PORT_TYPE
+OUT_PIN[1] <= Counter[1].DB_MAX_OUTPUT_PORT_TYPE
+OUT_PIN[2] <= Counter[2].DB_MAX_OUTPUT_PORT_TYPE
+OUT_PIN[3] <= Counter[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

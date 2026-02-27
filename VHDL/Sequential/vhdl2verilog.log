@@ -1,0 +1,47 @@
+// *** vhdl2v log file : Opened Sat Feb  7 22:36:54 2026
+
+Command line: /home/rissun57/Downloads/synapticad-19.00c-x64-full-linux/synapticad-19.00c-x64/bin/x86_64/vhdl2verilog.bin D_FF_Sync.vhd
+
+// VHDL2verilog version 19.00c
+
+//       Copyright (c) SynaptiCAD Inc. 1992-2014, All Rights Reserved.
+//                      UNPUBLISHED, LICENSED SOFTWARE.
+//           CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//         PROPERTY OF ALTERNATIVE SYSTEM CONCEPTS OR ITS LICENSORS.
+//
+
+Running..
+
+Read in map file
+
+Loading /home/rissun57/Downloads/synapticad-19.00c-x64-full-linux/synapticad-19.00c-x64//v2v/lib/standard.vhd, Package standard
+
+Loading input file D_FF_Sync.vhd
+Loading /home/rissun57/Downloads/synapticad-19.00c-x64-full-linux/synapticad-19.00c-x64//v2v/lib/std_logic_1164_header.vhd, Package std_logic_1164
+Loading /home/rissun57/Downloads/synapticad-19.00c-x64-full-linux/synapticad-19.00c-x64//v2v/lib/numeric_std_header.vhd, Package numeric_std
+Reading function mapping files...
+Reading function mapping file '/home/rissun57/Downloads/synapticad-19.00c-x64-full-linux/synapticad-19.00c-x64//v2v/lib/standard.fm'
+Reading function mapping file '/home/rissun57/Downloads/synapticad-19.00c-x64-full-linux/synapticad-19.00c-x64//v2v/lib/std_logic_1164.fm'
+Reading function mapping file '/home/rissun57/Downloads/synapticad-19.00c-x64-full-linux/synapticad-19.00c-x64//v2v/lib/std_logic_arith.fm'
+Reading function mapping file '/home/rissun57/Downloads/synapticad-19.00c-x64-full-linux/synapticad-19.00c-x64//v2v/lib/std_logic_unsigned.fm'
+Finished reading function mapping files
+Top-level module is 'D_FF_Sync'
+
+    NOTE: Adding port 'clk' of mode 'IN' to module 'D_FF_Sync'
+    NOTE: Adding port 'rst' of mode 'IN' to module 'D_FF_Sync'
+    NOTE: Adding port 'D' of mode 'IN' to module 'D_FF_Sync'
+    NOTE: Adding port 'Q' of mode 'OUT' to module 'D_FF_Sync'
+    NOTE: Adding port 'Qn' of mode 'OUT' to module 'D_FF_Sync'
+    NOTE: Adding 'always' statement corresponding to process 'D_FLIPFLOP' to module
+
+Demo Data:
+HDL file translated : D_FF_Sync.vhd
+
+        THIS DEMO VERSION OF VHDL2Verilog TRANSLATOR IS DISTRIBUTED
+                         EXCLUSIVELY BY SynaptiCAD.
+           FOR MORE INFORMATION OR EVALUATION OF THE FULL VERSION, 
+                         PLEASE CONTACT SynaptiCAD AT 
+                   800-804-7073 or sales@syncad.com 
+
+// Closing log file : Sat Feb  7 22:36:54 2026
+

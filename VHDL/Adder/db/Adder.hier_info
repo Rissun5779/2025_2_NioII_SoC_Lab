@@ -1,0 +1,121 @@
+|Ripple_adder
+IN1[0] => full_adder2:FA0.IN1
+IN1[1] => full_adder2:FA1.IN1
+IN1[2] => full_adder2:FA2.IN1
+IN1[3] => full_adder2:FA3.IN1
+IN2[0] => full_adder2:FA0.IN2
+IN2[1] => full_adder2:FA1.IN2
+IN2[2] => full_adder2:FA2.IN2
+IN2[3] => full_adder2:FA3.IN2
+Cin => full_adder2:FA0.Cin
+Sum[0] <= full_adder2:FA0.sum
+Sum[1] <= full_adder2:FA1.sum
+Sum[2] <= full_adder2:FA2.sum
+Sum[3] <= full_adder2:FA3.sum
+Carry <= full_adder2:FA3.carry
+
+
+|Ripple_adder|full_adder2:FA0
+IN1 => half_adder:HA_0.IN1
+IN2 => half_adder:HA_0.IN2
+Cin => half_adder:HA_1.IN2
+sum <= half_adder:HA_1.sum
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Ripple_adder|full_adder2:FA0|half_adder:HA_0
+IN1 => sum.IN0
+IN1 => carry.IN0
+IN2 => sum.IN1
+IN2 => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Ripple_adder|full_adder2:FA0|half_adder:HA_1
+IN1 => sum.IN0
+IN1 => carry.IN0
+IN2 => sum.IN1
+IN2 => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Ripple_adder|full_adder2:FA1
+IN1 => half_adder:HA_0.IN1
+IN2 => half_adder:HA_0.IN2
+Cin => half_adder:HA_1.IN2
+sum <= half_adder:HA_1.sum
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Ripple_adder|full_adder2:FA1|half_adder:HA_0
+IN1 => sum.IN0
+IN1 => carry.IN0
+IN2 => sum.IN1
+IN2 => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Ripple_adder|full_adder2:FA1|half_adder:HA_1
+IN1 => sum.IN0
+IN1 => carry.IN0
+IN2 => sum.IN1
+IN2 => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Ripple_adder|full_adder2:FA2
+IN1 => half_adder:HA_0.IN1
+IN2 => half_adder:HA_0.IN2
+Cin => half_adder:HA_1.IN2
+sum <= half_adder:HA_1.sum
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Ripple_adder|full_adder2:FA2|half_adder:HA_0
+IN1 => sum.IN0
+IN1 => carry.IN0
+IN2 => sum.IN1
+IN2 => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Ripple_adder|full_adder2:FA2|half_adder:HA_1
+IN1 => sum.IN0
+IN1 => carry.IN0
+IN2 => sum.IN1
+IN2 => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Ripple_adder|full_adder2:FA3
+IN1 => half_adder:HA_0.IN1
+IN2 => half_adder:HA_0.IN2
+Cin => half_adder:HA_1.IN2
+sum <= half_adder:HA_1.sum
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Ripple_adder|full_adder2:FA3|half_adder:HA_0
+IN1 => sum.IN0
+IN1 => carry.IN0
+IN2 => sum.IN1
+IN2 => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Ripple_adder|full_adder2:FA3|half_adder:HA_1
+IN1 => sum.IN0
+IN1 => carry.IN0
+IN2 => sum.IN1
+IN2 => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+

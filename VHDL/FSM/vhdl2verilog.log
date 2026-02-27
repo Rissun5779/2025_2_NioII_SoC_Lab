@@ -1,0 +1,51 @@
+// *** vhdl2v log file : Opened Sun Feb  8 00:22:18 2026
+
+Command line: /home/rissun57/Downloads/synapticad-19.00c-x64-full-linux/synapticad-19.00c-x64/bin/x86_64/vhdl2verilog.bin PBWC.vhd
+
+// VHDL2verilog version 19.00c
+
+//       Copyright (c) SynaptiCAD Inc. 1992-2014, All Rights Reserved.
+//                      UNPUBLISHED, LICENSED SOFTWARE.
+//           CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//         PROPERTY OF ALTERNATIVE SYSTEM CONCEPTS OR ITS LICENSORS.
+//
+
+Running..
+
+Read in map file
+
+Loading /home/rissun57/Downloads/synapticad-19.00c-x64-full-linux/synapticad-19.00c-x64//v2v/lib/standard.vhd, Package standard
+
+Loading input file PBWC.vhd
+Loading /home/rissun57/Downloads/synapticad-19.00c-x64-full-linux/synapticad-19.00c-x64//v2v/lib/std_logic_1164_header.vhd, Package std_logic_1164
+Loading /home/rissun57/Downloads/synapticad-19.00c-x64-full-linux/synapticad-19.00c-x64//v2v/lib/numeric_std_header.vhd, Package numeric_std
+Reading function mapping files...
+Reading function mapping file '/home/rissun57/Downloads/synapticad-19.00c-x64-full-linux/synapticad-19.00c-x64//v2v/lib/standard.fm'
+Reading function mapping file '/home/rissun57/Downloads/synapticad-19.00c-x64-full-linux/synapticad-19.00c-x64//v2v/lib/std_logic_1164.fm'
+Reading function mapping file '/home/rissun57/Downloads/synapticad-19.00c-x64-full-linux/synapticad-19.00c-x64//v2v/lib/std_logic_arith.fm'
+Reading function mapping file '/home/rissun57/Downloads/synapticad-19.00c-x64-full-linux/synapticad-19.00c-x64//v2v/lib/std_logic_unsigned.fm'
+Finished reading function mapping files
+Top-level module is 'PBWC'
+
+PBWC.vhd:16: NOTE: Using Verilog type 'reg' for VHDL type 'STATES'
+    NOTE: Created equivalent Verilog model for 'CURRENT_STATES' in architecture 'rtl' of entity 'PBWC'
+    NOTE: Adding port 'CLK' of mode 'IN' to module 'PBWC'
+    NOTE: Adding port 'RST' of mode 'IN' to module 'PBWC'
+    NOTE: Adding port 'PRESS' of mode 'IN' to module 'PBWC'
+    NOTE: Adding port 'OPEN_CW' of mode 'OUT' to module 'PBWC'
+    NOTE: Adding port 'CLOSE_CW' of mode 'OUT' to module 'PBWC'
+    NOTE: Adding 'always' statement corresponding to process 'CURRENT_STATES' to module
+    NOTE: Adding 'always' statement corresponding to process 'NEXT_STATES' to module
+    NOTE: Adding 'always' statement corresponding to process 'OUTPUT_LOGIC' to module
+
+Demo Data:
+HDL file translated : PBWC.vhd
+
+        THIS DEMO VERSION OF VHDL2Verilog TRANSLATOR IS DISTRIBUTED
+                         EXCLUSIVELY BY SynaptiCAD.
+           FOR MORE INFORMATION OR EVALUATION OF THE FULL VERSION, 
+                         PLEASE CONTACT SynaptiCAD AT 
+                   800-804-7073 or sales@syncad.com 
+
+// Closing log file : Sun Feb  8 00:22:18 2026
+

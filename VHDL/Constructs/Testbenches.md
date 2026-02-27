@@ -1,0 +1,100 @@
+# Testbench
+``` VHDL=1
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity tb_Ripple_adder is
+end entity;
+
+architecture sim of tb_Ripple_adder is
+
+    -- DUT signals
+    signal IN1   : std_logic_vector(3 downto 0);
+    signal IN2   : std_logic_vector(3 downto 0);
+    signal Cin   : std_logic;
+    signal Sum   : std_logic_vector(3 downto 0);
+    signal Carry : std_logic;
+
+begin
+
+    -- =====================================================
+    -- DUT instantiation
+    -- =====================================================
+    DUT : entity work.Ripple_adder
+        port map (
+            IN1   => IN1,
+            IN2   => IN2,
+            Cin   => Cin,
+            Sum   => Sum,
+            Carry => Carry
+        );
+
+    -- =====================================================
+    -- Test process
+    -- =====================================================
+    stim_proc : process
+        variable a, b  : unsigned(3 downto 0);
+        variable cin_v : unsigned(0 downto 0);
+        variable result : unsigned(4 downto 0);
+    begin
+    for cin_i in 0 to 1 loop
+    if cin_i = 0 then
+        Cin <= '0';
+    else
+        Cin <= '1';
+    end if;
+    
+    for i in 0 to 15 loop
+        for j in 0 to 15 loop
+            a := to_unsigned(i, 4);
+            b := to_unsigned(j, 4);
+
+            IN1 <= std_logic_vector(a);
+            IN2 <= std_logic_vector(b);
+
+            wait for 10 ns;
+
+            -- Expected result
+            result := ('0' & a) + ('0' & b) + to_unsigned(cin_i,1);
+
+            -- Assertions
+            assert Sum = std_logic_vector(result(3 downto 0))
+                report "SUM ERROR: IN1=" & integer'image(i) &
+                       " IN2=" & integer'image(j) &
+                       " Cin=" & integer'image(cin_i)
+                severity error;
+
+            assert Carry = result(4)
+                report "CARRY ERROR: IN1=" & integer'image(i) &
+                       " IN2=" & integer'image(j) &
+                       " Cin=" & integer'image(cin_i)
+                severity error;
+
+        end loop;
+    end loop;
+end loop;
+
+
+
+        report "All Ripple Adder tests passed!" severity note;
+        wait;
+    end process;
+
+end architecture;
+```
+
+- report  "string  to  be  printed"  severity  <level>; 
+- assert  boolean_condition  report  "string"  severity  <level>; 
+
+# Modeling Sequential Storage and Registers
+## D-Latch
+``` VHDL
+C D |  Q       Qn
+----------------------
+0 x | Last Q  Last Qn
+1 0 |  0       1
+1 1 |  1       0
+```
+
+# FSM

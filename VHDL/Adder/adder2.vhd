@@ -1,0 +1,29 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+use IEEE.std_logic_textio.all;
+
+entity adder2 is
+  port (
+    A : in std_logic;
+    B : in std_logic;
+    S : out std_logic;
+    C : out std_logic);
+end entity;
+
+architecture Adder2 of adder2 is
+  signal sum_temp : unsigned(1 downto 0);
+  signal VecA    : std_logic_vector(1 downto 0);
+  signal VecB    : std_logic_vector(1 downto 0);
+begin
+  --logic method
+  -- C <= A and B;
+  -- S <= A xor B;
+  VecA <= "0" & A;
+  VecB <= "0" & B;
+  
+  sum_temp <= unsigned(VecA) + unsigned(VecB);
+
+  C <= sum_temp(1);
+  S <= sum_temp(0);
+end architecture;
