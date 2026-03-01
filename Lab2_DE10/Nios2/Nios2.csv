@@ -1,12 +1,12 @@
-# system info Nios2 on 2026.03.01.21:19:50
+# system info Nios2 on 2026.03.01.23:02:39
 system_info:
 name,value
 DEVICE,5CSXFC6D6F31C6
 DEVICE_FAMILY,Cyclone V
-GENERATION_ID,1772371159
+GENERATION_ID,1772377332
 #
 #
-# Files generated for Nios2 on 2026.03.01.21:19:50
+# Files generated for Nios2 on 2026.03.01.23:02:39
 files:
 filepath,kind,attributes,module,is_top
 simulation/Nios2.vhd,VHDL,,Nios2,true

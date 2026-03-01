@@ -37,7 +37,7 @@ entity Nios2_PIO_LED is
                  signal writedata : IN STD_LOGIC_VECTOR (31 DOWNTO 0);
 
               -- outputs:
-                 signal out_port : OUT STD_LOGIC_VECTOR (9 DOWNTO 0);
+                 signal out_port : OUT STD_LOGIC_VECTOR (7 DOWNTO 0);
                  signal readdata : OUT STD_LOGIC_VECTOR (31 DOWNTO 0)
               );
 end entity Nios2_PIO_LED;
@@ -45,27 +45,27 @@ end entity Nios2_PIO_LED;
 
 architecture europa of Nios2_PIO_LED is
                 signal clk_en :  STD_LOGIC;
-                signal data_out :  STD_LOGIC_VECTOR (9 DOWNTO 0);
-                signal read_mux_out :  STD_LOGIC_VECTOR (9 DOWNTO 0);
+                signal data_out :  STD_LOGIC_VECTOR (7 DOWNTO 0);
+                signal read_mux_out :  STD_LOGIC_VECTOR (7 DOWNTO 0);
 
 begin
 
   clk_en <= std_logic'('1');
   --s1, which is an e_avalon_slave
-  read_mux_out <= A_REP(to_std_logic((((std_logic_vector'("000000000000000000000000000000") & (address)) = std_logic_vector'("00000000000000000000000000000000")))), 10) AND data_out;
+  read_mux_out <= A_REP(to_std_logic((((std_logic_vector'("000000000000000000000000000000") & (address)) = std_logic_vector'("00000000000000000000000000000000")))), 8) AND data_out;
   process (clk, reset_n)
   begin
     if reset_n = '0' then
-      data_out <= std_logic_vector'("0000000000");
+      data_out <= std_logic_vector'("00000000");
     elsif clk'event and clk = '1' then
       if std_logic'(((chipselect AND NOT write_n) AND to_std_logic((((std_logic_vector'("000000000000000000000000000000") & (address)) = std_logic_vector'("00000000000000000000000000000000")))))) = '1' then 
-        data_out <= writedata(9 DOWNTO 0);
+        data_out <= writedata(7 DOWNTO 0);
       end if;
     end if;
 
   end process;
 
-  readdata <= std_logic_vector'("00000000000000000000000000000000") OR (std_logic_vector'("0000000000000000000000") & (read_mux_out));
+  readdata <= std_logic_vector'("00000000000000000000000000000000") OR (std_logic_vector'("000000000000000000000000") & (read_mux_out));
   out_port <= data_out;
 
 end europa;

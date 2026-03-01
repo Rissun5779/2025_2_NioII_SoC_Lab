@@ -246,3 +246,189 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 
 !ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 21:39:50.618
 !MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab2_DE10/software/Lab2/Lab2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 21:50:03.681
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 21:50:04.390
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 21:50:06.453
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab2_DE10/software/Lab2/Lab2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 22:05:48.513
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 22:05:49.218
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 22:05:51.300
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab2_DE10/software/Lab2/Lab2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 22:07:20.460
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 22:07:21.148
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 22:07:23.248
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab2_DE10/software/Lab2/Lab2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 22:09:03.092
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 22:09:03.793
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 22:09:05.867
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab2_DE10/software/Lab2/Lab2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 22:09:32.779
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 22:09:33.470
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 22:09:35.535
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab2_DE10/software/Lab2/Lab2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 22:10:43.710
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 22:10:44.408
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 22:10:46.467
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab2_DE10/software/Lab2/Lab2.elf]
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-03-01 22:53:44.665
+!MESSAGE Indexed 'Lab2_2_bsp' (79 sources, 60 headers) in 2.22 sec: 1,189 declarations; 2,478 references; 110 unresolved inclusions; 6 syntax errors; 191 unresolved names (5%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-03-01 22:53:47.729
+!MESSAGE Indexed 'Lab2_2' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 22:55:26.474
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 22:55:27.216
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 22:55:29.305
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab2_DE10/software/Lab2_2/Lab2_2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 22:56:29.850
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 22:56:30.551
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 22:56:32.616
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab2_DE10/software/Lab2_2/Lab2_2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 22:57:33.868
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 22:57:34.563
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 22:57:36.625
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab2_DE10/software/Lab2_2/Lab2_2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 23:21:16.164
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 23:21:16.914
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 23:21:18.982
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab2_DE10/software/Lab2_2/Lab2_2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 23:22:26.859
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 23:22:27.588
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 23:22:29.680
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab2_DE10/software/Lab2_2/Lab2_2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 23:24:51.251
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 23:24:51.940
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 23:24:54.022
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab2_DE10/software/Lab2_2/Lab2_2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 23:33:29.965
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 23:33:30.722
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 23:33:32.805
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab2_DE10/software/Lab2_2/Lab2_2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 23:39:28.440
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 23:39:29.151
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 23:39:31.236
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab2_DE10/software/Lab2_2/Lab2_2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 23:49:16.702
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 23:49:17.411
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 23:49:19.760
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab2_DE10/software/Lab2_2/Lab2_2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 23:51:20.372
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 23:51:21.085
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 23:51:23.169
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab2_DE10/software/Lab2_2/Lab2_2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 23:52:23.221
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 23:52:23.962
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 23:52:26.040
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab2_DE10/software/Lab2_2/Lab2_2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 23:53:25.549
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 23:53:26.250
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 23:53:28.350
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab2_DE10/software/Lab2_2/Lab2_2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 23:54:45.026
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 23:54:45.729
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 23:54:47.813
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab2_DE10/software/Lab2_2/Lab2_2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 23:56:27.560
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 23:56:28.259
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-03-01 23:56:30.338
+!MESSAGE Executing: [K:/quartus18/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab2_DE10/software/Lab2_2/Lab2_2.elf]

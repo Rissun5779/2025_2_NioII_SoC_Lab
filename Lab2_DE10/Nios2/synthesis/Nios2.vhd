@@ -9,7 +9,7 @@ use IEEE.numeric_std.all;
 entity Nios2 is
 	port (
 		clk_clk        : in  std_logic                    := '0';             --     clk.clk
-		pio_led_export : out std_logic_vector(9 downto 0);                    -- pio_led.export
+		pio_led_export : out std_logic_vector(7 downto 0);                    -- pio_led.export
 		pio_sw_export  : in  std_logic_vector(9 downto 0) := (others => '0'); --  pio_sw.export
 		reset_reset_n  : in  std_logic                    := '0'              --   reset.reset_n
 	);
@@ -71,7 +71,7 @@ architecture rtl of Nios2 is
 			writedata  : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
 			chipselect : in  std_logic                     := 'X';             -- chipselect
 			readdata   : out std_logic_vector(31 downto 0);                    -- readdata
-			out_port   : out std_logic_vector(9 downto 0)                      -- export
+			out_port   : out std_logic_vector(7 downto 0)                      -- export
 		);
 	end component Nios2_PIO_LED;
 

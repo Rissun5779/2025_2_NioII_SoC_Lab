@@ -1,0 +1,19 @@
+// INC
+#include <unistd.h>
+#include <stdint.h>
+#include <io.h>
+#include "system.h"
+// Memory mapped
+#define PIO_LED_REG (*(volatile uint16_t *)PIO_LED_BASE)
+#define PIO_SW_REG (*(volatile uint16_t *)PIO_SW_BASE)
+// Variable
+// MAIN
+int main()
+{
+  int8_t GATE = 60;
+
+  while (1){
+     PIO_LED_REG = (PIO_SW_REG>=GATE)?0xF0:0x0F;
+  }
+  return 0;
+}

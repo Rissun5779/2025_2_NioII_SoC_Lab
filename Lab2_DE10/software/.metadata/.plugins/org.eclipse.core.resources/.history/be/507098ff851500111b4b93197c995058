@@ -1,0 +1,40 @@
+// INC
+#include <unistd.h>
+#include <stdint.h>
+#include <io.h>
+#include "system.h"
+// Memory mapped
+#define PIO_LED_REG (*(volatile uint8_t *)PIO_LED_BASE)
+#define PIO_SW_REG (*(volatile uint8_t *)PIO_SW_BASE)
+// Variable
+#define MS 1000
+//#define Lab2_1
+// MAIN
+int main()
+{
+  uint8_t counter=0;
+  #ifdef Lab2_1
+  while (1)
+  {
+     PIO_LED_REG = counter;
+     counter++;
+     usleep(200*MS);
+  }
+  #else
+  while(1)
+  {
+     char dir = 0;
+
+     if(dir){
+       for(uint8_t counter=0;counter<256;++counter){
+    	  PIO_LED_REG = counter;
+    	  usleep(20*MS);
+       }
+       dir = 1;
+     }else{
+
+     }
+  }
+  #endif
+  return 0;
+}

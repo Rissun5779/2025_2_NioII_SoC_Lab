@@ -2,7 +2,7 @@ set_global_assignment -entity "Nios2" -library "Nios2" -name IP_TOOL_NAME "Qsys"
 set_global_assignment -entity "Nios2" -library "Nios2" -name IP_TOOL_VERSION "18.1"
 set_global_assignment -entity "Nios2" -library "Nios2" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "Nios2" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../Nios2.sopcinfo"]
-set_global_assignment -entity "Nios2" -library "Nios2" -name SLD_INFO "QSYS_NAME Nios2 HAS_SOPCINFO 1 GENERATION_ID 1772371198"
+set_global_assignment -entity "Nios2" -library "Nios2" -name SLD_INFO "QSYS_NAME Nios2 HAS_SOPCINFO 1 GENERATION_ID 1772377366"
 set_global_assignment -library "Nios2" -name MISC_FILE [file join $::quartus(qip_path) "../Nios2.cmp"]
 set_global_assignment -library "Nios2" -name SLD_FILE [file join $::quartus(qip_path) "Nios2.regmap"]
 set_global_assignment -library "Nios2" -name SLD_FILE [file join $::quartus(qip_path) "Nios2.debuginfo"]
@@ -16,7 +16,7 @@ set_global_assignment -entity "Nios2" -library "Nios2" -name IP_COMPONENT_DISPLA
 set_global_assignment -entity "Nios2" -library "Nios2" -name IP_COMPONENT_REPORT_HIERARCHY "On"
 set_global_assignment -entity "Nios2" -library "Nios2" -name IP_COMPONENT_INTERNAL "Off"
 set_global_assignment -entity "Nios2" -library "Nios2" -name IP_COMPONENT_VERSION "MS4w"
-set_global_assignment -entity "Nios2" -library "Nios2" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTc3MjM3MTE5OA==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "Nios2" -library "Nios2" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTc3MjM3NzM2Ng==::QXV0byBHRU5FUkFUSU9OX0lE"
 set_global_assignment -entity "Nios2" -library "Nios2" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSBW::QXV0byBERVZJQ0VfRkFNSUxZ"
 set_global_assignment -entity "Nios2" -library "Nios2" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::NUNTWEZDNkQ2RjMxQzY=::QXV0byBERVZJQ0U="
 set_global_assignment -entity "Nios2" -library "Nios2" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::Nl9INg==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
@@ -556,7 +556,7 @@ set_global_assignment -entity "Nios2_PIO_LED" -library "Nios2" -name IP_COMPONEN
 set_global_assignment -entity "Nios2_PIO_LED" -library "Nios2" -name IP_COMPONENT_PARAMETER "Yml0TW9kaWZ5aW5nT3V0UmVn::ZmFsc2U=::RW5hYmxlIGluZGl2aWR1YWwgYml0IHNldHRpbmcvY2xlYXJpbmc="
 set_global_assignment -entity "Nios2_PIO_LED" -library "Nios2" -name IP_COMPONENT_PARAMETER "ZGlyZWN0aW9u::T3V0cHV0::RGlyZWN0aW9u"
 set_global_assignment -entity "Nios2_PIO_LED" -library "Nios2" -name IP_COMPONENT_PARAMETER "cmVzZXRWYWx1ZQ==::MA==::T3V0cHV0IFBvcnQgUmVzZXQgVmFsdWU="
-set_global_assignment -entity "Nios2_PIO_LED" -library "Nios2" -name IP_COMPONENT_PARAMETER "d2lkdGg=::MTA=::V2lkdGggKDEtMzIgYml0cyk="
+set_global_assignment -entity "Nios2_PIO_LED" -library "Nios2" -name IP_COMPONENT_PARAMETER "d2lkdGg=::OA==::V2lkdGggKDEtMzIgYml0cyk="
 set_global_assignment -entity "Nios2_PIO_LED" -library "Nios2" -name IP_COMPONENT_PARAMETER "Y2xvY2tSYXRl::NTAwMDAwMDA=::Y2xvY2tSYXRl"
 set_global_assignment -entity "Nios2_PIO_LED" -library "Nios2" -name IP_COMPONENT_PARAMETER "ZGVyaXZlZF9oYXNfdHJp::ZmFsc2U=::ZGVyaXZlZF9oYXNfdHJp"
 set_global_assignment -entity "Nios2_PIO_LED" -library "Nios2" -name IP_COMPONENT_PARAMETER "ZGVyaXZlZF9oYXNfb3V0::dHJ1ZQ==::ZGVyaXZlZF9oYXNfb3V0"

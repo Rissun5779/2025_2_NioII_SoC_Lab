@@ -1,0 +1,23 @@
+// INC
+#include <unistd.h>
+#include <stdint.h>
+#include <io.h>
+#include "system.h"
+// Memory mapped
+#define PIO_LED_REG (*(volatile uint32_t *)PIO_LED_BASE)
+#define PIO_SW_REG (*(volatile uint32_t *)PIO_SW_BASE)
+// Variable
+#define MS 1000
+// MAIN
+int main()
+{
+  uint8_t count=0;
+
+  while (1)
+  {
+     PIO_LED_REG = count;
+     usleep(200*MS);
+     count++;
+  }
+  return 0;
+}

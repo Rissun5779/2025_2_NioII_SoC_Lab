@@ -47,8 +47,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 112)
 		(output)
-		(text "pio_led_export[9..0]" (rect 0 0 77 12)(font "Arial" (font_size 8)))
-		(text "pio_led_export[9..0]" (rect 4 101 124 112)(font "Arial" (font_size 8)))
+		(text "pio_led_export[7..0]" (rect 0 0 77 12)(font "Arial" (font_size 8)))
+		(text "pio_led_export[7..0]" (rect 4 101 124 112)(font "Arial" (font_size 8)))
 		(line (pt 0 112)(pt 112 112)(line_width 3))
 	)
 	(drawing

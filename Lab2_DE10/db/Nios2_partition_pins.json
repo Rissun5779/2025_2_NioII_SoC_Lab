@@ -4,43 +4,39 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "PIO_LED[9]",
+					"name" : "PIO_LED9",
 					"strict" : false
 				},
 				{
-					"name" : "PIO_LED[8]",
+					"name" : "PIO_LED7",
 					"strict" : false
 				},
 				{
-					"name" : "PIO_LED[7]",
+					"name" : "PIO_LED6",
 					"strict" : false
 				},
 				{
-					"name" : "PIO_LED[6]",
+					"name" : "PIO_LED5",
 					"strict" : false
 				},
 				{
-					"name" : "PIO_LED[5]",
+					"name" : "PIO_LED4",
 					"strict" : false
 				},
 				{
-					"name" : "PIO_LED[4]",
+					"name" : "PIO_LED3",
 					"strict" : false
 				},
 				{
-					"name" : "PIO_LED[3]",
+					"name" : "PIO_LED2",
 					"strict" : false
 				},
 				{
-					"name" : "PIO_LED[2]",
+					"name" : "PIO_LED1",
 					"strict" : false
 				},
 				{
-					"name" : "PIO_LED[1]",
-					"strict" : false
-				},
-				{
-					"name" : "PIO_LED[0]",
+					"name" : "PIO_LED0",
 					"strict" : false
 				},
 				{
@@ -52,7 +48,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "PIO_SW[4]",
+					"name" : "PIO_SW[5]",
 					"strict" : false
 				},
 				{
@@ -72,11 +68,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "PIO_SW[9]",
-					"strict" : false
-				},
-				{
-					"name" : "PIO_SW[5]",
+					"name" : "PIO_SW[4]",
 					"strict" : false
 				},
 				{
@@ -89,6 +81,10 @@
 				},
 				{
 					"name" : "PIO_SW[6]",
+					"strict" : false
+				},
+				{
+					"name" : "PIO_SW[9]",
 					"strict" : false
 				}
 			]
