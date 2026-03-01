@@ -1,0 +1,6 @@
+01:46:09 **** Clean-only build of configuration Nios II for project Lab3 ****
+make clean 
+[Lab3 clean complete]
+
+01:46:09 Build Finished (took 430ms)
+

@@ -1,0 +1,29 @@
+#include <io.h>
+#include <stdio.h>
+#include <stdint.h>
+#include "system.h"
+// Memory map
+#define SW_REG (*(volatile uint32_t*)PIO_SW_BASE)
+#define SDRAM_REG (*(volatile uint32_t*)SDRAM_BASE)
+#define LED_REG (*(volatile uint32_t*)PIO_LED_BASE)
+// Main
+int main()
+{
+  int32_t menu;
+  int32_t data1;
+  int32_t data2;
+  int32_t total;
+
+  while(1)
+  {
+	printf("Input menu func \"0\"->ADD, \"1\"->SUB, \"2\"->MUL");
+	scanf("%d", &menu);
+
+	printf("Input Number A:");
+	scanf("%d", &data1);
+
+	printf("Input Number A:");
+	scanf("%d", &data2);
+  }
+  return 0;
+}

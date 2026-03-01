@@ -1,0 +1,30 @@
+02:40:02 **** Incremental Build of configuration Nios II for project Lab3_1 ****
+make all 
+Info: Building ../Lab3_1_bsp/
+K:/Quartus18/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab3_1_bsp/
+[BSP build complete]
+[Lab3_1 build complete]
+02:40:11 **** Build of configuration Nios II for project Lab3_1 ****
+make all 
+Info: Building ../Lab3_1_bsp/
+K:/Quartus18/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab3_1_bsp/
+[BSP build complete]
+[Lab3_1 build complete]
+02:41:33 **** Build of configuration Nios II for project Lab3_1 ****
+make all 
+Info: Building ../Lab3_1_bsp/
+K:/Quartus18/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab3_1_bsp/
+[BSP build complete]
+[Lab3_1 build complete]
+02:44:52 **** Build of configuration Nios II for project Lab3_1 ****
+make all 
+Info: Building ../Lab3_1_bsp/
+K:/Quartus18/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab3_1_bsp/
+[BSP build complete]
+[Lab3_1 build complete]
+02:48:39 **** Build of configuration Nios II for project Lab3_1 ****
+make all 
+Info: Building ../Lab3_1_bsp/
+K:/Quartus18/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab3_1_bsp/
+[BSP build complete]
+[Lab3_1 build complete]

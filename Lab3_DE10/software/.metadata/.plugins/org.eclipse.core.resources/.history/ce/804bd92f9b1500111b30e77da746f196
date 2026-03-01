@@ -1,0 +1,15 @@
+#include <io.h>
+#include <stdio.h>
+#include <stdint.h>
+#include "system.h"
+// Memory map
+#define SW_REG (*(volatile uint32_t*)PIO_SW_BASE)
+#define SDRAM_REG (*(volatile uint32_t*)SDRAM_BASE)
+int main()
+{
+  while(1)
+  {
+	printf("Input a number : (0 -> 255)\n");
+  }
+  return 0;
+}

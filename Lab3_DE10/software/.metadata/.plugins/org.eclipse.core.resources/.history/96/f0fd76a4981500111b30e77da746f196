@@ -1,0 +1,17 @@
+#include <io.h>
+#include <stdint.h>
+#include "system.h"
+// Memory map
+#define SW_REG (*(volatile uint32_t*)PIO_SW_BASE)
+#define SDRAM_REG
+int main()
+{
+  uint32_t i = SW_REG;
+  uint32_t j = 0;
+
+  while(1)
+  {
+
+  }
+  return 0;
+}
