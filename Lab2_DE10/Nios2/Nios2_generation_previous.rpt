@@ -1,0 +1,205 @@
+Info: Starting: Create simulation model
+Info: qsys-generate C:\Users\USER\Desktop\2025_2_NioII_SoC_Lab\Lab2_DE10\Nios2.qsys --simulation=VHDL --allow-mixed-language-simulation --output-directory=C:\Users\USER\Desktop\2025_2_NioII_SoC_Lab\Lab2_DE10\Nios2\simulation --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading Lab2_DE10/Nios2.qsys
+Progress: Reading input file
+Progress: Adding CLK [clock_source 18.1]
+Progress: Parameterizing module CLK
+Progress: Adding CPU [altera_nios2_gen2 18.1]
+Progress: Parameterizing module CPU
+Progress: Adding JUART [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module JUART
+Progress: Adding PIO_LED [altera_avalon_pio 18.1]
+Progress: Parameterizing module PIO_LED
+Progress: Adding RAM [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module RAM
+Progress: Adding pio_0 [altera_avalon_pio 18.1]
+Progress: Parameterizing module pio_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: Nios2.JUART: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: Nios2.pio_0: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: Nios2: Generating Nios2 "Nios2" for SIM_VHDL
+Info: CPU: "Nios2" instantiated altera_nios2_gen2 "CPU"
+Info: JUART: Starting RTL generation for module 'Nios2_JUART'
+Info: JUART:   Generation command is [exec K:/quartus18/quartus/bin64/perl/bin/perl.exe -I K:/quartus18/quartus/bin64/perl/lib -I K:/quartus18/quartus/sopc_builder/bin/europa -I K:/quartus18/quartus/sopc_builder/bin/perl_lib -I K:/quartus18/quartus/sopc_builder/bin -I K:/quartus18/quartus/../ip/altera/sopc_builder_ip/common -I K:/quartus18/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- K:/quartus18/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=Nios2_JUART --dir=C:/Users/USER/AppData/Local/Temp/alt0513_5339720241644383330.dir/0002_JUART_gen/ --quartus_dir=K:/quartus18/quartus --vhdl --config=C:/Users/USER/AppData/Local/Temp/alt0513_5339720241644383330.dir/0002_JUART_gen//Nios2_JUART_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/USER/AppData/Local/Temp/alt0513_5339720241644383330.dir/0002_JUART_gen/  ]
+Info: JUART: Done RTL generation for module 'Nios2_JUART'
+Info: JUART: "Nios2" instantiated altera_avalon_jtag_uart "JUART"
+Info: PIO_LED: Starting RTL generation for module 'Nios2_PIO_LED'
+Info: PIO_LED:   Generation command is [exec K:/quartus18/quartus/bin64/perl/bin/perl.exe -I K:/quartus18/quartus/bin64/perl/lib -I K:/quartus18/quartus/sopc_builder/bin/europa -I K:/quartus18/quartus/sopc_builder/bin/perl_lib -I K:/quartus18/quartus/sopc_builder/bin -I K:/quartus18/quartus/../ip/altera/sopc_builder_ip/common -I K:/quartus18/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- K:/quartus18/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Nios2_PIO_LED --dir=C:/Users/USER/AppData/Local/Temp/alt0513_5339720241644383330.dir/0003_PIO_LED_gen/ --quartus_dir=K:/quartus18/quartus --vhdl --config=C:/Users/USER/AppData/Local/Temp/alt0513_5339720241644383330.dir/0003_PIO_LED_gen//Nios2_PIO_LED_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/USER/AppData/Local/Temp/alt0513_5339720241644383330.dir/0003_PIO_LED_gen/  ]
+Info: PIO_LED: Done RTL generation for module 'Nios2_PIO_LED'
+Info: PIO_LED: "Nios2" instantiated altera_avalon_pio "PIO_LED"
+Info: RAM: Starting RTL generation for module 'Nios2_RAM'
+Info: RAM:   Generation command is [exec K:/quartus18/quartus/bin64/perl/bin/perl.exe -I K:/quartus18/quartus/bin64/perl/lib -I K:/quartus18/quartus/sopc_builder/bin/europa -I K:/quartus18/quartus/sopc_builder/bin/perl_lib -I K:/quartus18/quartus/sopc_builder/bin -I K:/quartus18/quartus/../ip/altera/sopc_builder_ip/common -I K:/quartus18/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- K:/quartus18/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=Nios2_RAM --dir=C:/Users/USER/AppData/Local/Temp/alt0513_5339720241644383330.dir/0004_RAM_gen/ --quartus_dir=K:/quartus18/quartus --vhdl --config=C:/Users/USER/AppData/Local/Temp/alt0513_5339720241644383330.dir/0004_RAM_gen//Nios2_RAM_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/USER/AppData/Local/Temp/alt0513_5339720241644383330.dir/0004_RAM_gen/  ]
+Info: RAM: Done RTL generation for module 'Nios2_RAM'
+Info: RAM: "Nios2" instantiated altera_avalon_onchip_memory2 "RAM"
+Info: pio_0: Starting RTL generation for module 'Nios2_pio_0'
+Info: pio_0:   Generation command is [exec K:/quartus18/quartus/bin64/perl/bin/perl.exe -I K:/quartus18/quartus/bin64/perl/lib -I K:/quartus18/quartus/sopc_builder/bin/europa -I K:/quartus18/quartus/sopc_builder/bin/perl_lib -I K:/quartus18/quartus/sopc_builder/bin -I K:/quartus18/quartus/../ip/altera/sopc_builder_ip/common -I K:/quartus18/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- K:/quartus18/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Nios2_pio_0 --dir=C:/Users/USER/AppData/Local/Temp/alt0513_5339720241644383330.dir/0005_pio_0_gen/ --quartus_dir=K:/quartus18/quartus --vhdl --config=C:/Users/USER/AppData/Local/Temp/alt0513_5339720241644383330.dir/0005_pio_0_gen//Nios2_pio_0_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/USER/AppData/Local/Temp/alt0513_5339720241644383330.dir/0005_pio_0_gen/  ]
+Info: pio_0: Done RTL generation for module 'Nios2_pio_0'
+Info: pio_0: "Nios2" instantiated altera_avalon_pio "pio_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "Nios2" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "Nios2" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "Nios2" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'Nios2_CPU_cpu'
+Info: cpu:   Generation command is [exec K:/Quartus18/quartus/bin64//eperlcmd.exe -I K:/Quartus18/quartus/bin64//perl/lib -I K:/quartus18/quartus/sopc_builder/bin/europa -I K:/quartus18/quartus/sopc_builder/bin/perl_lib -I K:/quartus18/quartus/sopc_builder/bin -I K:/quartus18/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I K:/quartus18/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I K:/quartus18/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I K:/quartus18/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- K:/quartus18/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=Nios2_CPU_cpu --dir=C:/Users/USER/AppData/Local/Temp/alt0513_5339720241644383330.dir/0008_cpu_gen/ --quartus_bindir=K:/Quartus18/quartus/bin64/ --verilog --config=C:/Users/USER/AppData/Local/Temp/alt0513_5339720241644383330.dir/0008_cpu_gen//Nios2_CPU_cpu_processor_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/USER/AppData/Local/Temp/alt0513_5339720241644383330.dir/0008_cpu_gen/  ]
+Info: cpu: # 2026.03.01 20:30:12 (*) Starting Nios II generation
+Info: cpu: # 2026.03.01 20:30:12 (*)   Checking for plaintext license.
+Info: cpu: # 2026.03.01 20:30:16 (*)   Couldn't query license setup in Quartus directory K:/Quartus18/quartus/bin64/
+Info: cpu: # 2026.03.01 20:30:16 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2026.03.01 20:30:16 (*)   Plaintext license not found.
+Info: cpu: # 2026.03.01 20:30:16 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2026.03.01 20:30:16 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2026.03.01 20:30:16 (*)   Creating all objects for CPU
+Info: cpu: # 2026.03.01 20:30:17 (*)   Creating 'C:/Users/USER/AppData/Local/Temp/alt0513_5339720241644383330.dir/0008_cpu_gen//Nios2_CPU_cpu_nios2_waves.do'
+Info: cpu: # 2026.03.01 20:30:17 (*)   Generating RTL from CPU objects
+Info: cpu: # 2026.03.01 20:30:17 (*)   Creating plain-text RTL
+Info: cpu: # 2026.03.01 20:30:18 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'Nios2_CPU_cpu'
+Info: cpu: "CPU" instantiated altera_nios2_gen2_unit "cpu"
+Info: CPU_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "CPU_data_master_translator"
+Info: JUART_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "JUART_avalon_jtag_slave_translator"
+Info: CPU_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "CPU_data_master_agent"
+Info: JUART_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "JUART_avalon_jtag_slave_agent"
+Info: JUART_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "JUART_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab2_DE10/Nios2/simulation/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: Nios2: Done "Nios2" with 23 modules, 45 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=C:\Users\USER\Desktop\2025_2_NioII_SoC_Lab\Lab2_DE10\Nios2\Nios2.spd --output-directory=C:/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab2_DE10/Nios2/simulation/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=C:\Users\USER\Desktop\2025_2_NioII_SoC_Lab\Lab2_DE10\Nios2\Nios2.spd --output-directory=C:/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab2_DE10/Nios2/simulation/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in C:/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab2_DE10/Nios2/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Skipping VCS script generation since VHDL file $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_syn_attributes.vhd is required for simulation
+Info: Generating the following file(s) for VCSMX simulator in C:/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab2_DE10/Nios2/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in C:/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab2_DE10/Nios2/simulation/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	22 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in C:/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab2_DE10/Nios2/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under C:/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab2_DE10/Nios2/simulation/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\USER\Desktop\2025_2_NioII_SoC_Lab\Lab2_DE10\Nios2.qsys --block-symbol-file --output-directory=C:\Users\USER\Desktop\2025_2_NioII_SoC_Lab\Lab2_DE10\Nios2 --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading Lab2_DE10/Nios2.qsys
+Progress: Reading input file
+Progress: Adding CLK [clock_source 18.1]
+Progress: Parameterizing module CLK
+Progress: Adding CPU [altera_nios2_gen2 18.1]
+Progress: Parameterizing module CPU
+Progress: Adding JUART [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module JUART
+Progress: Adding PIO_LED [altera_avalon_pio 18.1]
+Progress: Parameterizing module PIO_LED
+Progress: Adding RAM [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module RAM
+Progress: Adding pio_0 [altera_avalon_pio 18.1]
+Progress: Parameterizing module pio_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: Nios2.JUART: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: Nios2.pio_0: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\USER\Desktop\2025_2_NioII_SoC_Lab\Lab2_DE10\Nios2.qsys --synthesis=VHDL --output-directory=C:\Users\USER\Desktop\2025_2_NioII_SoC_Lab\Lab2_DE10\Nios2\synthesis --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading Lab2_DE10/Nios2.qsys
+Progress: Reading input file
+Progress: Adding CLK [clock_source 18.1]
+Progress: Parameterizing module CLK
+Progress: Adding CPU [altera_nios2_gen2 18.1]
+Progress: Parameterizing module CPU
+Progress: Adding JUART [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module JUART
+Progress: Adding PIO_LED [altera_avalon_pio 18.1]
+Progress: Parameterizing module PIO_LED
+Progress: Adding RAM [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module RAM
+Progress: Adding pio_0 [altera_avalon_pio 18.1]
+Progress: Parameterizing module pio_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: Nios2.JUART: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: Nios2.pio_0: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: Nios2: Generating Nios2 "Nios2" for QUARTUS_SYNTH
+Info: CPU: "Nios2" instantiated altera_nios2_gen2 "CPU"
+Info: JUART: Starting RTL generation for module 'Nios2_JUART'
+Info: JUART:   Generation command is [exec K:/quartus18/quartus/bin64/perl/bin/perl.exe -I K:/quartus18/quartus/bin64/perl/lib -I K:/quartus18/quartus/sopc_builder/bin/europa -I K:/quartus18/quartus/sopc_builder/bin/perl_lib -I K:/quartus18/quartus/sopc_builder/bin -I K:/quartus18/quartus/../ip/altera/sopc_builder_ip/common -I K:/quartus18/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- K:/quartus18/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=Nios2_JUART --dir=C:/Users/USER/AppData/Local/Temp/alt0513_5339720241644383330.dir/0022_JUART_gen/ --quartus_dir=K:/quartus18/quartus --verilog --config=C:/Users/USER/AppData/Local/Temp/alt0513_5339720241644383330.dir/0022_JUART_gen//Nios2_JUART_component_configuration.pl  --do_build_sim=0  ]
+Info: JUART: Done RTL generation for module 'Nios2_JUART'
+Info: JUART: "Nios2" instantiated altera_avalon_jtag_uart "JUART"
+Info: PIO_LED: Starting RTL generation for module 'Nios2_PIO_LED'
+Info: PIO_LED:   Generation command is [exec K:/quartus18/quartus/bin64/perl/bin/perl.exe -I K:/quartus18/quartus/bin64/perl/lib -I K:/quartus18/quartus/sopc_builder/bin/europa -I K:/quartus18/quartus/sopc_builder/bin/perl_lib -I K:/quartus18/quartus/sopc_builder/bin -I K:/quartus18/quartus/../ip/altera/sopc_builder_ip/common -I K:/quartus18/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- K:/quartus18/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Nios2_PIO_LED --dir=C:/Users/USER/AppData/Local/Temp/alt0513_5339720241644383330.dir/0023_PIO_LED_gen/ --quartus_dir=K:/quartus18/quartus --verilog --config=C:/Users/USER/AppData/Local/Temp/alt0513_5339720241644383330.dir/0023_PIO_LED_gen//Nios2_PIO_LED_component_configuration.pl  --do_build_sim=0  ]
+Info: PIO_LED: Done RTL generation for module 'Nios2_PIO_LED'
+Info: PIO_LED: "Nios2" instantiated altera_avalon_pio "PIO_LED"
+Info: RAM: Starting RTL generation for module 'Nios2_RAM'
+Info: RAM:   Generation command is [exec K:/quartus18/quartus/bin64/perl/bin/perl.exe -I K:/quartus18/quartus/bin64/perl/lib -I K:/quartus18/quartus/sopc_builder/bin/europa -I K:/quartus18/quartus/sopc_builder/bin/perl_lib -I K:/quartus18/quartus/sopc_builder/bin -I K:/quartus18/quartus/../ip/altera/sopc_builder_ip/common -I K:/quartus18/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- K:/quartus18/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=Nios2_RAM --dir=C:/Users/USER/AppData/Local/Temp/alt0513_5339720241644383330.dir/0024_RAM_gen/ --quartus_dir=K:/quartus18/quartus --verilog --config=C:/Users/USER/AppData/Local/Temp/alt0513_5339720241644383330.dir/0024_RAM_gen//Nios2_RAM_component_configuration.pl  --do_build_sim=0  ]
+Info: RAM: Done RTL generation for module 'Nios2_RAM'
+Info: RAM: "Nios2" instantiated altera_avalon_onchip_memory2 "RAM"
+Info: pio_0: Starting RTL generation for module 'Nios2_pio_0'
+Info: pio_0:   Generation command is [exec K:/quartus18/quartus/bin64/perl/bin/perl.exe -I K:/quartus18/quartus/bin64/perl/lib -I K:/quartus18/quartus/sopc_builder/bin/europa -I K:/quartus18/quartus/sopc_builder/bin/perl_lib -I K:/quartus18/quartus/sopc_builder/bin -I K:/quartus18/quartus/../ip/altera/sopc_builder_ip/common -I K:/quartus18/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- K:/quartus18/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Nios2_pio_0 --dir=C:/Users/USER/AppData/Local/Temp/alt0513_5339720241644383330.dir/0025_pio_0_gen/ --quartus_dir=K:/quartus18/quartus --verilog --config=C:/Users/USER/AppData/Local/Temp/alt0513_5339720241644383330.dir/0025_pio_0_gen//Nios2_pio_0_component_configuration.pl  --do_build_sim=0  ]
+Info: pio_0: Done RTL generation for module 'Nios2_pio_0'
+Info: pio_0: "Nios2" instantiated altera_avalon_pio "pio_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "Nios2" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "Nios2" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "Nios2" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'Nios2_CPU_cpu'
+Info: cpu:   Generation command is [exec K:/Quartus18/quartus/bin64//eperlcmd.exe -I K:/Quartus18/quartus/bin64//perl/lib -I K:/quartus18/quartus/sopc_builder/bin/europa -I K:/quartus18/quartus/sopc_builder/bin/perl_lib -I K:/quartus18/quartus/sopc_builder/bin -I K:/quartus18/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I K:/quartus18/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I K:/quartus18/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I K:/quartus18/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- K:/quartus18/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=Nios2_CPU_cpu --dir=C:/Users/USER/AppData/Local/Temp/alt0513_5339720241644383330.dir/0028_cpu_gen/ --quartus_bindir=K:/Quartus18/quartus/bin64/ --verilog --config=C:/Users/USER/AppData/Local/Temp/alt0513_5339720241644383330.dir/0028_cpu_gen//Nios2_CPU_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2026.03.01 20:30:55 (*) Starting Nios II generation
+Info: cpu: # 2026.03.01 20:30:55 (*)   Checking for plaintext license.
+Info: cpu: # 2026.03.01 20:30:56 (*)   Couldn't query license setup in Quartus directory K:/Quartus18/quartus/bin64/
+Info: cpu: # 2026.03.01 20:30:56 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2026.03.01 20:30:56 (*)   Plaintext license not found.
+Info: cpu: # 2026.03.01 20:30:56 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2026.03.01 20:30:56 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2026.03.01 20:30:57 (*)   Creating all objects for CPU
+Info: cpu: # 2026.03.01 20:30:58 (*)   Generating RTL from CPU objects
+Info: cpu: # 2026.03.01 20:30:58 (*)   Creating plain-text RTL
+Info: cpu: # 2026.03.01 20:30:59 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'Nios2_CPU_cpu'
+Info: cpu: "CPU" instantiated altera_nios2_gen2_unit "cpu"
+Info: CPU_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "CPU_data_master_translator"
+Info: JUART_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "JUART_avalon_jtag_slave_translator"
+Info: CPU_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "CPU_data_master_agent"
+Info: JUART_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "JUART_avalon_jtag_slave_agent"
+Info: JUART_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "JUART_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab2_DE10/Nios2/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: Nios2: Done "Nios2" with 23 modules, 38 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

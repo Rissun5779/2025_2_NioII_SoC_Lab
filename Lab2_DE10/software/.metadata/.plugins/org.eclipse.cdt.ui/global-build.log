@@ -1,0 +1,27 @@
+21:38:27 **** Incremental Build of configuration Nios II for project Lab2 ****
+make all 
+Info: Building ../Lab2_bsp/
+K:/Quartus18/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_bsp//HAL/inc -I../Lab2_bsp/ -I../Lab2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking Lab2.elf
+nios2-elf-g++  -T'../Lab2_bsp//linker.x' -msys-crt0='../Lab2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Lab2_bsp/   -Wl,-Map=Lab2.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o Lab2.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert Lab2.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev JUART --stdin_dev JUART --stdout_dev JUART --sopc_system_name Nios2 --quartus_project_dir "C:/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab2_DE10" --jdi ../..//output_files/Nios2.jdi --sopcinfo C:/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab2_DE10/software/Lab2_bsp/../../Nios2.sopcinfo
+Info: (Lab2.elf) 15 KBytes program size (code + initialized data).
+Info:            99 KBytes free for stack + heap.
+Info: Creating Lab2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Lab2.elf >Lab2.objdump
+[Lab2 build complete]
+21:39:41 **** Build of configuration Nios II for project Lab2 ****
+make all 
+Info: Building ../Lab2_bsp/
+K:/Quartus18/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_bsp/
+[BSP build complete]
+[Lab2 build complete]
+21:39:44 **** Incremental Build of configuration Nios II for project Lab2 ****
+make all 
+Info: Building ../Lab2_bsp/
+K:/Quartus18/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_bsp/
+[BSP build complete]
+[Lab2 build complete]

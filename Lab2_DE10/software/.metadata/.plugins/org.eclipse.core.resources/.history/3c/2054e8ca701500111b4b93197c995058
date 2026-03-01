@@ -1,0 +1,12 @@
+// INC
+#include <unistd.h>
+#include <io.h>
+#include "system.h"
+// Memory mapped
+// MAIN
+int main()
+{
+  printf("Hello from Nios II!\n");
+
+  return 0;
+}

@@ -1,0 +1,13 @@
+// INC
+#include <unistd.h>
+#include <io.h>
+#include "system.h"
+// Memory mapped
+#define PIO_LED_REG
+// MAIN
+int main()
+{
+  printf("Hello from Nios II!\n");
+
+  return 0;
+}

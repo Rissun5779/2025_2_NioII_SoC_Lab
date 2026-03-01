@@ -1,0 +1,15 @@
+// INC
+#include <unistd.h>
+#include <stdint.h>
+#include <io.h>
+#include "system.h"
+// Memory mapped
+#define PIO_LED_REG *(volatile uint32_t PIO_LED_BASE)
+#define PIO_SW_REG  *(volatile uint32_t PIO_SW_BASE)
+// Variable
+// MAIN
+int main()
+{
+
+  return 0;
+}

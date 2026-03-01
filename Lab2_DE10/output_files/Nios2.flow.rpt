@@ -1,0 +1,141 @@
+Flow report for Nios2
+Sun Mar 01 21:26:46 2026
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++---------------------------------+---------------------------------------------+
+; Flow Status                     ; Successful - Sun Mar 01 21:26:46 2026       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; Nios2                                       ;
+; Top-level Entity Name           ; Nios2_top                                   ;
+; Family                          ; Cyclone V                                   ;
+; Device                          ; 5CSXFC6D6F31C6                              ;
+; Timing Models                   ; Final                                       ;
+; Logic utilization (in ALMs)     ; 800 / 41,910 ( 2 % )                        ;
+; Total registers                 ; 1012                                        ;
+; Total pins                      ; 22 / 499 ( 4 % )                            ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 994,304 / 5,662,720 ( 18 % )                ;
+; Total DSP Blocks                ; 0 / 112 ( 0 % )                             ;
+; Total HSSI RX PCSs              ; 0 / 9 ( 0 % )                               ;
+; Total HSSI PMA RX Deserializers ; 0 / 9 ( 0 % )                               ;
+; Total HSSI TX PCSs              ; 0 / 9 ( 0 % )                               ;
+; Total HSSI PMA TX Serializers   ; 0 / 9 ( 0 % )                               ;
+; Total PLLs                      ; 0 / 15 ( 0 % )                              ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
++---------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 03/01/2026 21:22:50 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; Nios2               ;
++-------------------+---------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                             ;
++-------------------------------------+---------------------------------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                                                   ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+---------------------------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 84440840969871.177237136916716                          ; --            ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                                    ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                                  ; <None>        ; --          ; --             ;
+; EDA_TIME_SCALE                      ; 1 ps                                                    ; --            ; --          ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                      ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                       ; --            ; --          ; --             ;
+; MISC_FILE                           ; Nios2/synthesis/../Nios2.cmp                            ; --            ; --          ; --             ;
+; MISC_FILE                           ; Nios2/synthesis/../../Nios2.qsys                        ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family)                  ; --            ; Nios2_top   ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                  ; --            ; Nios2_top   ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                  ; --            ; Nios2_top   ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                     ; --            ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                   ; --            ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                            ; --            ; --          ; --             ;
+; SLD_FILE                            ; Nios2/synthesis/Nios2.regmap                            ; --            ; --          ; --             ;
+; SLD_FILE                            ; Nios2/synthesis/Nios2.debuginfo                         ; --            ; --          ; --             ;
+; SLD_INFO                            ; QSYS_NAME Nios2 HAS_SOPCINFO 1 GENERATION_ID 1772371198 ; --            ; --          ; --             ;
+; SOPCINFO_FILE                       ; Nios2/synthesis/../../Nios2.sopcinfo                    ; --            ; --          ; --             ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                      ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; Nios2_top                                               ; Nios2         ; --          ; --             ;
++-------------------------------------+---------------------------------------------------------+---------------+-------------+----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:56     ; 1.0                     ; 4979 MB             ; 00:01:34                           ;
+; Fitter               ; 00:02:13     ; 1.1                     ; 6710 MB             ; 00:04:18                           ;
+; Assembler            ; 00:00:13     ; 1.0                     ; 4876 MB             ; 00:00:13                           ;
+; Timing Analyzer      ; 00:00:16     ; 1.9                     ; 5207 MB             ; 00:00:26                           ;
+; EDA Netlist Writer   ; 00:00:05     ; 1.0                     ; 4786 MB             ; 00:00:05                           ;
+; Total                ; 00:03:43     ; --                      ; --                  ; 00:06:36                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; DESKTOP-L74U05T  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-L74U05T  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-L74U05T  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-L74U05T  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-L74U05T  ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off Nios2 -c Nios2
+quartus_fit --read_settings_files=off --write_settings_files=off Nios2 -c Nios2
+quartus_asm --read_settings_files=off --write_settings_files=off Nios2 -c Nios2
+quartus_sta Nios2 -c Nios2
+quartus_eda --read_settings_files=off --write_settings_files=off Nios2 -c Nios2
+
+
+
