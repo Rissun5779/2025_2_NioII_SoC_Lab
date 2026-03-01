@@ -1,31 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <simPackage>
  <file
-   path="nios2/simulation/submodules/nios2_mm_interconnect_0_rsp_xbar_mux.vho"
+   path="nios2/simulation/submodules/nios2_irq_mapper.vho"
+   type="VHDL"
+   library="irq_mapper" />
+ <file
+   path="nios2/simulation/submodules/nios2_rsp_xbar_mux.vho"
    type="VHDL"
    library="rsp_xbar_mux" />
  <file
-   path="nios2/simulation/submodules/nios2_mm_interconnect_0_rsp_xbar_demux.vho"
+   path="nios2/simulation/submodules/nios2_rsp_xbar_demux.vho"
    type="VHDL"
    library="rsp_xbar_demux" />
  <file
-   path="nios2/simulation/submodules/nios2_mm_interconnect_0_cmd_xbar_mux.vho"
+   path="nios2/simulation/submodules/nios2_cmd_xbar_mux.vho"
    type="VHDL"
    library="cmd_xbar_mux" />
  <file
-   path="nios2/simulation/submodules/nios2_mm_interconnect_0_cmd_xbar_demux.vho"
+   path="nios2/simulation/submodules/nios2_cmd_xbar_demux.vho"
    type="VHDL"
    library="cmd_xbar_demux" />
  <file
-   path="nios2/simulation/submodules/nios2_mm_interconnect_0_id_router.vho"
+   path="nios2/simulation/submodules/mentor/altera_reset_controller.v"
+   type="VERILOG_ENCRYPT"
+   library="rst_controller"
+   simulator="modelsim" />
+ <file
+   path="nios2/simulation/submodules/mentor/altera_reset_synchronizer.v"
+   type="VERILOG_ENCRYPT"
+   library="rst_controller"
+   simulator="modelsim" />
+ <file
+   path="nios2/simulation/submodules/aldec/altera_reset_controller.v"
+   type="VERILOG_ENCRYPT"
+   library="rst_controller"
+   simulator="riviera" />
+ <file
+   path="nios2/simulation/submodules/aldec/altera_reset_synchronizer.v"
+   type="VERILOG_ENCRYPT"
+   library="rst_controller"
+   simulator="riviera" />
+ <file
+   path="nios2/simulation/submodules/nios2_id_router.vho"
    type="VHDL"
    library="id_router" />
  <file
-   path="nios2/simulation/submodules/nios2_mm_interconnect_0_addr_router.vho"
+   path="nios2/simulation/submodules/nios2_addr_router.vho"
    type="VHDL"
    library="addr_router" />
  <file
-   path="nios2/simulation/submodules/nios2_mm_interconnect_0_nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo.vho"
+   path="nios2/simulation/submodules/nios2_nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo.vho"
    type="VHDL"
    library="nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo" />
  <file
@@ -49,26 +73,6 @@
    library="nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent"
    simulator="riviera" />
  <file
-   path="nios2/simulation/submodules/cadence/altera_merlin_slave_agent.sv"
-   type="SYSTEM_VERILOG_ENCRYPT"
-   library="nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent"
-   simulator="ncsim" />
- <file
-   path="nios2/simulation/submodules/cadence/altera_merlin_burst_uncompressor.sv"
-   type="SYSTEM_VERILOG_ENCRYPT"
-   library="nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent"
-   simulator="ncsim" />
- <file
-   path="nios2/simulation/submodules/synopsys/altera_merlin_slave_agent.sv"
-   type="SYSTEM_VERILOG_ENCRYPT"
-   library="nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent"
-   simulator="vcs" />
- <file
-   path="nios2/simulation/submodules/synopsys/altera_merlin_burst_uncompressor.sv"
-   type="SYSTEM_VERILOG_ENCRYPT"
-   library="nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent"
-   simulator="vcs" />
- <file
    path="nios2/simulation/submodules/mentor/altera_merlin_master_agent.sv"
    type="SYSTEM_VERILOG_ENCRYPT"
    library="nios2_instruction_master_translator_avalon_universal_master_0_agent"
@@ -78,16 +82,6 @@
    type="SYSTEM_VERILOG_ENCRYPT"
    library="nios2_instruction_master_translator_avalon_universal_master_0_agent"
    simulator="riviera" />
- <file
-   path="nios2/simulation/submodules/cadence/altera_merlin_master_agent.sv"
-   type="SYSTEM_VERILOG_ENCRYPT"
-   library="nios2_instruction_master_translator_avalon_universal_master_0_agent"
-   simulator="ncsim" />
- <file
-   path="nios2/simulation/submodules/synopsys/altera_merlin_master_agent.sv"
-   type="SYSTEM_VERILOG_ENCRYPT"
-   library="nios2_instruction_master_translator_avalon_universal_master_0_agent"
-   simulator="vcs" />
  <file
    path="nios2/simulation/submodules/mentor/altera_merlin_slave_translator.sv"
    type="SYSTEM_VERILOG_ENCRYPT"
@@ -99,16 +93,6 @@
    library="nios2_jtag_debug_module_translator"
    simulator="riviera" />
  <file
-   path="nios2/simulation/submodules/cadence/altera_merlin_slave_translator.sv"
-   type="SYSTEM_VERILOG_ENCRYPT"
-   library="nios2_jtag_debug_module_translator"
-   simulator="ncsim" />
- <file
-   path="nios2/simulation/submodules/synopsys/altera_merlin_slave_translator.sv"
-   type="SYSTEM_VERILOG_ENCRYPT"
-   library="nios2_jtag_debug_module_translator"
-   simulator="vcs" />
- <file
    path="nios2/simulation/submodules/mentor/altera_merlin_master_translator.sv"
    type="SYSTEM_VERILOG_ENCRYPT"
    library="nios2_instruction_master_translator"
@@ -119,88 +103,6 @@
    library="nios2_instruction_master_translator"
    simulator="riviera" />
  <file
-   path="nios2/simulation/submodules/cadence/altera_merlin_master_translator.sv"
-   type="SYSTEM_VERILOG_ENCRYPT"
-   library="nios2_instruction_master_translator"
-   simulator="ncsim" />
- <file
-   path="nios2/simulation/submodules/synopsys/altera_merlin_master_translator.sv"
-   type="SYSTEM_VERILOG_ENCRYPT"
-   library="nios2_instruction_master_translator"
-   simulator="vcs" />
- <file
-   path="nios2/simulation/submodules/mentor/altera_reset_controller.v"
-   type="VERILOG_ENCRYPT"
-   library="rst_controller"
-   simulator="modelsim" />
- <file
-   path="nios2/simulation/submodules/mentor/altera_reset_synchronizer.v"
-   type="VERILOG_ENCRYPT"
-   library="rst_controller"
-   simulator="modelsim" />
- <file
-   path="nios2/simulation/submodules/aldec/altera_reset_controller.v"
-   type="VERILOG_ENCRYPT"
-   library="rst_controller"
-   simulator="riviera" />
- <file
-   path="nios2/simulation/submodules/aldec/altera_reset_synchronizer.v"
-   type="VERILOG_ENCRYPT"
-   library="rst_controller"
-   simulator="riviera" />
- <file
-   path="nios2/simulation/submodules/cadence/altera_reset_controller.v"
-   type="VERILOG_ENCRYPT"
-   library="rst_controller"
-   simulator="ncsim" />
- <file
-   path="nios2/simulation/submodules/cadence/altera_reset_synchronizer.v"
-   type="VERILOG_ENCRYPT"
-   library="rst_controller"
-   simulator="ncsim" />
- <file
-   path="nios2/simulation/submodules/synopsys/altera_reset_controller.v"
-   type="VERILOG_ENCRYPT"
-   library="rst_controller"
-   simulator="vcs" />
- <file
-   path="nios2/simulation/submodules/synopsys/altera_reset_synchronizer.v"
-   type="VERILOG_ENCRYPT"
-   library="rst_controller"
-   simulator="vcs" />
- <file
-   path="nios2/simulation/submodules/nios2_irq_mapper.vho"
-   type="VHDL"
-   library="irq_mapper" />
- <file
-   path="nios2/simulation/submodules/nios2_mm_interconnect_0.vhd"
-   type="VHDL"
-   library="mm_interconnect_0" />
- <file
-   path="nios2/simulation/submodules/nios2_mm_interconnect_0_nios2_jtag_debug_module_translator.vhd"
-   type="VHDL"
-   library="mm_interconnect_0" />
- <file
-   path="nios2/simulation/submodules/nios2_mm_interconnect_0_juart_avalon_jtag_slave_translator.vhd"
-   type="VHDL"
-   library="mm_interconnect_0" />
- <file
-   path="nios2/simulation/submodules/nios2_mm_interconnect_0_led_pio_s1_translator.vhd"
-   type="VHDL"
-   library="mm_interconnect_0" />
- <file
-   path="nios2/simulation/submodules/nios2_mm_interconnect_0_ram_s1_translator.vhd"
-   type="VHDL"
-   library="mm_interconnect_0" />
- <file
-   path="nios2/simulation/submodules/nios2_mm_interconnect_0_nios2_instruction_master_translator.vhd"
-   type="VHDL"
-   library="mm_interconnect_0" />
- <file
-   path="nios2/simulation/submodules/nios2_mm_interconnect_0_nios2_data_master_translator.vhd"
-   type="VHDL"
-   library="mm_interconnect_0" />
- <file
    path="nios2/simulation/submodules/nios2_LED_PIO.vhd"
    type="VHDL"
    library="LED_PIO" />
@@ -209,15 +111,27 @@
    type="VHDL"
    library="JUART" />
  <file
-   path="nios2/simulation/submodules/nios2_RAM.vhd"
-   type="VHDL"
-   library="RAM" />
- <file
    path="nios2/simulation/submodules/nios2_RAM.hex"
    type="HEX"
    library="RAM" />
  <file
+   path="nios2/simulation/submodules/nios2_RAM.vhd"
+   type="VHDL"
+   library="RAM" />
+ <file
+   path="nios2/simulation/submodules/nios2_nios2.sdc"
+   type="SDC"
+   library="nios2" />
+ <file
    path="nios2/simulation/submodules/nios2_nios2.vhd"
+   type="VHDL"
+   library="nios2" />
+ <file
+   path="nios2/simulation/submodules/nios2_nios2_jtag_debug_module_sysclk.vhd"
+   type="VHDL"
+   library="nios2" />
+ <file
+   path="nios2/simulation/submodules/nios2_nios2_jtag_debug_module_tck.vhd"
    type="VHDL"
    library="nios2" />
  <file
@@ -229,7 +143,7 @@
    type="OTHER"
    library="nios2" />
  <file
-   path="nios2/simulation/submodules/nios2_nios2_rf_ram_a.dat"
+   path="nios2/simulation/submodules/nios2_nios2_ociram_default_contents.dat"
    type="DAT"
    library="nios2" />
  <file
@@ -237,55 +151,57 @@
    type="HEX"
    library="nios2" />
  <file
-   path="nios2/simulation/submodules/nios2_nios2_rf_ram_a.mif"
+   path="nios2/simulation/submodules/nios2_nios2_ociram_default_contents.mif"
    type="MIF"
-   library="nios2" />
- <file
-   path="nios2/simulation/submodules/nios2_nios2_rf_ram_b.hex"
-   type="HEX"
    library="nios2" />
  <file
    path="nios2/simulation/submodules/nios2_nios2_oci_test_bench.vhd"
    type="VHDL"
    library="nios2" />
  <file
-   path="nios2/simulation/submodules/nios2_nios2_jtag_debug_module_tck.vhd"
-   type="VHDL"
+   path="nios2/simulation/submodules/nios2_nios2_rf_ram_a.dat"
+   type="DAT"
    library="nios2" />
  <file
    path="nios2/simulation/submodules/nios2_nios2_rf_ram_a.hex"
    type="HEX"
    library="nios2" />
  <file
-   path="nios2/simulation/submodules/nios2_nios2_jtag_debug_module_sysclk.vhd"
-   type="VHDL"
-   library="nios2" />
- <file
-   path="nios2/simulation/submodules/nios2_nios2_rf_ram_b.mif"
-   type="MIF"
-   library="nios2" />
- <file
-   path="nios2/simulation/submodules/nios2_nios2_ociram_default_contents.dat"
-   type="DAT"
-   library="nios2" />
- <file
-   path="nios2/simulation/submodules/nios2_nios2_test_bench.vhd"
-   type="VHDL"
-   library="nios2" />
- <file
-   path="nios2/simulation/submodules/nios2_nios2.sdc"
-   type="SDC"
-   library="nios2" />
- <file
-   path="nios2/simulation/submodules/nios2_nios2_ociram_default_contents.mif"
+   path="nios2/simulation/submodules/nios2_nios2_rf_ram_a.mif"
    type="MIF"
    library="nios2" />
  <file
    path="nios2/simulation/submodules/nios2_nios2_rf_ram_b.dat"
    type="DAT"
    library="nios2" />
+ <file
+   path="nios2/simulation/submodules/nios2_nios2_rf_ram_b.hex"
+   type="HEX"
+   library="nios2" />
+ <file
+   path="nios2/simulation/submodules/nios2_nios2_rf_ram_b.mif"
+   type="MIF"
+   library="nios2" />
+ <file
+   path="nios2/simulation/submodules/nios2_nios2_test_bench.vhd"
+   type="VHDL"
+   library="nios2" />
  <file path="nios2/simulation/nios2.vhd" type="VHDL" />
+ <file
+   path="nios2/simulation/nios2_nios2_jtag_debug_module_translator.vhd"
+   type="VHDL" />
+ <file
+   path="nios2/simulation/nios2_juart_avalon_jtag_slave_translator.vhd"
+   type="VHDL" />
+ <file path="nios2/simulation/nios2_led_pio_s1_translator.vhd" type="VHDL" />
+ <file path="nios2/simulation/nios2_ram_s1_translator.vhd" type="VHDL" />
+ <file
+   path="nios2/simulation/nios2_nios2_instruction_master_translator.vhd"
+   type="VHDL" />
+ <file
+   path="nios2/simulation/nios2_nios2_data_master_translator.vhd"
+   type="VHDL" />
  <topLevel name="nios2" />
- <deviceFamily name="cycloneive" />
+ <deviceFamily name="cyclonev" />
  <modelMap controllerPath="nios2.RAM" modelPath="nios2.RAM" />
 </simPackage>
