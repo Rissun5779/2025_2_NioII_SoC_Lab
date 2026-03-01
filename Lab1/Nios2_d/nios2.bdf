@@ -69,7 +69,7 @@ applicable agreement for further details.
 	(rotate180)
 )
 (symbol
-	(rect 208 256 496 440)
+	(rect 232 256 520 440)
 	(text "nios2" (rect 129 -1 167 15)(font "Arial" (font_size 10)))
 	(text "inst" (rect 8 168 26 179)(font "Arial" ))
 	(port
@@ -116,4 +116,17 @@ applicable agreement for further details.
 		(line (pt 0 184)(pt 288 184))
 		(line (pt 0 0)(pt 0 184))
 	)
+)
+(connector
+	(pt 208 328)
+	(pt 232 328)
+)
+(connector
+	(pt 208 368)
+	(pt 232 368)
+	(bus)
+)
+(connector
+	(pt 208 408)
+	(pt 232 408)
 )
