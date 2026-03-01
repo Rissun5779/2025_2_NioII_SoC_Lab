@@ -1,5 +1,5 @@
 Flow report for nios2
-Sun Mar 01 12:27:39 2026
+Sun Mar 01 12:44:46 2026
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,15 +40,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Flow Summary                                                                          ;
 +-------------------------------------+-------------------------------------------------+
-; Flow Status                         ; Successful - Sun Mar 01 12:27:39 2026           ;
+; Flow Status                         ; Successful - Sun Mar 01 12:44:46 2026           ;
 ; Quartus II 64-Bit Version           ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                       ; nios2                                           ;
 ; Top-level Entity Name               ; Nios_top                                        ;
 ; Family                              ; Cyclone V                                       ;
 ; Device                              ; 5CSXFC6D6F31C6                                  ;
 ; Timing Models                       ; Preliminary                                     ;
-; Logic utilization (in ALMs)         ; 783 / 41,910 ( 2 % )                            ;
-; Total registers                     ; 970                                             ;
+; Logic utilization (in ALMs)         ; 777 / 41,910 ( 2 % )                            ;
+; Total registers                     ; 961                                             ;
 ; Total pins                          ; 10 / 499 ( 2 % )                                ;
 ; Total virtual pins                  ; 0                                               ;
 ; Total block memory bits             ; 338,944 / 5,662,720 ( 6 % )                     ;
@@ -69,7 +69,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/01/2026 12:24:41 ;
+; Start date & time ; 03/01/2026 12:41:50 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; nios2               ;
 +-------------------+---------------------+
@@ -80,7 +80,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 84440840969871.177233908112344        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 84440840969871.177234011005764        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                     ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)       ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
@@ -100,12 +100,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:28     ; 1.0                     ; 4742 MB             ; 00:00:26                           ;
-; Fitter                    ; 00:01:57     ; 1.0                     ; 6036 MB             ; 00:01:43                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 4603 MB             ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:22     ; 1.0                     ; 5233 MB             ; 00:00:21                           ;
-; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 4626 MB             ; 00:00:02                           ;
-; Total                     ; 00:02:52     ; --                      ; --                  ; 00:02:34                           ;
+; Analysis & Synthesis      ; 00:00:42     ; 1.0                     ; 4758 MB             ; 00:00:24                           ;
+; Fitter                    ; 00:01:45     ; 1.0                     ; 6097 MB             ; 00:01:39                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 4596 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:18     ; 1.0                     ; 5208 MB             ; 00:00:17                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4632 MB             ; 00:00:02                           ;
+; Total                     ; 00:02:49     ; --                      ; --                  ; 00:02:24                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

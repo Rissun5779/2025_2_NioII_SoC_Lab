@@ -1,12 +1,12 @@
-Fitter Status : Successful - Sun Mar 01 12:27:08 2026
+Fitter Status : Successful - Sun Mar 01 12:44:18 2026
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : nios2
 Top-level Entity Name : Nios_top
 Family : Cyclone V
 Device : 5CSXFC6D6F31C6
 Timing Models : Preliminary
-Logic utilization (in ALMs) : 783 / 41,910 ( 2 % )
-Total registers : 970
+Logic utilization (in ALMs) : 777 / 41,910 ( 2 % )
+Total registers : 961
 Total pins : 10 / 499 ( 2 % )
 Total virtual pins : 0
 Total block memory bits : 338,944 / 5,662,720 ( 6 % )

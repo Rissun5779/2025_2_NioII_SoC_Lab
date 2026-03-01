@@ -1,5 +1,5 @@
 Assembler report for nios2
-Sun Mar 01 12:27:12 2026
+Sun Mar 01 12:44:23 2026
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -35,7 +35,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sun Mar 01 12:27:12 2026 ;
+; Assembler Status      ; Successful - Sun Mar 01 12:44:23 2026 ;
 ; Revision Name         ; nios2                                 ;
 ; Top-level Entity Name ; Nios_top                              ;
 ; Family                ; Cyclone V                             ;
@@ -81,12 +81,12 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Mar 01 12:27:10 2026
+    Info: Processing started: Sun Mar 01 12:44:21 2026
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off nios2 -c nios2
 Info (115015): Compilation Report contains advance information. Specifications for device 5CSXFC6D6F31C6 are subject to change. Contact Altera for information on availability. No programming file will be generated.
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4603 megabytes
-    Info: Processing ended: Sun Mar 01 12:27:12 2026
+    Info: Peak virtual memory: 4596 megabytes
+    Info: Processing ended: Sun Mar 01 12:44:23 2026
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
