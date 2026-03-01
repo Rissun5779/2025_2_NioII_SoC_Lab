@@ -1,1 +1,3 @@
 *.flock
+*.rdr
+*.qsys_edit/
