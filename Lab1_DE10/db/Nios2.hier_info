@@ -14,18 +14,26 @@ reset_n => Nios2:inst.reset_reset_n
 
 
 |Nios2_top|Nios2:inst
-clk_clk => clk_clk.IN7
-pio_led_export[0] <= Nios2_PIO_LED:pio_led.out_port
-pio_led_export[1] <= Nios2_PIO_LED:pio_led.out_port
-pio_led_export[2] <= Nios2_PIO_LED:pio_led.out_port
-pio_led_export[3] <= Nios2_PIO_LED:pio_led.out_port
-pio_led_export[4] <= Nios2_PIO_LED:pio_led.out_port
-pio_led_export[5] <= Nios2_PIO_LED:pio_led.out_port
-pio_led_export[6] <= Nios2_PIO_LED:pio_led.out_port
-pio_led_export[7] <= Nios2_PIO_LED:pio_led.out_port
-pio_led_export[8] <= Nios2_PIO_LED:pio_led.out_port
-pio_led_export[9] <= Nios2_PIO_LED:pio_led.out_port
-reset_reset_n => _.IN1
+clk_clk => Nios2_CPU:cpu.clk
+clk_clk => Nios2_JUART:juart.clk
+clk_clk => Nios2_PIO_LED:pio_led.clk
+clk_clk => Nios2_RAM:ram.clk
+clk_clk => Nios2_mm_interconnect_0:mm_interconnect_0.CLK_clk_clk
+clk_clk => Nios2_irq_mapper:irq_mapper.clk
+clk_clk => nios2_rst_controller:rst_controller.clk
+clk_clk => nios2_rst_controller_001:rst_controller_001.clk
+pio_led_export[0] <= Nios2_PIO_LED:pio_led.out_port[0]
+pio_led_export[1] <= Nios2_PIO_LED:pio_led.out_port[1]
+pio_led_export[2] <= Nios2_PIO_LED:pio_led.out_port[2]
+pio_led_export[3] <= Nios2_PIO_LED:pio_led.out_port[3]
+pio_led_export[4] <= Nios2_PIO_LED:pio_led.out_port[4]
+pio_led_export[5] <= Nios2_PIO_LED:pio_led.out_port[5]
+pio_led_export[6] <= Nios2_PIO_LED:pio_led.out_port[6]
+pio_led_export[7] <= Nios2_PIO_LED:pio_led.out_port[7]
+pio_led_export[8] <= Nios2_PIO_LED:pio_led.out_port[8]
+pio_led_export[9] <= Nios2_PIO_LED:pio_led.out_port[9]
+reset_reset_n => nios2_rst_controller:rst_controller.reset_in0
+reset_reset_n => nios2_rst_controller_001:rst_controller_001.reset_in0
 
 
 |Nios2_top|Nios2:inst|Nios2_CPU:cpu
@@ -407,7 +415,7 @@ i_readdata[29] => i_readdata[29].IN1
 i_readdata[30] => i_readdata[30].IN1
 i_readdata[31] => i_readdata[31].IN1
 i_waitrequest => i_waitrequest.IN1
-irq[0] => ~NO_FANOUT~
+irq[0] => W_ipending_reg_nxt.IN0
 irq[1] => ~NO_FANOUT~
 irq[2] => ~NO_FANOUT~
 irq[3] => ~NO_FANOUT~
@@ -4403,7 +4411,7 @@ debugaccess => write_strobe.IN0
 monitor_error => oci_reg_readdata.DATAB
 monitor_go => oci_reg_readdata.DATAB
 monitor_ready => oci_reg_readdata.DATAB
-reset_n => oci_ienable[0]~reg0.ACLR
+reset_n => oci_ienable[0]~reg0.PRESET
 reset_n => oci_ienable[1]~reg0.ACLR
 reset_n => oci_ienable[2]~reg0.ACLR
 reset_n => oci_ienable[3]~reg0.ACLR
@@ -4438,6 +4446,7 @@ reset_n => oci_ienable[31]~reg0.ACLR
 reset_n => oci_single_step_mode~reg0.ACLR
 write => write_strobe.IN1
 writedata[0] => ocireg_mrs.DATAIN
+writedata[0] => oci_ienable[0]~reg0.DATAIN
 writedata[1] => ocireg_ers.DATAIN
 writedata[2] => ~NO_FANOUT~
 writedata[3] => oci_single_step_mode~reg0.DATAIN
@@ -9012,7 +9021,8 @@ sel[0] => _.IN0
 
 |Nios2_top|Nios2:inst|Nios2_mm_interconnect_0:mm_interconnect_0
 CLK_clk_clk => CLK_clk_clk.IN38
-CPU_reset_reset_bridge_in_reset_reset => CPU_reset_reset_bridge_in_reset_reset.IN38
+CPU_reset_reset_bridge_in_reset_reset => CPU_reset_reset_bridge_in_reset_reset.IN31
+PIO_LED_reset_reset_bridge_in_reset_reset => PIO_LED_reset_reset_bridge_in_reset_reset.IN7
 CPU_data_master_address[0] => CPU_data_master_address[0].IN1
 CPU_data_master_address[1] => CPU_data_master_address[1].IN1
 CPU_data_master_address[2] => CPU_data_master_address[2].IN1
@@ -25781,7 +25791,8 @@ reset_n => ~NO_FANOUT~
 |Nios2_top|Nios2:inst|Nios2_irq_mapper:irq_mapper
 clk => ~NO_FANOUT~
 reset => ~NO_FANOUT~
-sender_irq[0] <= <GND>
+receiver0_irq => sender_irq[0].DATAIN
+sender_irq[0] <= receiver0_irq.DB_MAX_OUTPUT_PORT_TYPE
 sender_irq[1] <= <GND>
 sender_irq[2] <= <GND>
 sender_irq[3] <= <GND>
@@ -25815,7 +25826,45 @@ sender_irq[30] <= <GND>
 sender_irq[31] <= <GND>
 
 
-|Nios2_top|Nios2:inst|altera_reset_controller:rst_controller
+|Nios2_top|Nios2:inst|nios2_rst_controller:rst_controller
+reset_in0 => altera_reset_controller:rst_controller.reset_in0
+clk => altera_reset_controller:rst_controller.clk
+reset_out <= altera_reset_controller:rst_controller.reset_out
+reset_req <= altera_reset_controller:rst_controller.reset_req
+reset_in1 => ~NO_FANOUT~
+reset_in10 => ~NO_FANOUT~
+reset_in11 => ~NO_FANOUT~
+reset_in12 => ~NO_FANOUT~
+reset_in13 => ~NO_FANOUT~
+reset_in14 => ~NO_FANOUT~
+reset_in15 => ~NO_FANOUT~
+reset_in2 => ~NO_FANOUT~
+reset_in3 => ~NO_FANOUT~
+reset_in4 => ~NO_FANOUT~
+reset_in5 => ~NO_FANOUT~
+reset_in6 => ~NO_FANOUT~
+reset_in7 => ~NO_FANOUT~
+reset_in8 => ~NO_FANOUT~
+reset_in9 => ~NO_FANOUT~
+reset_req_in0 => ~NO_FANOUT~
+reset_req_in1 => ~NO_FANOUT~
+reset_req_in10 => ~NO_FANOUT~
+reset_req_in11 => ~NO_FANOUT~
+reset_req_in12 => ~NO_FANOUT~
+reset_req_in13 => ~NO_FANOUT~
+reset_req_in14 => ~NO_FANOUT~
+reset_req_in15 => ~NO_FANOUT~
+reset_req_in2 => ~NO_FANOUT~
+reset_req_in3 => ~NO_FANOUT~
+reset_req_in4 => ~NO_FANOUT~
+reset_req_in5 => ~NO_FANOUT~
+reset_req_in6 => ~NO_FANOUT~
+reset_req_in7 => ~NO_FANOUT~
+reset_req_in8 => ~NO_FANOUT~
+reset_req_in9 => ~NO_FANOUT~
+
+
+|Nios2_top|Nios2:inst|nios2_rst_controller:rst_controller|altera_reset_controller:rst_controller
 reset_in0 => merged_reset.IN0
 reset_in1 => merged_reset.IN1
 reset_in2 => merged_reset.IN1
@@ -25853,7 +25902,7 @@ reset_out <= r_sync_rst.DB_MAX_OUTPUT_PORT_TYPE
 reset_req <= r_early_rst.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Nios2_top|Nios2:inst|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1
+|Nios2_top|Nios2:inst|nios2_rst_controller:rst_controller|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1
 reset_in => altera_reset_synchronizer_int_chain_out.PRESET
 reset_in => altera_reset_synchronizer_int_chain[0].PRESET
 reset_in => altera_reset_synchronizer_int_chain[1].PRESET
@@ -25863,7 +25912,101 @@ clk => altera_reset_synchronizer_int_chain[1].CLK
 reset_out <= altera_reset_synchronizer_int_chain_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Nios2_top|Nios2:inst|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1
+|Nios2_top|Nios2:inst|nios2_rst_controller:rst_controller|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1
+reset_in => altera_reset_synchronizer_int_chain[1].DATAIN
+clk => altera_reset_synchronizer_int_chain_out.CLK
+clk => altera_reset_synchronizer_int_chain[0].CLK
+clk => altera_reset_synchronizer_int_chain[1].CLK
+reset_out <= altera_reset_synchronizer_int_chain_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Nios2_top|Nios2:inst|nios2_rst_controller_001:rst_controller_001
+reset_in0 => altera_reset_controller:rst_controller_001.reset_in0
+reset_in1 => altera_reset_controller:rst_controller_001.reset_in1
+clk => altera_reset_controller:rst_controller_001.clk
+reset_out <= altera_reset_controller:rst_controller_001.reset_out
+reset_in10 => ~NO_FANOUT~
+reset_in11 => ~NO_FANOUT~
+reset_in12 => ~NO_FANOUT~
+reset_in13 => ~NO_FANOUT~
+reset_in14 => ~NO_FANOUT~
+reset_in15 => ~NO_FANOUT~
+reset_in2 => ~NO_FANOUT~
+reset_in3 => ~NO_FANOUT~
+reset_in4 => ~NO_FANOUT~
+reset_in5 => ~NO_FANOUT~
+reset_in6 => ~NO_FANOUT~
+reset_in7 => ~NO_FANOUT~
+reset_in8 => ~NO_FANOUT~
+reset_in9 => ~NO_FANOUT~
+reset_req <= comb.DB_MAX_OUTPUT_PORT_TYPE
+reset_req_in0 => ~NO_FANOUT~
+reset_req_in1 => ~NO_FANOUT~
+reset_req_in10 => ~NO_FANOUT~
+reset_req_in11 => ~NO_FANOUT~
+reset_req_in12 => ~NO_FANOUT~
+reset_req_in13 => ~NO_FANOUT~
+reset_req_in14 => ~NO_FANOUT~
+reset_req_in15 => ~NO_FANOUT~
+reset_req_in2 => ~NO_FANOUT~
+reset_req_in3 => ~NO_FANOUT~
+reset_req_in4 => ~NO_FANOUT~
+reset_req_in5 => ~NO_FANOUT~
+reset_req_in6 => ~NO_FANOUT~
+reset_req_in7 => ~NO_FANOUT~
+reset_req_in8 => ~NO_FANOUT~
+reset_req_in9 => ~NO_FANOUT~
+
+
+|Nios2_top|Nios2:inst|nios2_rst_controller_001:rst_controller_001|altera_reset_controller:rst_controller_001
+reset_in0 => merged_reset.IN0
+reset_in1 => merged_reset.IN1
+reset_in2 => merged_reset.IN1
+reset_in3 => merged_reset.IN1
+reset_in4 => merged_reset.IN1
+reset_in5 => merged_reset.IN1
+reset_in6 => merged_reset.IN1
+reset_in7 => merged_reset.IN1
+reset_in8 => merged_reset.IN1
+reset_in9 => merged_reset.IN1
+reset_in10 => merged_reset.IN1
+reset_in11 => merged_reset.IN1
+reset_in12 => merged_reset.IN1
+reset_in13 => merged_reset.IN1
+reset_in14 => merged_reset.IN1
+reset_in15 => merged_reset.IN1
+reset_req_in0 => ~NO_FANOUT~
+reset_req_in1 => ~NO_FANOUT~
+reset_req_in2 => ~NO_FANOUT~
+reset_req_in3 => ~NO_FANOUT~
+reset_req_in4 => ~NO_FANOUT~
+reset_req_in5 => ~NO_FANOUT~
+reset_req_in6 => ~NO_FANOUT~
+reset_req_in7 => ~NO_FANOUT~
+reset_req_in8 => ~NO_FANOUT~
+reset_req_in9 => ~NO_FANOUT~
+reset_req_in10 => ~NO_FANOUT~
+reset_req_in11 => ~NO_FANOUT~
+reset_req_in12 => ~NO_FANOUT~
+reset_req_in13 => ~NO_FANOUT~
+reset_req_in14 => ~NO_FANOUT~
+reset_req_in15 => ~NO_FANOUT~
+clk => clk.IN2
+reset_out <= altera_reset_synchronizer:alt_rst_sync_uq1.reset_out
+reset_req <= altera_reset_synchronizer:alt_rst_req_sync_uq1.reset_out
+
+
+|Nios2_top|Nios2:inst|nios2_rst_controller_001:rst_controller_001|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_sync_uq1
+reset_in => altera_reset_synchronizer_int_chain_out.PRESET
+reset_in => altera_reset_synchronizer_int_chain[0].PRESET
+reset_in => altera_reset_synchronizer_int_chain[1].PRESET
+clk => altera_reset_synchronizer_int_chain_out.CLK
+clk => altera_reset_synchronizer_int_chain[0].CLK
+clk => altera_reset_synchronizer_int_chain[1].CLK
+reset_out <= altera_reset_synchronizer_int_chain_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Nios2_top|Nios2:inst|nios2_rst_controller_001:rst_controller_001|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_req_sync_uq1
 reset_in => altera_reset_synchronizer_int_chain[1].DATAIN
 clk => altera_reset_synchronizer_int_chain_out.CLK
 clk => altera_reset_synchronizer_int_chain[0].CLK

@@ -181,7 +181,7 @@
   <parameter name="instruction_master_high_performance_paddr_size" value="0" />
   <parameter name="instruction_master_paddr_base" value="0" />
   <parameter name="instruction_master_paddr_size" value="0" />
-  <parameter name="internalIrqMaskSystemInfo" value="0" />
+  <parameter name="internalIrqMaskSystemInfo" value="1" />
   <parameter name="io_regionbase" value="0" />
   <parameter name="io_regionsize" value="0" />
   <parameter name="master_addr_map" value="false" />
@@ -426,10 +426,18 @@
  <connection kind="clock" version="18.1" start="CLK.clk" end="JUART.clk" />
  <connection kind="clock" version="18.1" start="CLK.clk" end="PIO_LED.clk" />
  <connection kind="clock" version="18.1" start="CLK.clk" end="RAM.clk1" />
+ <connection kind="interrupt" version="18.1" start="CPU.irq" end="JUART.irq">
+  <parameter name="irqNumber" value="0" />
+ </connection>
  <connection kind="reset" version="18.1" start="CLK.clk_reset" end="CPU.reset" />
  <connection kind="reset" version="18.1" start="CLK.clk_reset" end="JUART.reset" />
  <connection kind="reset" version="18.1" start="CLK.clk_reset" end="PIO_LED.reset" />
  <connection kind="reset" version="18.1" start="CLK.clk_reset" end="RAM.reset1" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="CPU.debug_reset_request"
+   end="PIO_LED.reset" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
  <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
 </system>

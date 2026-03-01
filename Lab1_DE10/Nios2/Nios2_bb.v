@@ -1,10 +1,10 @@
 
 module Nios2 (
 	clk_clk,
-	reset_reset_n,
-	pio_led_export);	
+	pio_led_export,
+	reset_reset_n);	
 
 	input		clk_clk;
-	input		reset_reset_n;
 	output	[9:0]	pio_led_export;
+	input		reset_reset_n;
 endmodule

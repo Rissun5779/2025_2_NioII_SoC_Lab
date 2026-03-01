@@ -7,47 +7,48 @@
 
 `timescale 1 ps / 1 ps
 module Nios2_mm_interconnect_0 (
-		input  wire        CLK_clk_clk,                           //                         CLK_clk.clk
-		input  wire        CPU_reset_reset_bridge_in_reset_reset, // CPU_reset_reset_bridge_in_reset.reset
-		input  wire [17:0] CPU_data_master_address,               //                 CPU_data_master.address
-		output wire        CPU_data_master_waitrequest,           //                                .waitrequest
-		input  wire [3:0]  CPU_data_master_byteenable,            //                                .byteenable
-		input  wire        CPU_data_master_read,                  //                                .read
-		output wire [31:0] CPU_data_master_readdata,              //                                .readdata
-		input  wire        CPU_data_master_write,                 //                                .write
-		input  wire [31:0] CPU_data_master_writedata,             //                                .writedata
-		input  wire        CPU_data_master_debugaccess,           //                                .debugaccess
-		input  wire [17:0] CPU_instruction_master_address,        //          CPU_instruction_master.address
-		output wire        CPU_instruction_master_waitrequest,    //                                .waitrequest
-		input  wire        CPU_instruction_master_read,           //                                .read
-		output wire [31:0] CPU_instruction_master_readdata,       //                                .readdata
-		output wire [8:0]  CPU_debug_mem_slave_address,           //             CPU_debug_mem_slave.address
-		output wire        CPU_debug_mem_slave_write,             //                                .write
-		output wire        CPU_debug_mem_slave_read,              //                                .read
-		input  wire [31:0] CPU_debug_mem_slave_readdata,          //                                .readdata
-		output wire [31:0] CPU_debug_mem_slave_writedata,         //                                .writedata
-		output wire [3:0]  CPU_debug_mem_slave_byteenable,        //                                .byteenable
-		input  wire        CPU_debug_mem_slave_waitrequest,       //                                .waitrequest
-		output wire        CPU_debug_mem_slave_debugaccess,       //                                .debugaccess
-		output wire [0:0]  JUART_avalon_jtag_slave_address,       //         JUART_avalon_jtag_slave.address
-		output wire        JUART_avalon_jtag_slave_write,         //                                .write
-		output wire        JUART_avalon_jtag_slave_read,          //                                .read
-		input  wire [31:0] JUART_avalon_jtag_slave_readdata,      //                                .readdata
-		output wire [31:0] JUART_avalon_jtag_slave_writedata,     //                                .writedata
-		input  wire        JUART_avalon_jtag_slave_waitrequest,   //                                .waitrequest
-		output wire        JUART_avalon_jtag_slave_chipselect,    //                                .chipselect
-		output wire [1:0]  PIO_LED_s1_address,                    //                      PIO_LED_s1.address
-		output wire        PIO_LED_s1_write,                      //                                .write
-		input  wire [31:0] PIO_LED_s1_readdata,                   //                                .readdata
-		output wire [31:0] PIO_LED_s1_writedata,                  //                                .writedata
-		output wire        PIO_LED_s1_chipselect,                 //                                .chipselect
-		output wire [13:0] RAM_s1_address,                        //                          RAM_s1.address
-		output wire        RAM_s1_write,                          //                                .write
-		input  wire [31:0] RAM_s1_readdata,                       //                                .readdata
-		output wire [31:0] RAM_s1_writedata,                      //                                .writedata
-		output wire [3:0]  RAM_s1_byteenable,                     //                                .byteenable
-		output wire        RAM_s1_chipselect,                     //                                .chipselect
-		output wire        RAM_s1_clken                           //                                .clken
+		input  wire        CLK_clk_clk,                               //                             CLK_clk.clk
+		input  wire        CPU_reset_reset_bridge_in_reset_reset,     //     CPU_reset_reset_bridge_in_reset.reset
+		input  wire        PIO_LED_reset_reset_bridge_in_reset_reset, // PIO_LED_reset_reset_bridge_in_reset.reset
+		input  wire [17:0] CPU_data_master_address,                   //                     CPU_data_master.address
+		output wire        CPU_data_master_waitrequest,               //                                    .waitrequest
+		input  wire [3:0]  CPU_data_master_byteenable,                //                                    .byteenable
+		input  wire        CPU_data_master_read,                      //                                    .read
+		output wire [31:0] CPU_data_master_readdata,                  //                                    .readdata
+		input  wire        CPU_data_master_write,                     //                                    .write
+		input  wire [31:0] CPU_data_master_writedata,                 //                                    .writedata
+		input  wire        CPU_data_master_debugaccess,               //                                    .debugaccess
+		input  wire [17:0] CPU_instruction_master_address,            //              CPU_instruction_master.address
+		output wire        CPU_instruction_master_waitrequest,        //                                    .waitrequest
+		input  wire        CPU_instruction_master_read,               //                                    .read
+		output wire [31:0] CPU_instruction_master_readdata,           //                                    .readdata
+		output wire [8:0]  CPU_debug_mem_slave_address,               //                 CPU_debug_mem_slave.address
+		output wire        CPU_debug_mem_slave_write,                 //                                    .write
+		output wire        CPU_debug_mem_slave_read,                  //                                    .read
+		input  wire [31:0] CPU_debug_mem_slave_readdata,              //                                    .readdata
+		output wire [31:0] CPU_debug_mem_slave_writedata,             //                                    .writedata
+		output wire [3:0]  CPU_debug_mem_slave_byteenable,            //                                    .byteenable
+		input  wire        CPU_debug_mem_slave_waitrequest,           //                                    .waitrequest
+		output wire        CPU_debug_mem_slave_debugaccess,           //                                    .debugaccess
+		output wire [0:0]  JUART_avalon_jtag_slave_address,           //             JUART_avalon_jtag_slave.address
+		output wire        JUART_avalon_jtag_slave_write,             //                                    .write
+		output wire        JUART_avalon_jtag_slave_read,              //                                    .read
+		input  wire [31:0] JUART_avalon_jtag_slave_readdata,          //                                    .readdata
+		output wire [31:0] JUART_avalon_jtag_slave_writedata,         //                                    .writedata
+		input  wire        JUART_avalon_jtag_slave_waitrequest,       //                                    .waitrequest
+		output wire        JUART_avalon_jtag_slave_chipselect,        //                                    .chipselect
+		output wire [1:0]  PIO_LED_s1_address,                        //                          PIO_LED_s1.address
+		output wire        PIO_LED_s1_write,                          //                                    .write
+		input  wire [31:0] PIO_LED_s1_readdata,                       //                                    .readdata
+		output wire [31:0] PIO_LED_s1_writedata,                      //                                    .writedata
+		output wire        PIO_LED_s1_chipselect,                     //                                    .chipselect
+		output wire [13:0] RAM_s1_address,                            //                              RAM_s1.address
+		output wire        RAM_s1_write,                              //                                    .write
+		input  wire [31:0] RAM_s1_readdata,                           //                                    .readdata
+		output wire [31:0] RAM_s1_writedata,                          //                                    .writedata
+		output wire [3:0]  RAM_s1_byteenable,                         //                                    .byteenable
+		output wire        RAM_s1_chipselect,                         //                                    .chipselect
+		output wire        RAM_s1_clken                               //                                    .clken
 	);
 
 	wire         cpu_data_master_translator_avalon_universal_master_0_waitrequest;          // CPU_data_master_agent:av_waitrequest -> CPU_data_master_translator:uav_waitrequest
@@ -722,41 +723,41 @@ module Nios2_mm_interconnect_0 (
 		.AV_SETUP_WAIT_CYCLES           (0),
 		.AV_DATA_HOLD_CYCLES            (0)
 	) pio_led_s1_translator (
-		.clk                    (CLK_clk_clk),                           //                      clk.clk
-		.reset                  (CPU_reset_reset_bridge_in_reset_reset), //                    reset.reset
-		.uav_address            (pio_led_s1_agent_m0_address),           // avalon_universal_slave_0.address
-		.uav_burstcount         (pio_led_s1_agent_m0_burstcount),        //                         .burstcount
-		.uav_read               (pio_led_s1_agent_m0_read),              //                         .read
-		.uav_write              (pio_led_s1_agent_m0_write),             //                         .write
-		.uav_waitrequest        (pio_led_s1_agent_m0_waitrequest),       //                         .waitrequest
-		.uav_readdatavalid      (pio_led_s1_agent_m0_readdatavalid),     //                         .readdatavalid
-		.uav_byteenable         (pio_led_s1_agent_m0_byteenable),        //                         .byteenable
-		.uav_readdata           (pio_led_s1_agent_m0_readdata),          //                         .readdata
-		.uav_writedata          (pio_led_s1_agent_m0_writedata),         //                         .writedata
-		.uav_lock               (pio_led_s1_agent_m0_lock),              //                         .lock
-		.uav_debugaccess        (pio_led_s1_agent_m0_debugaccess),       //                         .debugaccess
-		.av_address             (PIO_LED_s1_address),                    //      avalon_anti_slave_0.address
-		.av_write               (PIO_LED_s1_write),                      //                         .write
-		.av_readdata            (PIO_LED_s1_readdata),                   //                         .readdata
-		.av_writedata           (PIO_LED_s1_writedata),                  //                         .writedata
-		.av_chipselect          (PIO_LED_s1_chipselect),                 //                         .chipselect
-		.av_read                (),                                      //              (terminated)
-		.av_begintransfer       (),                                      //              (terminated)
-		.av_beginbursttransfer  (),                                      //              (terminated)
-		.av_burstcount          (),                                      //              (terminated)
-		.av_byteenable          (),                                      //              (terminated)
-		.av_readdatavalid       (1'b0),                                  //              (terminated)
-		.av_waitrequest         (1'b0),                                  //              (terminated)
-		.av_writebyteenable     (),                                      //              (terminated)
-		.av_lock                (),                                      //              (terminated)
-		.av_clken               (),                                      //              (terminated)
-		.uav_clken              (1'b0),                                  //              (terminated)
-		.av_debugaccess         (),                                      //              (terminated)
-		.av_outputenable        (),                                      //              (terminated)
-		.uav_response           (),                                      //              (terminated)
-		.av_response            (2'b00),                                 //              (terminated)
-		.uav_writeresponsevalid (),                                      //              (terminated)
-		.av_writeresponsevalid  (1'b0)                                   //              (terminated)
+		.clk                    (CLK_clk_clk),                               //                      clk.clk
+		.reset                  (PIO_LED_reset_reset_bridge_in_reset_reset), //                    reset.reset
+		.uav_address            (pio_led_s1_agent_m0_address),               // avalon_universal_slave_0.address
+		.uav_burstcount         (pio_led_s1_agent_m0_burstcount),            //                         .burstcount
+		.uav_read               (pio_led_s1_agent_m0_read),                  //                         .read
+		.uav_write              (pio_led_s1_agent_m0_write),                 //                         .write
+		.uav_waitrequest        (pio_led_s1_agent_m0_waitrequest),           //                         .waitrequest
+		.uav_readdatavalid      (pio_led_s1_agent_m0_readdatavalid),         //                         .readdatavalid
+		.uav_byteenable         (pio_led_s1_agent_m0_byteenable),            //                         .byteenable
+		.uav_readdata           (pio_led_s1_agent_m0_readdata),              //                         .readdata
+		.uav_writedata          (pio_led_s1_agent_m0_writedata),             //                         .writedata
+		.uav_lock               (pio_led_s1_agent_m0_lock),                  //                         .lock
+		.uav_debugaccess        (pio_led_s1_agent_m0_debugaccess),           //                         .debugaccess
+		.av_address             (PIO_LED_s1_address),                        //      avalon_anti_slave_0.address
+		.av_write               (PIO_LED_s1_write),                          //                         .write
+		.av_readdata            (PIO_LED_s1_readdata),                       //                         .readdata
+		.av_writedata           (PIO_LED_s1_writedata),                      //                         .writedata
+		.av_chipselect          (PIO_LED_s1_chipselect),                     //                         .chipselect
+		.av_read                (),                                          //              (terminated)
+		.av_begintransfer       (),                                          //              (terminated)
+		.av_beginbursttransfer  (),                                          //              (terminated)
+		.av_burstcount          (),                                          //              (terminated)
+		.av_byteenable          (),                                          //              (terminated)
+		.av_readdatavalid       (1'b0),                                      //              (terminated)
+		.av_waitrequest         (1'b0),                                      //              (terminated)
+		.av_writebyteenable     (),                                          //              (terminated)
+		.av_lock                (),                                          //              (terminated)
+		.av_clken               (),                                          //              (terminated)
+		.uav_clken              (1'b0),                                      //              (terminated)
+		.av_debugaccess         (),                                          //              (terminated)
+		.av_outputenable        (),                                          //              (terminated)
+		.uav_response           (),                                          //              (terminated)
+		.av_response            (2'b00),                                     //              (terminated)
+		.uav_writeresponsevalid (),                                          //              (terminated)
+		.av_writeresponsevalid  (1'b0)                                       //              (terminated)
 	);
 
 	altera_merlin_master_agent #(
@@ -1336,7 +1337,7 @@ module Nios2_mm_interconnect_0 (
 		.ECC_ENABLE                (0)
 	) pio_led_s1_agent (
 		.clk                     (CLK_clk_clk),                                 //             clk.clk
-		.reset                   (CPU_reset_reset_bridge_in_reset_reset),       //       clk_reset.reset
+		.reset                   (PIO_LED_reset_reset_bridge_in_reset_reset),   //       clk_reset.reset
 		.m0_address              (pio_led_s1_agent_m0_address),                 //              m0.address
 		.m0_burstcount           (pio_led_s1_agent_m0_burstcount),              //                .burstcount
 		.m0_byteenable           (pio_led_s1_agent_m0_byteenable),              //                .byteenable
@@ -1395,7 +1396,7 @@ module Nios2_mm_interconnect_0 (
 		.USE_ALMOST_EMPTY_IF (0)
 	) pio_led_s1_agent_rsp_fifo (
 		.clk               (CLK_clk_clk),                                 //       clk.clk
-		.reset             (CPU_reset_reset_bridge_in_reset_reset),       // clk_reset.reset
+		.reset             (PIO_LED_reset_reset_bridge_in_reset_reset),   // clk_reset.reset
 		.in_data           (pio_led_s1_agent_rf_source_data),             //        in.data
 		.in_valid          (pio_led_s1_agent_rf_source_valid),            //          .valid
 		.in_ready          (pio_led_s1_agent_rf_source_ready),            //          .ready
@@ -1502,19 +1503,19 @@ module Nios2_mm_interconnect_0 (
 	);
 
 	Nios2_mm_interconnect_0_router_002 router_005 (
-		.sink_ready         (pio_led_s1_agent_rp_ready),             //      sink.ready
-		.sink_valid         (pio_led_s1_agent_rp_valid),             //          .valid
-		.sink_data          (pio_led_s1_agent_rp_data),              //          .data
-		.sink_startofpacket (pio_led_s1_agent_rp_startofpacket),     //          .startofpacket
-		.sink_endofpacket   (pio_led_s1_agent_rp_endofpacket),       //          .endofpacket
-		.clk                (CLK_clk_clk),                           //       clk.clk
-		.reset              (CPU_reset_reset_bridge_in_reset_reset), // clk_reset.reset
-		.src_ready          (router_005_src_ready),                  //       src.ready
-		.src_valid          (router_005_src_valid),                  //          .valid
-		.src_data           (router_005_src_data),                   //          .data
-		.src_channel        (router_005_src_channel),                //          .channel
-		.src_startofpacket  (router_005_src_startofpacket),          //          .startofpacket
-		.src_endofpacket    (router_005_src_endofpacket)             //          .endofpacket
+		.sink_ready         (pio_led_s1_agent_rp_ready),                 //      sink.ready
+		.sink_valid         (pio_led_s1_agent_rp_valid),                 //          .valid
+		.sink_data          (pio_led_s1_agent_rp_data),                  //          .data
+		.sink_startofpacket (pio_led_s1_agent_rp_startofpacket),         //          .startofpacket
+		.sink_endofpacket   (pio_led_s1_agent_rp_endofpacket),           //          .endofpacket
+		.clk                (CLK_clk_clk),                               //       clk.clk
+		.reset              (PIO_LED_reset_reset_bridge_in_reset_reset), // clk_reset.reset
+		.src_ready          (router_005_src_ready),                      //       src.ready
+		.src_valid          (router_005_src_valid),                      //          .valid
+		.src_data           (router_005_src_data),                       //          .data
+		.src_channel        (router_005_src_channel),                    //          .channel
+		.src_startofpacket  (router_005_src_startofpacket),              //          .startofpacket
+		.src_endofpacket    (router_005_src_endofpacket)                 //          .endofpacket
 	);
 
 	Nios2_mm_interconnect_0_cmd_demux cmd_demux (
@@ -1657,26 +1658,26 @@ module Nios2_mm_interconnect_0 (
 	);
 
 	Nios2_mm_interconnect_0_cmd_mux cmd_mux_003 (
-		.clk                 (CLK_clk_clk),                           //       clk.clk
-		.reset               (CPU_reset_reset_bridge_in_reset_reset), // clk_reset.reset
-		.src_ready           (cmd_mux_003_src_ready),                 //       src.ready
-		.src_valid           (cmd_mux_003_src_valid),                 //          .valid
-		.src_data            (cmd_mux_003_src_data),                  //          .data
-		.src_channel         (cmd_mux_003_src_channel),               //          .channel
-		.src_startofpacket   (cmd_mux_003_src_startofpacket),         //          .startofpacket
-		.src_endofpacket     (cmd_mux_003_src_endofpacket),           //          .endofpacket
-		.sink0_ready         (cmd_demux_src3_ready),                  //     sink0.ready
-		.sink0_valid         (cmd_demux_src3_valid),                  //          .valid
-		.sink0_channel       (cmd_demux_src3_channel),                //          .channel
-		.sink0_data          (cmd_demux_src3_data),                   //          .data
-		.sink0_startofpacket (cmd_demux_src3_startofpacket),          //          .startofpacket
-		.sink0_endofpacket   (cmd_demux_src3_endofpacket),            //          .endofpacket
-		.sink1_ready         (cmd_demux_001_src3_ready),              //     sink1.ready
-		.sink1_valid         (cmd_demux_001_src3_valid),              //          .valid
-		.sink1_channel       (cmd_demux_001_src3_channel),            //          .channel
-		.sink1_data          (cmd_demux_001_src3_data),               //          .data
-		.sink1_startofpacket (cmd_demux_001_src3_startofpacket),      //          .startofpacket
-		.sink1_endofpacket   (cmd_demux_001_src3_endofpacket)         //          .endofpacket
+		.clk                 (CLK_clk_clk),                               //       clk.clk
+		.reset               (PIO_LED_reset_reset_bridge_in_reset_reset), // clk_reset.reset
+		.src_ready           (cmd_mux_003_src_ready),                     //       src.ready
+		.src_valid           (cmd_mux_003_src_valid),                     //          .valid
+		.src_data            (cmd_mux_003_src_data),                      //          .data
+		.src_channel         (cmd_mux_003_src_channel),                   //          .channel
+		.src_startofpacket   (cmd_mux_003_src_startofpacket),             //          .startofpacket
+		.src_endofpacket     (cmd_mux_003_src_endofpacket),               //          .endofpacket
+		.sink0_ready         (cmd_demux_src3_ready),                      //     sink0.ready
+		.sink0_valid         (cmd_demux_src3_valid),                      //          .valid
+		.sink0_channel       (cmd_demux_src3_channel),                    //          .channel
+		.sink0_data          (cmd_demux_src3_data),                       //          .data
+		.sink0_startofpacket (cmd_demux_src3_startofpacket),              //          .startofpacket
+		.sink0_endofpacket   (cmd_demux_src3_endofpacket),                //          .endofpacket
+		.sink1_ready         (cmd_demux_001_src3_ready),                  //     sink1.ready
+		.sink1_valid         (cmd_demux_001_src3_valid),                  //          .valid
+		.sink1_channel       (cmd_demux_001_src3_channel),                //          .channel
+		.sink1_data          (cmd_demux_001_src3_data),                   //          .data
+		.sink1_startofpacket (cmd_demux_001_src3_startofpacket),          //          .startofpacket
+		.sink1_endofpacket   (cmd_demux_001_src3_endofpacket)             //          .endofpacket
 	);
 
 	Nios2_mm_interconnect_0_rsp_demux rsp_demux (
@@ -1749,26 +1750,26 @@ module Nios2_mm_interconnect_0 (
 	);
 
 	Nios2_mm_interconnect_0_rsp_demux rsp_demux_003 (
-		.clk                (CLK_clk_clk),                           //       clk.clk
-		.reset              (CPU_reset_reset_bridge_in_reset_reset), // clk_reset.reset
-		.sink_ready         (router_005_src_ready),                  //      sink.ready
-		.sink_channel       (router_005_src_channel),                //          .channel
-		.sink_data          (router_005_src_data),                   //          .data
-		.sink_startofpacket (router_005_src_startofpacket),          //          .startofpacket
-		.sink_endofpacket   (router_005_src_endofpacket),            //          .endofpacket
-		.sink_valid         (router_005_src_valid),                  //          .valid
-		.src0_ready         (rsp_demux_003_src0_ready),              //      src0.ready
-		.src0_valid         (rsp_demux_003_src0_valid),              //          .valid
-		.src0_data          (rsp_demux_003_src0_data),               //          .data
-		.src0_channel       (rsp_demux_003_src0_channel),            //          .channel
-		.src0_startofpacket (rsp_demux_003_src0_startofpacket),      //          .startofpacket
-		.src0_endofpacket   (rsp_demux_003_src0_endofpacket),        //          .endofpacket
-		.src1_ready         (rsp_demux_003_src1_ready),              //      src1.ready
-		.src1_valid         (rsp_demux_003_src1_valid),              //          .valid
-		.src1_data          (rsp_demux_003_src1_data),               //          .data
-		.src1_channel       (rsp_demux_003_src1_channel),            //          .channel
-		.src1_startofpacket (rsp_demux_003_src1_startofpacket),      //          .startofpacket
-		.src1_endofpacket   (rsp_demux_003_src1_endofpacket)         //          .endofpacket
+		.clk                (CLK_clk_clk),                               //       clk.clk
+		.reset              (PIO_LED_reset_reset_bridge_in_reset_reset), // clk_reset.reset
+		.sink_ready         (router_005_src_ready),                      //      sink.ready
+		.sink_channel       (router_005_src_channel),                    //          .channel
+		.sink_data          (router_005_src_data),                       //          .data
+		.sink_startofpacket (router_005_src_startofpacket),              //          .startofpacket
+		.sink_endofpacket   (router_005_src_endofpacket),                //          .endofpacket
+		.sink_valid         (router_005_src_valid),                      //          .valid
+		.src0_ready         (rsp_demux_003_src0_ready),                  //      src0.ready
+		.src0_valid         (rsp_demux_003_src0_valid),                  //          .valid
+		.src0_data          (rsp_demux_003_src0_data),                   //          .data
+		.src0_channel       (rsp_demux_003_src0_channel),                //          .channel
+		.src0_startofpacket (rsp_demux_003_src0_startofpacket),          //          .startofpacket
+		.src0_endofpacket   (rsp_demux_003_src0_endofpacket),            //          .endofpacket
+		.src1_ready         (rsp_demux_003_src1_ready),                  //      src1.ready
+		.src1_valid         (rsp_demux_003_src1_valid),                  //          .valid
+		.src1_data          (rsp_demux_003_src1_data),                   //          .data
+		.src1_channel       (rsp_demux_003_src1_channel),                //          .channel
+		.src1_startofpacket (rsp_demux_003_src1_startofpacket),          //          .startofpacket
+		.src1_endofpacket   (rsp_demux_003_src1_endofpacket)             //          .endofpacket
 	);
 
 	Nios2_mm_interconnect_0_rsp_mux rsp_mux (
@@ -1946,15 +1947,15 @@ module Nios2_mm_interconnect_0 (
 		.outUseReady     (1),
 		.outReadyLatency (0)
 	) avalon_st_adapter_003 (
-		.in_clk_0_clk   (CLK_clk_clk),                           // in_clk_0.clk
-		.in_rst_0_reset (CPU_reset_reset_bridge_in_reset_reset), // in_rst_0.reset
-		.in_0_data      (pio_led_s1_agent_rdata_fifo_src_data),  //     in_0.data
-		.in_0_valid     (pio_led_s1_agent_rdata_fifo_src_valid), //         .valid
-		.in_0_ready     (pio_led_s1_agent_rdata_fifo_src_ready), //         .ready
-		.out_0_data     (avalon_st_adapter_003_out_0_data),      //    out_0.data
-		.out_0_valid    (avalon_st_adapter_003_out_0_valid),     //         .valid
-		.out_0_ready    (avalon_st_adapter_003_out_0_ready),     //         .ready
-		.out_0_error    (avalon_st_adapter_003_out_0_error)      //         .error
+		.in_clk_0_clk   (CLK_clk_clk),                               // in_clk_0.clk
+		.in_rst_0_reset (PIO_LED_reset_reset_bridge_in_reset_reset), // in_rst_0.reset
+		.in_0_data      (pio_led_s1_agent_rdata_fifo_src_data),      //     in_0.data
+		.in_0_valid     (pio_led_s1_agent_rdata_fifo_src_valid),     //         .valid
+		.in_0_ready     (pio_led_s1_agent_rdata_fifo_src_ready),     //         .ready
+		.out_0_data     (avalon_st_adapter_003_out_0_data),          //    out_0.data
+		.out_0_valid    (avalon_st_adapter_003_out_0_valid),         //         .valid
+		.out_0_ready    (avalon_st_adapter_003_out_0_ready),         //         .ready
+		.out_0_error    (avalon_st_adapter_003_out_0_error)          //         .error
 	);
 
 endmodule

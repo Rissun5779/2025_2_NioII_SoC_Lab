@@ -160,6 +160,8 @@
    library="JUART" />
  <file path="simulation/submodules/Nios2_CPU.v" type="VERILOG" library="CPU" />
  <file path="simulation/Nios2.vhd" type="VHDL" />
+ <file path="simulation/nios2_rst_controller.vhd" type="VHDL" />
+ <file path="simulation/nios2_rst_controller_001.vhd" type="VHDL" />
  <topLevel name="Nios2" />
  <deviceFamily name="cyclonev" />
  <modelMap controllerPath="Nios2.RAM" modelPath="Nios2.RAM" />

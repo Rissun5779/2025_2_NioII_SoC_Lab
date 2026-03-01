@@ -1,0 +1,27 @@
+19:27:30 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+K:/Quartus18/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../hello_world_bsp//HAL/inc -I../hello_world_bsp/ -I../hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking hello_world.elf
+nios2-elf-g++  -T'../hello_world_bsp//linker.x' -msys-crt0='../hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../hello_world_bsp/   -Wl,-Map=hello_world.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o hello_world.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert hello_world.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev JUART --stdin_dev JUART --stdout_dev JUART --sopc_system_name Nios2 --quartus_project_dir "C:/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab1_DE10" --jdi ../..//output_files/Nios2.jdi --sopcinfo C:/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab1_DE10/software/hello_world_bsp/../../Nios2.sopcinfo
+Info: (hello_world.elf) 16 KBytes program size (code + initialized data).
+Info:                   18 KBytes free for stack + heap.
+Info: Creating hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source hello_world.elf >hello_world.objdump
+[hello_world build complete]
+19:27:38 **** Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+K:/Quartus18/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]
+19:27:40 **** Incremental Build of configuration Nios II for project hello_world ****
+make all 
+Info: Building ../hello_world_bsp/
+K:/Quartus18/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hello_world_bsp/
+[BSP build complete]
+[hello_world build complete]

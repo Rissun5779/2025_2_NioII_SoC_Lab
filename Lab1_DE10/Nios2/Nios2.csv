@@ -1,20 +1,22 @@
-# system info Nios2 on 2026.03.01.14:56:40
+# system info Nios2 on 2026.03.01.15:18:03
 system_info:
 name,value
 DEVICE,5CSXFC6D6F31C6
 DEVICE_FAMILY,Cyclone V
-GENERATION_ID,1772348162
+GENERATION_ID,1772349458
 #
 #
-# Files generated for Nios2 on 2026.03.01.14:56:40
+# Files generated for Nios2 on 2026.03.01.15:18:03
 files:
 filepath,kind,attributes,module,is_top
-simulation/Nios2.v,VERILOG,,Nios2,true
+simulation/Nios2.vhd,VHDL,,Nios2,true
+simulation/nios2_rst_controller.vhd,VHDL,,Nios2,false
+simulation/nios2_rst_controller_001.vhd,VHDL,,Nios2,false
 simulation/submodules/Nios2_CPU.v,VERILOG,,Nios2_CPU,false
-simulation/submodules/Nios2_JUART.v,VERILOG,,Nios2_JUART,false
-simulation/submodules/Nios2_PIO_LED.v,VERILOG,,Nios2_PIO_LED,false
+simulation/submodules/Nios2_JUART.vhd,VHDL,,Nios2_JUART,false
+simulation/submodules/Nios2_PIO_LED.vhd,VHDL,,Nios2_PIO_LED,false
 simulation/submodules/Nios2_RAM.hex,HEX,,Nios2_RAM,false
-simulation/submodules/Nios2_RAM.v,VERILOG,,Nios2_RAM,false
+simulation/submodules/Nios2_RAM.vhd,VHDL,,Nios2_RAM,false
 simulation/submodules/Nios2_mm_interconnect_0.v,VERILOG,,Nios2_mm_interconnect_0,false
 simulation/submodules/Nios2_irq_mapper.sv,SYSTEM_VERILOG,,Nios2_irq_mapper,false
 simulation/submodules/altera_reset_controller.v,VERILOG,,altera_reset_controller,false
@@ -50,7 +52,7 @@ simulation/submodules/altera_merlin_arbitrator.sv,SYSTEM_VERILOG,,Nios2_mm_inter
 simulation/submodules/Nios2_mm_interconnect_0_rsp_demux.sv,SYSTEM_VERILOG,,Nios2_mm_interconnect_0_rsp_demux,false
 simulation/submodules/Nios2_mm_interconnect_0_rsp_mux.sv,SYSTEM_VERILOG,,Nios2_mm_interconnect_0_rsp_mux,false
 simulation/submodules/altera_merlin_arbitrator.sv,SYSTEM_VERILOG,,Nios2_mm_interconnect_0_rsp_mux,false
-simulation/submodules/Nios2_mm_interconnect_0_avalon_st_adapter.v,VERILOG,,Nios2_mm_interconnect_0_avalon_st_adapter,false
+simulation/submodules/Nios2_mm_interconnect_0_avalon_st_adapter.vhd,VHDL,,Nios2_mm_interconnect_0_avalon_st_adapter,false
 simulation/submodules/Nios2_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv,SYSTEM_VERILOG,,Nios2_mm_interconnect_0_avalon_st_adapter_error_adapter_0,false
 #
 # Map from instance-path to kind of module
@@ -106,3 +108,6 @@ Nios2.mm_interconnect_0.avalon_st_adapter_003,Nios2_mm_interconnect_0_avalon_st_
 Nios2.mm_interconnect_0.avalon_st_adapter_003.error_adapter_0,Nios2_mm_interconnect_0_avalon_st_adapter_error_adapter_0
 Nios2.irq_mapper,Nios2_irq_mapper
 Nios2.rst_controller,altera_reset_controller
+Nios2.rst_controller_001,altera_reset_controller
+Nios2.rst_controller,altera_reset_controller
+Nios2.rst_controller_001,altera_reset_controller

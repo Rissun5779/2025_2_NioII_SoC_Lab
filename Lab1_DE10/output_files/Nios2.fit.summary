@@ -1,12 +1,12 @@
-Fitter Status : Successful - Sun Mar 01 15:00:50 2026
+Fitter Status : Successful - Sun Mar 01 15:21:29 2026
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Nios2
 Top-level Entity Name : Nios2_top
 Family : Cyclone V
 Device : 5CSXFC6D6F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 758 / 41,910 ( 2 % )
-Total registers : 961
+Logic utilization (in ALMs) : 765 / 41,910 ( 2 % )
+Total registers : 972
 Total pins : 12 / 499 ( 2 % )
 Total virtual pins : 0
 Total block memory bits : 338,944 / 5,662,720 ( 6 % )
