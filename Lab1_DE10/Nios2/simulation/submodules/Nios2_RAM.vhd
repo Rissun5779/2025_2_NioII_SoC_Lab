@@ -37,6 +37,7 @@ entity Nios2_RAM is
                  signal chipselect : IN STD_LOGIC;
                  signal clk : IN STD_LOGIC;
                  signal clken : IN STD_LOGIC;
+                 signal freeze : IN STD_LOGIC;
                  signal reset : IN STD_LOGIC;
                  signal reset_req : IN STD_LOGIC;
                  signal write : IN STD_LOGIC;
@@ -60,6 +61,7 @@ GENERIC (
         outdata_reg_a : STRING;
         ram_block_type : STRING;
         read_during_write_mode_mixed_ports : STRING;
+        read_during_write_mode_port_a : STRING;
         width_a : NATURAL;
         width_byteena_a : NATURAL;
         widthad_a : NATURAL
@@ -93,6 +95,7 @@ begin
       outdata_reg_a => "UNREGISTERED",
       ram_block_type => "AUTO",
       read_during_write_mode_mixed_ports => "DONT_CARE",
+      read_during_write_mode_port_a => "DONT_CARE",
       width_a => 32,
       width_byteena_a => 4,
       widthad_a => 14

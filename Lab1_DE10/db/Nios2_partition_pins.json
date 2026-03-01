@@ -1,0 +1,57 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "pio_led[9]",
+					"strict" : false
+				},
+				{
+					"name" : "pio_led[8]",
+					"strict" : false
+				},
+				{
+					"name" : "pio_led[7]",
+					"strict" : false
+				},
+				{
+					"name" : "pio_led[6]",
+					"strict" : false
+				},
+				{
+					"name" : "pio_led[5]",
+					"strict" : false
+				},
+				{
+					"name" : "pio_led[4]",
+					"strict" : false
+				},
+				{
+					"name" : "pio_led[3]",
+					"strict" : false
+				},
+				{
+					"name" : "pio_led[2]",
+					"strict" : false
+				},
+				{
+					"name" : "pio_led[1]",
+					"strict" : false
+				},
+				{
+					"name" : "pio_led[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clk_50",
+					"strict" : false
+				},
+				{
+					"name" : "reset_n",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
