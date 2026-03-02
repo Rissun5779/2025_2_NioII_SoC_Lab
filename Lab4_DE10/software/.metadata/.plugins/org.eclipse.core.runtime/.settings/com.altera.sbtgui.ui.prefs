@@ -1,4 +1,4 @@
 eclipse.preferences.version=1
-newSoftwareExampleWizardPage.defaultLocation=C\:\\Users\\USER\\Desktop\\2025_2_NioII_SoC_Lab\\Lab4_DE10\\software\\Lab4
-newSoftwareExampleWizardPage.sopcinfoFile=C\:\\Users\\USER\\Desktop\\2025_2_NioII_SoC_Lab\\Lab4_DE10\\Nios2.sopcinfo
-newSoftwareExampleWizardPage2.newBspLocation=C\:\\Users\\USER\\Desktop\\2025_2_NioII_SoC_Lab\\Lab4_DE10\\software\\Lab4_bsp
+newSoftwareExampleWizardPage.defaultLocation=C\:\\Users\\USER\\Desktop\\2025_2_NioII_SoC_Lab\\Lab4_DE10\\software\\Lab4_1
+newSoftwareExampleWizardPage.sopcinfoFile=C\:\\Users\\USER\\Desktop\\2025_2_NioII_SoC_Lab\\Lab4_DE10\\Nios2_2.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=C\:\\Users\\USER\\Desktop\\2025_2_NioII_SoC_Lab\\Lab4_DE10\\software\\Lab4_1_bsp

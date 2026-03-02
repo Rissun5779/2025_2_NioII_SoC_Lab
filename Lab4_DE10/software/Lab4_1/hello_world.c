@@ -1,0 +1,53 @@
+// INC
+#include <stdio.h>
+#include <stdint.h>
+#include <io.h>
+#include "system.h"
+#include "unistd.h"
+// Memory map
+#define SEG7_REG (*(volatile uint32_t*)SEG7_BASE)
+#define PIO_SW_REG (*(volatile uint32_t*)PIO_SW_BASE)
+// Variable
+#define MS 1000
+#define Lab2
+
+/****************
+SEG_TBL(A-F)=>
+   A: 000_1000
+   B: 000_0011
+   C: 100_0110
+   D: 010_0001
+   E: 000_0110
+   F: 000_1110
+ *****************/
+unsigned char i;
+unsigned char seven_seg[16]={
+  0XC0, 0XF9, 0XA4, 0XB0, 0X99,
+  0X92, 0X82, 0XF8, 0X80, 0X90,
+  0x08, 0x03, 0x46, 0x21, 0x06,
+  0x0e
+};
+// main
+int main()
+{
+#if defined(Lab1)
+  while(1){
+    for(i=0;i<10;++i){
+      SEG7_0_REG = seven_seg[i];
+      usleep(100*MS);
+    }
+  }
+#elif defined(Lab2)
+  uint16_t j=0;
+  while(1){
+    if(PIO_SW_REG & 0x01 ){
+      j++;
+    }else{
+      j--;
+    }
+  	usleep(100*MS);
+    SEG7_REG = j;
+  }
+#endif
+  return 0;
+}

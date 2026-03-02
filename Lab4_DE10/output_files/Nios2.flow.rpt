@@ -1,5 +1,5 @@
 Flow report for Nios2
-Mon Mar 02 16:06:50 2026
+Mon Mar 02 17:42:32 2026
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Mon Mar 02 16:06:50 2026       ;
+; Flow Status                     ; Successful - Mon Mar 02 17:42:32 2026       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; Nios2                                       ;
-; Top-level Entity Name           ; Nios2_top                                   ;
+; Top-level Entity Name           ; Nios2_2_top                                 ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSXFC6D6F31C6                              ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 1,282 / 41,910 ( 3 % )                      ;
-; Total registers                 ; 1945                                        ;
+; Logic utilization (in ALMs)     ; 1,169 / 41,910 ( 3 % )                      ;
+; Total registers                 ; 1855                                        ;
 ; Total pins                      ; 84 / 499 ( 17 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 994,432 / 5,662,720 ( 18 % )                ;
@@ -67,45 +67,45 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/02/2026 16:03:19 ;
+; Start date & time ; 03/02/2026 17:38:40 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Nios2               ;
 +-------------------+---------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                             ;
-+-------------------------------------+---------------------------------------------------------+---------------+-----------------------------+----------------+
-; Assignment Name                     ; Value                                                   ; Default Value ; Entity Name                 ; Section Id     ;
-+-------------------------------------+---------------------------------------------------------+---------------+-----------------------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 84440840969871.177243859912564                          ; --            ; --                          ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                                    ; --            ; --                          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                                  ; <None>        ; --                          ; --             ;
-; EDA_TIME_SCALE                      ; 1 ps                                                    ; --            ; --                          ; eda_simulation ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                                      ; --            ; --                          ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                                       ; --            ; --                          ; --             ;
-; MISC_FILE                           ; Nios2/synthesis/../Nios2.cmp                            ; --            ; --                          ; --             ;
-; MISC_FILE                           ; Nios2/synthesis/../../Nios2.qsys                        ; --            ; --                          ; --             ;
-; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                                       ; --            ; --                          ; --             ;
-; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                                       ; --            ; --                          ; --             ;
-; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                                              ; --            ; --                          ; --             ;
-; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                                              ; --            ; --                          ; --             ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family)                  ; --            ; DE10_Standard_DRAM_RTL_Test ; Top            ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family)                  ; --            ; Nios2_top                   ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                  ; --            ; DE10_Standard_DRAM_RTL_Test ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                  ; --            ; Nios2_top                   ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                  ; --            ; DE10_Standard_DRAM_RTL_Test ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                  ; --            ; Nios2_top                   ; Top            ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                     ; --            ; --                          ; --             ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                   ; --            ; --                          ; --             ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                                            ; --            ; --                          ; --             ;
-; SLD_FILE                            ; Nios2/synthesis/Nios2.regmap                            ; --            ; --                          ; --             ;
-; SLD_FILE                            ; Nios2/synthesis/Nios2.debuginfo                         ; --            ; --                          ; --             ;
-; SLD_INFO                            ; QSYS_NAME Nios2 HAS_SOPCINFO 1 GENERATION_ID 1772437596 ; --            ; --                          ; --             ;
-; SOPCINFO_FILE                       ; Nios2/synthesis/../../Nios2.sopcinfo                    ; --            ; --                          ; --             ;
-; SYNTHESIS_ONLY_QIP                  ; On                                                      ; --            ; --                          ; --             ;
-; TOP_LEVEL_ENTITY                    ; Nios2_top                                               ; Nios2         ; --                          ; --             ;
-+-------------------------------------+---------------------------------------------------------+---------------+-----------------------------+----------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                               ;
++-------------------------------------+-----------------------------------------------------------+---------------+-----------------------------+----------------+
+; Assignment Name                     ; Value                                                     ; Default Value ; Entity Name                 ; Section Id     ;
++-------------------------------------+-----------------------------------------------------------+---------------+-----------------------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 84440840969871.177244432006036                            ; --            ; --                          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                                      ; --            ; --                          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                                    ; <None>        ; --                          ; --             ;
+; EDA_TIME_SCALE                      ; 1 ps                                                      ; --            ; --                          ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                        ; --            ; --                          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                         ; --            ; --                          ; --             ;
+; MISC_FILE                           ; Nios2_2/synthesis/../Nios2_2.cmp                          ; --            ; --                          ; --             ;
+; MISC_FILE                           ; Nios2_2/synthesis/../../Nios2_2.qsys                      ; --            ; --                          ; --             ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                                         ; --            ; --                          ; --             ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                                         ; --            ; --                          ; --             ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                                                ; --            ; --                          ; --             ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                                                ; --            ; --                          ; --             ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family)                    ; --            ; DE10_Standard_DRAM_RTL_Test ; Top            ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family)                    ; --            ; Nios2_2_top                 ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                    ; --            ; DE10_Standard_DRAM_RTL_Test ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                    ; --            ; Nios2_2_top                 ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                    ; --            ; DE10_Standard_DRAM_RTL_Test ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                    ; --            ; Nios2_2_top                 ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                       ; --            ; --                          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                     ; --            ; --                          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                              ; --            ; --                          ; --             ;
+; SLD_FILE                            ; Nios2_2/synthesis/Nios2_2.regmap                          ; --            ; --                          ; --             ;
+; SLD_FILE                            ; Nios2_2/synthesis/Nios2_2.debuginfo                       ; --            ; --                          ; --             ;
+; SLD_INFO                            ; QSYS_NAME Nios2_2 HAS_SOPCINFO 1 GENERATION_ID 1772443641 ; --            ; Nios2_2                     ; --             ;
+; SOPCINFO_FILE                       ; Nios2_2/synthesis/../../Nios2_2.sopcinfo                  ; --            ; --                          ; --             ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                        ; --            ; --                          ; --             ;
+; TOP_LEVEL_ENTITY                    ; Nios2_2_top                                               ; Nios2         ; --                          ; --             ;
++-------------------------------------+-----------------------------------------------------------+---------------+-----------------------------+----------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -113,12 +113,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:53     ; 1.0                     ; 5022 MB             ; 00:01:21                           ;
-; Fitter               ; 00:01:42     ; 1.1                     ; 6978 MB             ; 00:03:31                           ;
-; Assembler            ; 00:00:18     ; 1.0                     ; 4887 MB             ; 00:00:14                           ;
-; Timing Analyzer      ; 00:00:19     ; 1.7                     ; 5373 MB             ; 00:00:29                           ;
-; EDA Netlist Writer   ; 00:00:06     ; 1.0                     ; 4912 MB             ; 00:00:06                           ;
-; Total                ; 00:03:18     ; --                      ; --                  ; 00:05:41                           ;
+; Analysis & Synthesis ; 00:00:58     ; 1.0                     ; 5023 MB             ; 00:01:24                           ;
+; Fitter               ; 00:01:48     ; 1.1                     ; 7042 MB             ; 00:03:22                           ;
+; Assembler            ; 00:00:22     ; 1.0                     ; 4883 MB             ; 00:00:15                           ;
+; Timing Analyzer      ; 00:00:24     ; 1.6                     ; 5369 MB             ; 00:00:32                           ;
+; EDA Netlist Writer   ; 00:00:06     ; 1.0                     ; 4908 MB             ; 00:00:06                           ;
+; Total                ; 00:03:38     ; --                      ; --                  ; 00:05:39                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

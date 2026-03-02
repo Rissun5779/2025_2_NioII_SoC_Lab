@@ -300,7 +300,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "SW[6]",
+					"name" : "SW[4]",
 					"strict" : false
 				},
 				{
@@ -320,15 +320,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "SW[4]",
-					"strict" : false
-				},
-				{
 					"name" : "SW[5]",
 					"strict" : false
 				},
 				{
 					"name" : "SW[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[6]",
 					"strict" : false
 				}
 			]
