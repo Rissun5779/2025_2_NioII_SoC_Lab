@@ -147,6 +147,15 @@ architecture rtl of Nios2 is
 		);
 	end component Nios2_SDRAM;
 
+	component Nios2_sysid_qsys_0 is
+		port (
+			clock    : in  std_logic                     := 'X'; -- clk
+			reset_n  : in  std_logic                     := 'X'; -- reset_n
+			readdata : out std_logic_vector(31 downto 0);        -- readdata
+			address  : in  std_logic                     := 'X'  -- address
+		);
+	end component Nios2_sysid_qsys_0;
+
 	component Nios2_mm_interconnect_0 is
 		port (
 			CLK_clk_clk                               : in  std_logic                     := 'X';             -- clk
@@ -203,7 +212,9 @@ architecture rtl of Nios2 is
 			SDRAM_s1_byteenable                       : out std_logic_vector(1 downto 0);                     -- byteenable
 			SDRAM_s1_readdatavalid                    : in  std_logic                     := 'X';             -- readdatavalid
 			SDRAM_s1_waitrequest                      : in  std_logic                     := 'X';             -- waitrequest
-			SDRAM_s1_chipselect                       : out std_logic                                         -- chipselect
+			SDRAM_s1_chipselect                       : out std_logic;                                        -- chipselect
+			sysid_qsys_0_control_slave_address        : out std_logic_vector(0 downto 0);                     -- address
+			sysid_qsys_0_control_slave_readdata       : in  std_logic_vector(31 downto 0) := (others => 'X')  -- readdata
 		);
 	end component Nios2_mm_interconnect_0;
 
@@ -434,6 +445,8 @@ architecture rtl of Nios2 is
 	signal mm_interconnect_0_juart_avalon_jtag_slave_read            : std_logic;                     -- mm_interconnect_0:JUART_avalon_jtag_slave_read -> mm_interconnect_0_juart_avalon_jtag_slave_read:in
 	signal mm_interconnect_0_juart_avalon_jtag_slave_write           : std_logic;                     -- mm_interconnect_0:JUART_avalon_jtag_slave_write -> mm_interconnect_0_juart_avalon_jtag_slave_write:in
 	signal mm_interconnect_0_juart_avalon_jtag_slave_writedata       : std_logic_vector(31 downto 0); -- mm_interconnect_0:JUART_avalon_jtag_slave_writedata -> JUART:av_writedata
+	signal mm_interconnect_0_sysid_qsys_0_control_slave_readdata     : std_logic_vector(31 downto 0); -- sysid_qsys_0:readdata -> mm_interconnect_0:sysid_qsys_0_control_slave_readdata
+	signal mm_interconnect_0_sysid_qsys_0_control_slave_address      : std_logic_vector(0 downto 0);  -- mm_interconnect_0:sysid_qsys_0_control_slave_address -> sysid_qsys_0:address
 	signal mm_interconnect_0_cpu_debug_mem_slave_readdata            : std_logic_vector(31 downto 0); -- CPU:debug_mem_slave_readdata -> mm_interconnect_0:CPU_debug_mem_slave_readdata
 	signal mm_interconnect_0_cpu_debug_mem_slave_waitrequest         : std_logic;                     -- CPU:debug_mem_slave_waitrequest -> mm_interconnect_0:CPU_debug_mem_slave_waitrequest
 	signal mm_interconnect_0_cpu_debug_mem_slave_debugaccess         : std_logic;                     -- mm_interconnect_0:CPU_debug_mem_slave_debugaccess -> CPU:debug_mem_slave_debugaccess
@@ -479,7 +492,7 @@ architecture rtl of Nios2 is
 	signal mm_interconnect_0_sdram_s1_read_ports_inv                 : std_logic;                     -- mm_interconnect_0_sdram_s1_read:inv -> SDRAM:az_rd_n
 	signal mm_interconnect_0_sdram_s1_byteenable_ports_inv           : std_logic_vector(1 downto 0);  -- mm_interconnect_0_sdram_s1_byteenable:inv -> SDRAM:az_be_n
 	signal mm_interconnect_0_sdram_s1_write_ports_inv                : std_logic;                     -- mm_interconnect_0_sdram_s1_write:inv -> SDRAM:az_wr_n
-	signal rst_controller_reset_out_reset_ports_inv                  : std_logic;                     -- rst_controller_reset_out_reset:inv -> [CPU:reset_n, JUART:rst_n, PIO_SW:reset_n]
+	signal rst_controller_reset_out_reset_ports_inv                  : std_logic;                     -- rst_controller_reset_out_reset:inv -> [CPU:reset_n, JUART:rst_n, PIO_SW:reset_n, sysid_qsys_0:reset_n]
 	signal rst_controller_001_reset_out_reset_ports_inv              : std_logic;                     -- rst_controller_001_reset_out_reset:inv -> PIO_LED:reset_n
 	signal rst_controller_002_reset_out_reset_ports_inv              : std_logic;                     -- rst_controller_002_reset_out_reset:inv -> SDRAM:reset_n
 
@@ -598,6 +611,14 @@ begin
 			zs_we_n        => sdram_wire_we_n                                  --      .export
 		);
 
+	sysid_qsys_0 : component Nios2_sysid_qsys_0
+		port map (
+			clock    => clk_clk,                                                 --           clk.clk
+			reset_n  => rst_controller_reset_out_reset_ports_inv,                --         reset.reset_n
+			readdata => mm_interconnect_0_sysid_qsys_0_control_slave_readdata,   -- control_slave.readdata
+			address  => mm_interconnect_0_sysid_qsys_0_control_slave_address(0)  --              .address
+		);
+
 	mm_interconnect_0 : component Nios2_mm_interconnect_0
 		port map (
 			CLK_clk_clk                               => clk_clk,                                               --                             CLK_clk.clk
@@ -654,7 +675,9 @@ begin
 			SDRAM_s1_byteenable                       => mm_interconnect_0_sdram_s1_byteenable,                 --                                    .byteenable
 			SDRAM_s1_readdatavalid                    => mm_interconnect_0_sdram_s1_readdatavalid,              --                                    .readdatavalid
 			SDRAM_s1_waitrequest                      => mm_interconnect_0_sdram_s1_waitrequest,                --                                    .waitrequest
-			SDRAM_s1_chipselect                       => mm_interconnect_0_sdram_s1_chipselect                  --                                    .chipselect
+			SDRAM_s1_chipselect                       => mm_interconnect_0_sdram_s1_chipselect,                 --                                    .chipselect
+			sysid_qsys_0_control_slave_address        => mm_interconnect_0_sysid_qsys_0_control_slave_address,  --          sysid_qsys_0_control_slave.address
+			sysid_qsys_0_control_slave_readdata       => mm_interconnect_0_sysid_qsys_0_control_slave_readdata  --                                    .readdata
 		);
 
 	irq_mapper : component Nios2_irq_mapper

@@ -250,7 +250,7 @@
 		output_clock_frequency7 => "0 MHz",
 		output_clock_frequency8 => "0 MHz",
 		output_clock_frequency9 => "0 MHz",
-		phase_shift0 => "-3750 ps",
+		phase_shift0 => "0 ps",
 		phase_shift1 => "-3750 ps",
 		phase_shift10 => "0 ps",
 		phase_shift11 => "0 ps",

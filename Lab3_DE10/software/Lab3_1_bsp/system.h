@@ -4,7 +4,7 @@
  * Machine generated for CPU 'CPU' in SOPC Builder design 'Nios2'
  * SOPC Builder design path: ../../Nios2.sopcinfo
  *
- * Generated: Mon Mar 02 01:51:12 CST 2026
+ * Generated: Mon Mar 02 12:48:22 CST 2026
  */
 
 /*
@@ -137,6 +137,7 @@
 #define __ALTERA_AVALON_NEW_SDRAM_CONTROLLER
 #define __ALTERA_AVALON_ONCHIP_MEMORY2
 #define __ALTERA_AVALON_PIO
+#define __ALTERA_AVALON_SYSID_QSYS
 #define __ALTERA_NIOS2_GEN2
 
 
@@ -146,7 +147,7 @@
  */
 
 #define ALT_MODULE_CLASS_JUART altera_avalon_jtag_uart
-#define JUART_BASE 0x1041048
+#define JUART_BASE 0x1041058
 #define JUART_IRQ 0
 #define JUART_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JUART_NAME "/dev/JUART"
@@ -296,19 +297,19 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/JUART"
-#define ALT_STDERR_BASE 0x1041048
+#define ALT_STDERR_BASE 0x1041058
 #define ALT_STDERR_DEV JUART
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/JUART"
-#define ALT_STDIN_BASE 0x1041048
+#define ALT_STDIN_BASE 0x1041058
 #define ALT_STDIN_DEV JUART
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDOUT "/dev/JUART"
-#define ALT_STDOUT_BASE 0x1041048
+#define ALT_STDOUT_BASE 0x1041058
 #define ALT_STDOUT_DEV JUART
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
@@ -325,5 +326,21 @@
 #define ALT_MAX_FD 32
 #define ALT_SYS_CLK none
 #define ALT_TIMESTAMP_CLK none
+
+
+/*
+ * sysid_qsys_0 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_sysid_qsys_0 altera_avalon_sysid_qsys
+#define SYSID_QSYS_0_BASE 0x1041050
+#define SYSID_QSYS_0_ID 0
+#define SYSID_QSYS_0_IRQ -1
+#define SYSID_QSYS_0_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define SYSID_QSYS_0_NAME "/dev/sysid_qsys_0"
+#define SYSID_QSYS_0_SPAN 8
+#define SYSID_QSYS_0_TIMESTAMP 1772426823
+#define SYSID_QSYS_0_TYPE "altera_avalon_sysid_qsys"
 
 #endif /* __SYSTEM_H_ */

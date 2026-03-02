@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <simPackage>
  <file
-   path="simulation/submodules/Nios2_mm_interconnect_0_avalon_st_adapter_005_error_adapter_0.sv"
+   path="simulation/submodules/Nios2_mm_interconnect_0_avalon_st_adapter_006_error_adapter_0.sv"
    type="SYSTEM_VERILOG"
    library="error_adapter_0" />
  <file
@@ -9,9 +9,9 @@
    type="SYSTEM_VERILOG"
    library="error_adapter_0" />
  <file
-   path="simulation/submodules/Nios2_mm_interconnect_0_avalon_st_adapter_005.vhd"
+   path="simulation/submodules/Nios2_mm_interconnect_0_avalon_st_adapter_006.vhd"
    type="VHDL"
-   library="avalon_st_adapter_005" />
+   library="avalon_st_adapter_006" />
  <file
    path="simulation/submodules/Nios2_mm_interconnect_0_avalon_st_adapter.vhd"
    type="VHDL"
@@ -57,9 +57,9 @@
    type="SYSTEM_VERILOG"
    library="rsp_mux" />
  <file
-   path="simulation/submodules/Nios2_mm_interconnect_0_rsp_demux_005.sv"
+   path="simulation/submodules/Nios2_mm_interconnect_0_rsp_demux_006.sv"
    type="SYSTEM_VERILOG"
-   library="rsp_demux_005" />
+   library="rsp_demux_006" />
  <file
    path="simulation/submodules/Nios2_mm_interconnect_0_rsp_demux.sv"
    type="SYSTEM_VERILOG"
@@ -117,9 +117,9 @@
    type="SYSTEM_VERILOG"
    library="SDRAM_s1_burst_adapter" />
  <file
-   path="simulation/submodules/Nios2_mm_interconnect_0_router_007.sv"
+   path="simulation/submodules/Nios2_mm_interconnect_0_router_008.sv"
    type="SYSTEM_VERILOG"
-   library="router_007" />
+   library="router_008" />
  <file
    path="simulation/submodules/Nios2_mm_interconnect_0_router_002.sv"
    type="SYSTEM_VERILOG"
@@ -236,6 +236,10 @@
    path="simulation/submodules/Nios2_mm_interconnect_0.v"
    type="VERILOG"
    library="mm_interconnect_0" />
+ <file
+   path="simulation/submodules/Nios2_sysid_qsys_0.v"
+   type="VERILOG"
+   library="sysid_qsys_0" />
  <file
    path="simulation/submodules/Nios2_SDRAM.vhd"
    type="VHDL"

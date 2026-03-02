@@ -94,7 +94,7 @@
 # within the Quartus project, and generate a unified
 # script which supports all the Altera IP within the design.
 # ----------------------------------------
-# ACDS 18.1 625 win32 2026.03.02.02:51:25
+# ACDS 18.1 625 win32 2026.03.02.12:54:18
 
 # ----------------------------------------
 # Initialize variables
@@ -192,8 +192,8 @@ if ![ string match "*ModelSim ALTERA*" [ vsim -version ] ] {
 }
 ensure_lib                                        ./libraries/error_adapter_0/                       
 vmap       error_adapter_0                        ./libraries/error_adapter_0/                       
-ensure_lib                                        ./libraries/avalon_st_adapter_005/                 
-vmap       avalon_st_adapter_005                  ./libraries/avalon_st_adapter_005/                 
+ensure_lib                                        ./libraries/avalon_st_adapter_006/                 
+vmap       avalon_st_adapter_006                  ./libraries/avalon_st_adapter_006/                 
 ensure_lib                                        ./libraries/avalon_st_adapter/                     
 vmap       avalon_st_adapter                      ./libraries/avalon_st_adapter/                     
 ensure_lib                                        ./libraries/crosser/                               
@@ -202,8 +202,8 @@ ensure_lib                                        ./libraries/SDRAM_s1_rsp_width
 vmap       SDRAM_s1_rsp_width_adapter             ./libraries/SDRAM_s1_rsp_width_adapter/            
 ensure_lib                                        ./libraries/rsp_mux/                               
 vmap       rsp_mux                                ./libraries/rsp_mux/                               
-ensure_lib                                        ./libraries/rsp_demux_005/                         
-vmap       rsp_demux_005                          ./libraries/rsp_demux_005/                         
+ensure_lib                                        ./libraries/rsp_demux_006/                         
+vmap       rsp_demux_006                          ./libraries/rsp_demux_006/                         
 ensure_lib                                        ./libraries/rsp_demux/                             
 vmap       rsp_demux                              ./libraries/rsp_demux/                             
 ensure_lib                                        ./libraries/cmd_mux/                               
@@ -212,8 +212,8 @@ ensure_lib                                        ./libraries/cmd_demux/
 vmap       cmd_demux                              ./libraries/cmd_demux/                             
 ensure_lib                                        ./libraries/SDRAM_s1_burst_adapter/                
 vmap       SDRAM_s1_burst_adapter                 ./libraries/SDRAM_s1_burst_adapter/                
-ensure_lib                                        ./libraries/router_007/                            
-vmap       router_007                             ./libraries/router_007/                            
+ensure_lib                                        ./libraries/router_008/                            
+vmap       router_008                             ./libraries/router_008/                            
 ensure_lib                                        ./libraries/router_002/                            
 vmap       router_002                             ./libraries/router_002/                            
 ensure_lib                                        ./libraries/router/                                
@@ -236,6 +236,8 @@ ensure_lib                                        ./libraries/irq_mapper/
 vmap       irq_mapper                             ./libraries/irq_mapper/                            
 ensure_lib                                        ./libraries/mm_interconnect_0/                     
 vmap       mm_interconnect_0                      ./libraries/mm_interconnect_0/                     
+ensure_lib                                        ./libraries/sysid_qsys_0/                          
+vmap       sysid_qsys_0                           ./libraries/sysid_qsys_0/                          
 ensure_lib                                        ./libraries/SDRAM/                                 
 vmap       SDRAM                                  ./libraries/SDRAM/                                 
 ensure_lib                                        ./libraries/RAM/                                   
@@ -292,9 +294,9 @@ alias dev_com {
 # Compile the design files in correct order
 alias com {
   echo "\[exec\] com"
-  eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/Nios2_mm_interconnect_0_avalon_st_adapter_005_error_adapter_0.sv" -work error_adapter_0                       
+  eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/Nios2_mm_interconnect_0_avalon_st_adapter_006_error_adapter_0.sv" -work error_adapter_0                       
   eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/Nios2_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv"     -work error_adapter_0                       
-  eval  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS        "$QSYS_SIMDIR/submodules/Nios2_mm_interconnect_0_avalon_st_adapter_005.vhd"                -work avalon_st_adapter_005                 
+  eval  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS        "$QSYS_SIMDIR/submodules/Nios2_mm_interconnect_0_avalon_st_adapter_006.vhd"                -work avalon_st_adapter_006                 
   eval  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS        "$QSYS_SIMDIR/submodules/Nios2_mm_interconnect_0_avalon_st_adapter.vhd"                    -work avalon_st_adapter                     
   eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/altera_avalon_st_handshake_clock_crosser.v"                       -work crosser                               
   eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/altera_avalon_st_clock_crosser.v"                                 -work crosser                               
@@ -305,7 +307,7 @@ alias com {
   eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/altera_merlin_burst_uncompressor.sv"                              -work SDRAM_s1_rsp_width_adapter            
   eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/Nios2_mm_interconnect_0_rsp_mux.sv"                               -work rsp_mux                               
   eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/altera_merlin_arbitrator.sv"                                      -work rsp_mux                               
-  eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/Nios2_mm_interconnect_0_rsp_demux_005.sv"                         -work rsp_demux_005                         
+  eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/Nios2_mm_interconnect_0_rsp_demux_006.sv"                         -work rsp_demux_006                         
   eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/Nios2_mm_interconnect_0_rsp_demux.sv"                             -work rsp_demux                             
   eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/Nios2_mm_interconnect_0_cmd_mux.sv"                               -work cmd_mux                               
   eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/altera_merlin_arbitrator.sv"                                      -work cmd_mux                               
@@ -320,7 +322,7 @@ alias com {
   eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/altera_merlin_address_alignment.sv"                               -work SDRAM_s1_burst_adapter                
   eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/altera_avalon_st_pipeline_stage.sv"                               -work SDRAM_s1_burst_adapter                
   eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/altera_avalon_st_pipeline_base.v"                                 -work SDRAM_s1_burst_adapter                
-  eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/Nios2_mm_interconnect_0_router_007.sv"                            -work router_007                            
+  eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/Nios2_mm_interconnect_0_router_008.sv"                            -work router_008                            
   eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/Nios2_mm_interconnect_0_router_002.sv"                            -work router_002                            
   eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/Nios2_mm_interconnect_0_router.sv"                                -work router                                
   eval  vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/altera_avalon_sc_fifo.v"                                          -work JUART_avalon_jtag_slave_agent_rsp_fifo
@@ -338,6 +340,7 @@ alias com {
   eval  vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/altera_reset_synchronizer.v"                                      -work rst_controller                        
   eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/Nios2_irq_mapper.sv"                                              -work irq_mapper                            
   eval  vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/Nios2_mm_interconnect_0.v"                                        -work mm_interconnect_0                     
+  eval  vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/submodules/Nios2_sysid_qsys_0.v"                                             -work sysid_qsys_0                          
   eval  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS        "$QSYS_SIMDIR/submodules/Nios2_SDRAM.vhd"                                                  -work SDRAM                                 
   eval  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS        "$QSYS_SIMDIR/submodules/Nios2_RAM.vhd"                                                    -work RAM                                   
   eval  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS        "$QSYS_SIMDIR/submodules/Nios2_PLL.vho"                                                    -work PLL                                   
@@ -355,14 +358,14 @@ alias com {
 # Elaborate top level design
 alias elab {
   echo "\[exec\] elab"
-  eval vsim -t ps $ELAB_OPTIONS $USER_DEFINED_ELAB_OPTIONS -L work -L work_lib -L error_adapter_0 -L avalon_st_adapter_005 -L avalon_st_adapter -L crosser -L SDRAM_s1_rsp_width_adapter -L rsp_mux -L rsp_demux_005 -L rsp_demux -L cmd_mux -L cmd_demux -L SDRAM_s1_burst_adapter -L router_007 -L router_002 -L router -L JUART_avalon_jtag_slave_agent_rsp_fifo -L JUART_avalon_jtag_slave_agent -L CPU_data_master_agent -L JUART_avalon_jtag_slave_translator -L CPU_data_master_translator -L cpu -L rst_controller -L irq_mapper -L mm_interconnect_0 -L SDRAM -L RAM -L PLL -L PIO_SW -L PIO_LED -L JUART -L CPU -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev $TOP_LEVEL_NAME
+  eval vsim -t ps $ELAB_OPTIONS $USER_DEFINED_ELAB_OPTIONS -L work -L work_lib -L error_adapter_0 -L avalon_st_adapter_006 -L avalon_st_adapter -L crosser -L SDRAM_s1_rsp_width_adapter -L rsp_mux -L rsp_demux_006 -L rsp_demux -L cmd_mux -L cmd_demux -L SDRAM_s1_burst_adapter -L router_008 -L router_002 -L router -L JUART_avalon_jtag_slave_agent_rsp_fifo -L JUART_avalon_jtag_slave_agent -L CPU_data_master_agent -L JUART_avalon_jtag_slave_translator -L CPU_data_master_translator -L cpu -L rst_controller -L irq_mapper -L mm_interconnect_0 -L sysid_qsys_0 -L SDRAM -L RAM -L PLL -L PIO_SW -L PIO_LED -L JUART -L CPU -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev $TOP_LEVEL_NAME
 }
 
 # ----------------------------------------
 # Elaborate the top level design with novopt option
 alias elab_debug {
   echo "\[exec\] elab_debug"
-  eval vsim -novopt -t ps $ELAB_OPTIONS $USER_DEFINED_ELAB_OPTIONS -L work -L work_lib -L error_adapter_0 -L avalon_st_adapter_005 -L avalon_st_adapter -L crosser -L SDRAM_s1_rsp_width_adapter -L rsp_mux -L rsp_demux_005 -L rsp_demux -L cmd_mux -L cmd_demux -L SDRAM_s1_burst_adapter -L router_007 -L router_002 -L router -L JUART_avalon_jtag_slave_agent_rsp_fifo -L JUART_avalon_jtag_slave_agent -L CPU_data_master_agent -L JUART_avalon_jtag_slave_translator -L CPU_data_master_translator -L cpu -L rst_controller -L irq_mapper -L mm_interconnect_0 -L SDRAM -L RAM -L PLL -L PIO_SW -L PIO_LED -L JUART -L CPU -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev $TOP_LEVEL_NAME
+  eval vsim -novopt -t ps $ELAB_OPTIONS $USER_DEFINED_ELAB_OPTIONS -L work -L work_lib -L error_adapter_0 -L avalon_st_adapter_006 -L avalon_st_adapter -L crosser -L SDRAM_s1_rsp_width_adapter -L rsp_mux -L rsp_demux_006 -L rsp_demux -L cmd_mux -L cmd_demux -L SDRAM_s1_burst_adapter -L router_008 -L router_002 -L router -L JUART_avalon_jtag_slave_agent_rsp_fifo -L JUART_avalon_jtag_slave_agent -L CPU_data_master_agent -L JUART_avalon_jtag_slave_translator -L CPU_data_master_translator -L cpu -L rst_controller -L irq_mapper -L mm_interconnect_0 -L sysid_qsys_0 -L SDRAM -L RAM -L PLL -L PIO_SW -L PIO_LED -L JUART -L CPU -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev $TOP_LEVEL_NAME
 }
 
 # ----------------------------------------
