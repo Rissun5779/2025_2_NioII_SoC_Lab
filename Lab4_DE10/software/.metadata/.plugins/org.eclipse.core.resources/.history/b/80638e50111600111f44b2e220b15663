@@ -1,0 +1,15 @@
+// INC
+#include <stdio.h>
+#include <stdint.h>
+#include <io.h>
+#include "system.h"
+#include "unistd.h"
+// Memory map
+#define SEG7_0_REG (*(volatile uint32_t*)SEG7_0_BASE)
+// Variable
+// main
+int main()
+{
+
+  return 0;
+}

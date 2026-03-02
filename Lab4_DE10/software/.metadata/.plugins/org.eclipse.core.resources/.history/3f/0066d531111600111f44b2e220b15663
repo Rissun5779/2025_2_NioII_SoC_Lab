@@ -1,0 +1,12 @@
+// INC
+#include <stdio.h>
+#include <io.h>
+#include "system.h"
+#include "unistd.h"
+//
+// main
+int main()
+{
+
+  return 0;
+}

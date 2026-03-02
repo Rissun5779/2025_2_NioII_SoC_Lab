@@ -1,0 +1,14 @@
+// INC
+#include <stdio.h>
+#include <stdint.h>
+#include <io.h>
+#include "system.h"
+#include "unistd.h"
+// Memory map
+#define SEG7_0_REG (*(volatile ))
+// main
+int main()
+{
+
+  return 0;
+}

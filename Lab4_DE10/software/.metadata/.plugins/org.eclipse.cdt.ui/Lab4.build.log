@@ -1,6 +1,9 @@
-16:17:32 **** Clean-only build of configuration Nios II for project Lab4 ****
-make clean 
-[Lab4 clean complete]
+16:45:40 **** Incremental Build of configuration Nios II for project Lab4 ****
+make all 
+Info: Building ../Lab4_bsp/
+K:/Quartus18/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab4_bsp/
+[BSP build complete]
+[Lab4 build complete]
 
-16:17:33 Build Finished (took 476ms)
+16:45:41 Build Finished (took 1s.185ms)
 

@@ -1,6 +1,27 @@
-16:17:27 **** Clean-only build of configuration Nios II for project Lab4_bsp ****
-make clean 
-[BSP clean complete]
-16:17:32 **** Clean-only build of configuration Nios II for project Lab4 ****
-make clean 
-[Lab4 clean complete]
+16:45:24 **** Incremental Build of configuration Nios II for project Lab4 ****
+make all 
+Info: Building ../Lab4_bsp/
+K:/Quartus18/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab4_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab4_bsp//HAL/inc -I../Lab4_bsp/ -I../Lab4_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/main.o main.c
+Info: Linking Lab4.elf
+nios2-elf-g++  -T'../Lab4_bsp//linker.x' -msys-crt0='../Lab4_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Lab4_bsp/   -Wl,-Map=Lab4.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o Lab4.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert Lab4.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --id 0 --sidp 0x10410d0 --timestamp 1772437596 --stderr_dev JUART --stdin_dev JUART --stdout_dev JUART --sopc_system_name Nios2 --quartus_project_dir "C:/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab4_DE10" --jdi ../..//output_files/Nios2.jdi --sopcinfo C:/Users/USER/Desktop/2025_2_NioII_SoC_Lab/Lab4_DE10/software/Lab4_bsp/../../Nios2.sopcinfo
+Info: (Lab4.elf) 15 KBytes program size (code + initialized data).
+Info:            8171 KBytes free for stack + heap.
+Info: Creating Lab4.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Lab4.elf >Lab4.objdump
+[Lab4 build complete]
+16:45:38 **** Build of configuration Nios II for project Lab4 ****
+make all 
+Info: Building ../Lab4_bsp/
+K:/Quartus18/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab4_bsp/
+[BSP build complete]
+[Lab4 build complete]
+16:45:40 **** Incremental Build of configuration Nios II for project Lab4 ****
+make all 
+Info: Building ../Lab4_bsp/
+K:/Quartus18/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab4_bsp/
+[BSP build complete]
+[Lab4 build complete]
