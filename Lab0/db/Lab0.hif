@@ -33,6 +33,23 @@ halfadd.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# macro_sequence
+
+# end
+# entity
+decode2_4
+# storage
+db|Lab0.(1).cnf
+db|Lab0.(1).cnf
+# case_insensitive
+# source_file
+decode2_4.bdf
+825146a45b9da04b56ed42ad8eac6e82
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
 # hierarchies {
 |
 }
