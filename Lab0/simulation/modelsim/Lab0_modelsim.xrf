@@ -1,0 +1,8 @@
+vendor_name = ModelSim
+source_file = 1, D:/2025_2/2025_2_NioII_SoC_Lab/Lab0/Halfadd.bdf
+source_file = 1, D:/2025_2/2025_2_NioII_SoC_Lab/Lab0/db/Lab0.cbx.xml
+design_name = Halfadd
+instance = comp, \SUM~output\, SUM~output, Halfadd, 1
+instance = comp, \CARRY~output\, CARRY~output, Halfadd, 1
+instance = comp, \IN1~input\, IN1~input, Halfadd, 1
+instance = comp, \IN2~input\, IN2~input, Halfadd, 1
