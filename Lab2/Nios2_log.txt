@@ -1,0 +1,74 @@
+Altera SOPC Builder Version 9.10 Build 222
+Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.
+
+
+No .sopc_builder configuration file(!)
+# 2026.03.12 16:28:15 (*) mk_custom_sdk starting
+# 2026.03.12 16:28:15 (*) Reading project D:/2025_2/2025_2_NioII_SoC_Lab/Lab2/Nios2.ptf.
+
+# 2026.03.12 16:28:15 (*) Finding all CPUs
+# 2026.03.12 16:28:15 (*) Finding all available components
+# 2026.03.12 16:28:15 (*) Reading D:/2025_2/2025_2_NioII_SoC_Lab/Lab2/.sopc_builder/install.ptf
+
+# 2026.03.12 16:28:15 (*) Found 67 components
+
+# 2026.03.12 16:28:15 (*) Finding all peripherals
+
+# 2026.03.12 16:28:16 (*) Finding software components
+
+# 2026.03.12 16:28:16 (*) (Legacy SDK Generation Skipped)
+# 2026.03.12 16:28:16 (*) (All TCL Script Generation Skipped)
+# 2026.03.12 16:28:16 (*) (No Libraries Built)
+# 2026.03.12 16:28:16 (*) (Contents Generation Skipped)
+# 2026.03.12 16:28:16 (*) mk_custom_sdk finishing
+# 2026.03.12 16:28:16 (*) Starting generation for system: Nios2.
+
+.
+.
+.
+.
+
+# 2026.03.12 16:28:16 (*) Running Generator Program for CORE
+
+# 2026.03.12 16:28:18 (*) Starting Nios II generation
+# 2026.03.12 16:28:18 (*)   Checking for plaintext license.
+# 2026.03.12 16:28:18 (*)   Couldn't query license setup in Quartus directory c:/altera/91/quartus
+# 2026.03.12 16:28:18 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+# 2026.03.12 16:28:18 (*)   LM_LICENSE_FILE environment variable is empty
+# 2026.03.12 16:28:18 (*)   Plaintext license not found.
+# 2026.03.12 16:28:18 (*)   No license required to generate encrypted Nios II/e.
+
+# 2026.03.12 16:28:18 (*)   Getting CPU configuration settings
+# 2026.03.12 16:28:18 (*)   Elaborating CPU configuration settings
+# 2026.03.12 16:28:18 (*)   Creating all objects for CPU
+# 2026.03.12 16:28:19 (*)   Generating HDL from CPU objects
+# 2026.03.12 16:28:19 (*)   Creating plain-text HDL
+# 2026.03.12 16:28:22 (*) Done Nios II generation
+
+# 2026.03.12 16:28:22 (*) Running Generator Program for RAM
+
+# 2026.03.12 16:28:23 (*) Running Generator Program for JTAG_DEBUG
+
+# 2026.03.12 16:28:23 (*) Running Generator Program for PIO_LED
+
+
+# 2026.03.12 16:28:24 (*) Making arbitration and system (top) modules.
+
+# 2026.03.12 16:28:25 (*) Generating Quartus symbol for top level: Nios2
+# 2026.03.12 16:28:25 (*) Generating Symbol D:/2025_2/2025_2_NioII_SoC_Lab/Lab2/Nios2.bsf
+
+# 2026.03.12 16:28:25 (*) Creating command-line system-generation script: D:/2025_2/2025_2_NioII_SoC_Lab/Lab2/Nios2_generation_script
+
+# 2026.03.12 16:28:30 (*) Running setup for HDL simulator: modelsim
+
+
+# 2026.03.12 16:28:30 (*) Completed generation for system: Nios2.
+# 2026.03.12 16:28:30 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:
+  SOPC Builder database : D:/2025_2/2025_2_NioII_SoC_Lab/Lab2/Nios2.ptf 
+  System HDL Model : D:/2025_2/2025_2_NioII_SoC_Lab/Lab2/Nios2.vhd 
+  System Generation Script : D:/2025_2/2025_2_NioII_SoC_Lab/Lab2/Nios2_generation_script 
+
+# 2026.03.12 16:28:30 (*) SUCCESS: SYSTEM GENERATION COMPLETED.
+
+
+Press 'Exit' to exit.

@@ -1,3 +1,13 @@
 *.flock
 *.rdr
 *.qsys_edit/
+db/
+output_files/
+.sopc_builder/
+.metadata/
+*.elf
+*.elf.srec
+*.mif
+*.qws
+*.wsf
+*.rpt

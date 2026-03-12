@@ -1,0 +1,4 @@
+set_global_assignment -name SOURCE_FILE CORE.ocp
+set_global_assignment -name SDC_FILE CORE.sdc
+set_global_assignment -name SOPC_BUILDER_SIGNATURE_ID 0433C2611DAA0000019CE128BDE0 
+ 
